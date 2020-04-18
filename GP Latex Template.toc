@@ -16,14 +16,14 @@
 \contentsline {section}{\numberline {2.6}Project Management Tools}{9}%
 \contentsline {chapter}{\numberline {3}Requirements Specification}{10}%
 \contentsline {section}{\numberline {3.1}Stakeholders}{10}%
-\contentsline {section}{\numberline {3.2}Platform Requirements}{10}%
-\contentsline {subsection}{\numberline {3.2.1}Mobile Application and Website}{10}%
+\contentsline {section}{\numberline {3.2}Platform Requirements}{11}%
+\contentsline {subsection}{\numberline {3.2.1}Mobile Application and Website}{11}%
 \contentsline {subsection}{\numberline {3.2.2}Specimen Tracking System}{11}%
-\contentsline {section}{\numberline {3.3}Functional Requirements}{12}%
-\contentsline {subsection}{\numberline {3.3.1}Mobile Application and Website}{12}%
+\contentsline {section}{\numberline {3.3}Functional Requirements}{11}%
+\contentsline {subsection}{\numberline {3.3.1}Mobile Application and Website}{11}%
 \contentsline {subsection}{\numberline {3.3.2}Specimen Tracking System}{14}%
-\contentsline {section}{\numberline {3.4}Non-Functional Requirements}{15}%
-\contentsline {subsection}{\numberline {3.4.1}Mobile Application and Website}{15}%
+\contentsline {section}{\numberline {3.4}Non-Functional Requirements}{14}%
+\contentsline {subsection}{\numberline {3.4.1}Mobile Application and Website}{14}%
 \contentsline {subsection}{\numberline {3.4.2}Specimen Tracking System}{16}%
 \contentsline {section}{\numberline {3.5}Other Requirements}{16}%
 \contentsline {subsection}{\numberline {3.5.1}Hardware Requirements}{16}%
