@@ -1,0 +1,395 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{slantsc}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[toc, acronym]{glossaries}
+\graphicspath{ {figures/} }
+\usepackage{array}
+\usepackage{caption}
+\usepackage{titlesec}
+\usepackage[T1]{fontenc}
+
+\renewcommand{\arraystretch}{1.8}
+
+\makeglossaries
+
+\newacronym{rss}{HTML}{Royal Scientific Society.}
+\newacronym{gps}{GPS}{Global Position System.}
+\newacronym{gsm}{GSM}{Global System Module.}
+\newacronym{sim}{SIM}{Subscriber Identification Module.}
+\newacronym{gui}{GUI}{Graphical User Interface.}
+\newacronym{html}{HTML}{Hypertext Markup Language.}
+\newacronym{css}{CSS}{Cascading Style Sheetsage.}
+
+
+\begin{document}
+\begin{titlepage}
+	\begin{center}
+	\includegraphics[width=4cm]{Logo.png}\par
+		\vspace{.05\textheight}
+		{\LARGE\scshape Princess Sumaya University for Technology\par}
+		\vspace{.05\textheight}
+		{\Large\scshape King Hussein School of Computing Sciences\par}
+		\vspace{.07\textheight}
+		{\large Prepared by \textsc{Abdullah Beano and Hasan Sammour}\par}
+		\vspace{.05\textheight}
+		{\Huge\bfseries MedLabs Specimen Tracking System\par}
+		\vspace{.08\textheight}
+		{\large Supervised by Mohammad Abu-Snober\par}
+		\vspace{.10\textheight}
+                     {\small Project submitted in partial fulfillment for the degree of Bachelor of Science in Computer Science\par}
+		\vspace{.05\textheight}
+                     {\small 2019 - 2020\par}
+\end{center}
+\end{titlepage}
+
+\section*{\LARGE {Declaration of Originality}}
+\vspace{.05\textheight}
+This document has been written entirely by the undersigned team members of the project. 
+The source of every quoted text is clearly cited and there is no ambiguity in where the quoted text begins and ends. 
+The source of any illustration, image or table that is not the work of the team members is also clearly cited. 
+We are aware that using non-original text or material or paraphrasing or modifying it without proper citation is a violation of the university’s regulations 
+and is subject to legal actions.
+\newpage
+
+\section*{\LARGE {Acknowledgments}}
+\vspace{.05\textheight}
+Acknowledgments go here...
+\newpage
+
+\addcontentsline{toc}{section}{Abstract}
+\section*{\LARGE {Abstract}}
+\vspace{.05\textheight}
+Abstract goes here...
+\newpage
+
+\addcontentsline{toc}{section}{List of Abbreviations}
+\section*{\LARGE {List of Abbreviations}}
+\vspace{.05\textheight}
+\printglossary[type=\acronymtype]
+\acrfull{rss} \\
+\acrfull{gps} \\
+\acrfull{gsm} \\
+\acrfull{sim} \\
+\acrfull{gui} \\
+\acrfull{html} \\
+\acrfull{css} \\
+\newpage
+
+\tableofcontents
+\newpage
+
+\addcontentsline{toc}{section}{\listfigurename}
+\listoffigures
+\newpage
+
+\addcontentsline{toc}{section}{\listtablename}
+\listoftables
+\newpage
+
+\chapter[Introdution]{Introdution}
+
+\section[Overview]{Overview}
+
+\section[Problem Statement]{Problem Statement}
+
+\section[Related Work]{Related Work}
+
+\section[Document Outline]{Document Outline}
+
+\chapter[Project Plan]{Project Plan}
+
+\section[Project Deliverables]{Project Deliverables}
+
+\section[Project Tasks]{Project Tasks}
+
+\section[Gantt Chart]{Gantt Chart}
+
+\section[Roles and Responsibilities]{Roles and Responsibilities}
+
+\section[Cost Estimation]{Cost Estimation}
+
+\section[Project Management Tools]{Project Management Tools}
+
+\chapter[Requirements Specification]{Requirements Specification}
+
+\section[Stakeholders]{Stakeholders}
+
+\begin{center}
+    \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
+        \hline
+        Stakeholder & Description & Importance of Role \\ [1ex]
+        \hline
+        MedLabs & The tracking system, the application, and the website developed in this project 
+        were made to benefit MedLabs’ business and to optimise their courier system & High \\
+        \hline
+        Royal scientific society (RSS) & The project’s idea was made available
+        and the project’s database was built by the RSS. 
+        The RSS also specified the system’s requirements & Medium \\
+        \hline
+        The developers & The students who built the tracking device
+        and the students who designed and developed the tracking system, the application, and the website.
+        All of the aforementioned will greatly benefit the students’ learning process and careers in the future & Low \\
+        \hline
+    \end{tabular}
+    \captionof{table}{Stakeholders}
+\end{center}
+
+\begin{center}
+    \line(1,0){250}
+\end{center}
+
+\section[Platform Requirements]{Platform Requirements}
+
+\subsection[Mobile Application and Website]{Mobile Application and Website} \vspace{.01\textheight} 
+The mobile application will be developed using the React JavaScript library for Android and iOS. 
+The application is rather simple and not at all taxing and will run without trouble on almost any mobile device with an active internet connection. \\
+The website will be accessible and should run effectively on any desktop or laptop with an active internet connection.
+
+\subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
+The hardware used in this project is an Arduino based vehicle tracking system. Arduino is a single-board microcontroller that - in this case -  
+uses a global position system (GPS), and a global system module (GSM) to achieve real-time tracking of any vehile or object that bears and makes use of
+a SIM card even if it's offline. \\ The system will be assembled inside of the vehicle. Two applications, for the admininstrator and the employee will be
+developed to track all the vehicles.
+
+\begin{center}
+    \line(1,0){250}
+\end{center}
+
+\section[Functional Requirements]{Functional Requirements}
+
+\subsection{Mobile Application and Website} \vspace{.01\textheight} 
+
+\begin{enumerate}
+
+    \item \textbf{Account Related Functional Requirements}
+
+       \begin{enumerate}
+         \item The program must allow a new user to create a new account. 
+               The user will have to provide a valid username,
+               a valid password and a valid personal phone number along with their full name.
+               \begin{itemize}
+                 \item [-] Input: A valid username, a valid password, a valid phone number, a first name, and a last name.
+                 \item [-] Output: Creation of a new account.
+                 \item [-] Constraints: The username should not be longer than 20 characters. 
+                                       The password should contain at least: One number, one lowercase letter, 
+                                       and one uppercase letter. 
+                                       The phone number should be valid.                  
+                 \item [-] Priority: Mo; must have. \\
+               \end{itemize}
+
+         \item The program must allow a user who entered a password / username combination that matches one in the database to access the account.
+               \begin{itemize}
+                 \item [-] Input: A valid username and a valid password.
+                 \item [-] Output: The user will be directed to his home page in the application.
+                 \item [-] Constraints: The combination of the username and the password entered must match the combination stored in the database.                  
+                 \item [-] Priority: Mo; must have. \\
+               \end{itemize}     
+
+         \item The program must allow a user who forgot their account’s password to reset it using the phone number linked to that account.
+               The user will have to provide a valid username, and a valid personal phone number.
+               \begin{itemize}
+                 \item [-] Input: A valid username, and a valid phone number.
+                 \item [-] Output: A randomly-generated new password sent to the user’s phone number. The user can change this password once they log in.
+                 \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
+                 \item [-] Priority: Mo; must have. \\
+               \end{itemize}
+
+         \item The program should allow a user who forgot their account’s username to reset it using the phone number linked to that account.
+               \begin{itemize}
+                 \item [-] Input: A valid phone number and a valid password.
+                 \item [-] Output: A randomly-generated new username sent to the user’s phone number. The user can change this username once he logs in.
+                 \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
+                 \item [-] Priority: S; should have. \\
+               \end{itemize}   
+
+         \item The program could allow the user to login using their phone number and their password instead of the username and password.
+               \begin{itemize}
+                 \item [-] Input: A valid phone number and a valid password.
+                 \item [-] Output: The user will be directed to his home page in the application.
+                 \item [-] Constraints: The combination of the phone number and the password entered must match the combination stored in the database.                  
+                 \item [-] Priority: Co; could have. \\
+               \end{itemize}  
+
+       \end{enumerate}
+
+    \item \textbf{User Related Functional Requirements}
+
+        \begin{enumerate}
+
+         \item The program must allow the user to edit information related to their account. 
+                  Which includes: The username, password, phone number, first name, last name, personal avatar / image, and blood type.
+               \begin{itemize}
+                 \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
+                 \item [-] Output: Updated user information being stored in the database.
+                 \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
+                            to make sure no user modifies another’s information.                  
+                 \item [-] Priority: Mo; must have. \\
+               \end{itemize}
+               
+         \item The program must allow the user to view their history of tests done, and lists of scheduled and ongoing tests.
+               \begin{itemize}
+                 \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
+                 \item [-] Output: Updated user information being stored in the database.
+                 \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
+                                       to make sure no user modifies another’s information.                  
+                 \item [-] Priority: Mo; must have. \\
+               \end{itemize}
+
+         \item The program must notify the user with the following:
+               a) Confirmation of the time, location and type of sample to be taken - specified by the user - once the request has been processed by the system. 
+               b) A sample has been tested and the results are ready. In which case the results will be shown in the list of history of tests.
+               \begin{itemize}
+                 \item [-] Input: None.
+                 \item [-] Output: A Notification from the system to the user.
+                 \item [-] Constraints: Requires an active internet connection.                  
+                 \item [-] Priority: Mo; must have. \\
+               \end{itemize}
+
+        \end{enumerate}
+
+    \item \textbf{Collection of data from the form}
+
+        \begin{enumerate}
+
+         \item The program must allow the user to fill a form detailing the test he’d like to have done and a request for the sample to be taken at home.
+               \begin{itemize}
+                 \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
+                 \item [-] Output: Data formatted in JSON.
+                 \item [-] Constraints: Insufficient data entered by the user.                
+                 \item [-] Priority: Mo; must have. \\
+               \end{itemize}
+
+        \end{enumerate}
+
+    \item \textbf{Processing of collected data}
+
+        \begin{enumerate}
+         \item The program must send an API data request with the correct permission, and parameter in order to process it in the database.
+             \begin{itemize}
+                 \item [-] Input: Collected data formatted in JSON.
+                 \item [-] Output: Processed data to be stored in the database.
+                 \item [-] Constraints: The data should be secured with its designated user. A Token/Key technique is used to represent the claim between the two parties.               
+                 \item [-] Priority: Mo; must have. \\
+             \end{itemize}
+
+        \end{enumerate}
+
+    \item \textbf{Storage of data}
+
+        \begin{enumerate}
+         \item The program must properly store the data received in the database.
+            \begin{itemize}
+                 \item [-] Input: Processed data.
+                 \item [-] Output: Data stored in the database.
+                 \item [-] Constraints: The data should be accurately stored.               
+                 \item [-] Priority: Mo; must have. \\
+            \end{itemize}
+
+        \end{enumerate}
+
+\end{enumerate}
+
+\subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
+
+\begin{enumerate}
+
+    \item \textbf{System Related Requirements}
+
+        \begin{enumerate}
+         \item The system must provide real-time tracking of the couriers' vehicles.
+             \begin{itemize}
+                 \item [-] Input: Latitude and longitude provided by a GPS device.
+                 \item [-] Output: An accurate position of the courier.
+                 \item [-] Constraints: Connection to the GPS device being lost.                 
+                 \item [-] Priority: Mo; must have. \\
+             \end{itemize}
+
+         \item In case of an emergency, the system must notify the nearest courier to the impaired one. In order to take the best measures.
+            \begin{itemize}
+                 \item [-] Input: Notification from an impaired courier.
+                 \item [-] Output: Notification to the nearest courier to the incident.
+                 \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
+                 \item [-] Priority: Mo; must have. \\
+            \end{itemize}
+
+        \end{enumerate}
+
+    \item \textbf{User Related Requirements}
+    \item \textbf{Admin Related Requirements}
+    \item \textbf{Courier Related Requirements}
+
+\end{enumerate}
+
+\begin{center}
+    \line(1,0){250}
+\end{center}
+
+\section[Non-Functional Requirements]{Non-Functional Requirements}
+
+\subsection{Mobile Application and Website} \vspace{.01\textheight} 
+
+\begin{enumerate}
+
+    \item \textbf{Usability} \vspace{.01\textheight} \\ 
+         All system features shall be simple, transparent, and user-friendly to all archetypes of users. 
+         A clean GUI and clear indicators and labels on all text-fields in the forms will allow users to fill them as conveniently as possible.
+
+    \item \textbf{Performance} \vspace{.01\textheight}  \\
+         The program will perform swiftly and smoothly to make sure the forms are submitted and processed in a timely manner 
+         so appointments can be made while delivering results as soon as they’re ready.
+
+    \item \textbf{Security} \vspace{.01\textheight} \\ 
+         There will be multiple functionalities in place to provide a secure program that assures the users of their information's safety. 
+         And they're as follows
+         \begin{itemize}
+             \item [-] No user can access any information unless they login. This will prevent users from gaining access to other users’ personal information.
+             \item [-] All passwords will be hashed and stored in a protected database to prevent any leaks of information.
+                     The un-reversable hashing will provide additional security in case of a security breach.
+         \end{itemize}
+
+    \item \textbf{Availability} \vspace{.01\textheight}  \\ 
+         The program will be available for use to fill forms at all times. Exceptions may occur during system maintenance.
+         Which shall be conducted during times of minimum traffic.
+
+    \item \textbf{Portability} \vspace{.01\textheight}  \\
+         The program will be available as an application downloadable for Android and iOS. The program will conjointly be available as a website in like manner.
+
+\end{enumerate}
+\clearpage
+
+\subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
+
+\begin{enumerate}
+
+    \item \textbf{Usability} \vspace{.01\textheight} \\ 
+         The system shall use an unambiguous and user-friendly map to track the couriers distinctly. 
+         While sending automatic notifications to couriers in case of an emergency being reported.
+
+    \item \textbf{Performance} \vspace{.01\textheight}  \\
+         The system shall run in real-time to track the couriers with no delays as long as the GPS hardware device is functioning properly. 
+
+    \item \textbf{Availability} \vspace{.01\textheight}  \\ 
+         Unavailability might occur during system maintenance. 
+         This should not cause significant hindrance to any operations since the maintenance shall be concluded during off-times for couriers.
+
+    \item \textbf{Maintainability} \vspace{.01\textheight}  \\
+         Any new couriers being added should not cause any complications to the system as a whole. And maintenance shall conclude during couriers’ off-time.
+
+\end{enumerate}
+
+\section[Other Requirements]{Other Requirements}
+
+\subsection[Hardware Requirements]{Hardware Requirements}
+
+\subsection[Software Requirements]{Software Requirements}
+
+\subsection[Other Supplementary Requirements]{Other Supplementary Requirements}
+
+\chapter[System Design]{System Design}
+
+\section[Logical Model Design]{Logical Model Design}
+
+\section[Physical Model Design]{Physical Model Design}
+
+\end{document}
