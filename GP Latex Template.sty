@@ -91,17 +91,68 @@ Abstract goes here...
 
 \section[Overview]{Overview}
 
+In this project, a live tracking system of the different couriers working for MedLabs in Amman will be developed.
+These couriers’ main job is to deliver varying medical samples from MedLabs branches to the main branch for further testing. 
+A portion of these workers are also lab technicians who will be taking samples from the patients from their homes, 
+the system will track their routes as well. 
+Secondly, an application and a website will be developed to allow users to fill request-forms for their samples to be taken from home.
+by a capable lab technician. As the only way to achieve that currently is through a phone call to MedLabs call-center. \\
+There's undeniable value when it comes to making improvements to the health-care system in any way. And a dynamic, modern nad powerful
+health-care system is of utmost significance to help our community. 
+As for us working to build this project, learning new software, hardware, and technologies is of absolute importance
+and growing am entrepreneurial sense delving into a new field such as this will greatly benefit our careers moving forward.
+
+
 \section[Problem Statement]{Problem Statement}
+
+The current system at MedLabs is based on users making phone calls directly to the call center to make an arragenment for their samples to be taken at home.\
+Which regularly leads to heavy load on the call-center subsequently leading to customer dissastifcation. This inefficient and often confusing - for the patients - system
+will be renovated by the software to be developed in this project. Which will make the process far simpler, faster, and more convenient for the patients 
+while lifting sizeable load off the call-center.
+A live tracking system of the couriers will also greatly benefit MedLabs business as a whole, by helping to optimise their already rich testing, and boosting efficiency.
+
+\newpage
 
 \section[Related Work]{Related Work}
 
 \section[Document Outline]{Document Outline}
+
+The remainder of this document is arranged as follows:
+\begin{itemize}
+  \item [-] Chapter 2 details the project's plan and the analysis that went into it.
+  \item [-] Chapter 3 describes the system's requirements in detail.
+  \item [-] Chapter 4 illustrates the system's design using a plethora of diagrams and the model's description.
+\end{itemize}
+
 
 \chapter[Project Plan]{Project Plan}
 
 \section[Project Deliverables]{Project Deliverables}
 
 \section[Project Tasks]{Project Tasks}
+
+\begin{center}
+  \begin{tabular}{ | m{0.6cm} | m{4cm} |  m{4.5cm} | m{1.5cm} | m{2cm} | }
+    \hline
+    ID & Task & Description & Duration & Dependencies \\
+    \hline
+    T01 & Define the problem & Precisly describe the problem to be solved in a problem statement & Week 1 & None \\
+    \hline
+    T02 & Collect user requirements & Interview personnel from MedLabs to collect and document user requirements & Week 1 & T01 \\
+    \hline
+    T03 & Identify system requirements & Deduce, document, and prioritise all system requirements & Week 2 & T02 \\
+    \hline
+    T04 & Manage system requirements & Use a traceability matrix to manage system/user requirements & Week 2 & T02, T03 \\
+    \hline
+    T05 & Form a development strategy & Research and document hardware and software tools to be adopted in the project & Week 2 & T03 \\
+    \hline
+    T06 & Design system requirements & Use a wide and applicable array of diagrams to manifest the system's requirements & Week 3 & T04 \\
+    \hline
+    T07 & Design user interfaces & Use the appropriate softare to desing user interface prototypes & Week 4 & T03, T06 \\
+    \hline
+  \end{tabular}
+  \captionof{table}{Project Tasks}
+\end{center}
 
 \section[Gantt Chart]{Gantt Chart}
 
@@ -116,23 +167,23 @@ Abstract goes here...
 \section[Stakeholders]{Stakeholders}
 
 \begin{center}
-    \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
-        \hline
-        Stakeholder & Description & Importance of Role \\ [1ex]
-        \hline
-        MedLabs & The tracking system, the application, and the website developed in this project 
-        were made to benefit MedLabs’ business and to optimise their courier system & High \\
-        \hline
-        Royal Scientific Society (RSS) & The project’s idea was made available
-        and the project’s database was built by the RSS. 
-        The RSS also specified the system’s requirements & Medium \\
-        \hline
-        The developers & The students who built the tracking device
-        and the students who designed and developed the tracking system, the application, and the website.
-        All of the aforementioned will greatly benefit the students’ learning process and careers in the future & Low \\
-        \hline
-    \end{tabular}
-    \captionof{table}{Stakeholders}
+  \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
+      \hline
+      Stakeholder & Description & Importance of Role \\ [1ex]
+      \hline
+      MedLabs & The tracking system, the application, and the website developed in this project 
+      were made to benefit MedLabs’ business and to optimise their courier system & High \\
+      \hline
+      Royal Scientific Society (RSS) & The project’s idea was made available
+      and the project’s database was built by the RSS. 
+      The RSS also specified the system’s requirements & Medium \\
+      \hline
+      The developers & The students who built the tracking device
+      and the students who designed and developed the tracking system, the application, and the website.
+      All of the aforementioned will greatly benefit the students’ learning process and careers in the future & Low \\        
+      \hline
+  \end{tabular}
+  \captionof{table}{Stakeholders}
 \end{center}
 
 \begin{center}
