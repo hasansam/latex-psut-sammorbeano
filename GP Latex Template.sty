@@ -435,9 +435,101 @@ developed to track all the vehicles.
 
 \subsection[Hardware Requirements]{Hardware Requirements}
 
+An arduino based device will be used within the system. Integrating it with the web service developed. The device revolves around the usage of GPS, and GSM, a circuit is designed to track the location of the vehicles using these technologies. The tracking system sends geographical coordinates back to the web server, feeding the data into the cloud. By using this system, we are able to share real time information about transportation. This will also aid the means of transportation by providing shortest paths to a certain coordinate to the user. \\
+GSM module is used in this scenario for sending the coordinates of the vehicle to the server. GPS handles the continuous results of coordinates as a form of string data, known as longitude and latitude. Integrating it with the graphical user interface application, gives us the capability to showcase the location of a vehicle on a map dashboard in real-time.
+
+
 \subsection[Software Requirements]{Software Requirements}
 
+\begin{enumerate}
+	\item \textbf{Recognition Model Requirements} \vspace{.01\textheight} \\ 
+	With the addition of an Arduino based tracking device, tracking would be effortless. An API would be handling all the traffic between the server, and the application, hosting all the data on 	the cloud for ease of access and efficiency.\\
+	
+	
+	\begin{description}
+	\item \textbf{Python}\vspace{.01\textheight} \\ 	
+	A high-level programming language which serves a general purpose, dynamic, and is widely used within the scope of data scientists. Python allows the use of a variety of functions 				included for the utilization of data analysis and machine learning
+	\end{description}
+
+	\begin{itemize}
+	\item \textbf{Attributes} \vspace{.01\textheight} \\ 		
+	\begin{enumerate}
+	\item \textbf{Create a CSV output to easily read, and manipulate data in a spreadsheet} \vspace{.01\textheight}  \\	
+	\item \textbf{Integration of SQL (Read, Write)} \vspace{.01\textheight}  \\	
+	\item \textbf{Using PySpark to build a machine learning model} \vspace{.01\textheight}  \\	
+	\item \textbf{NumPy, anmd Pandas Tool for Data Analytics} \vspace{.01\textheight}  \\	
+
+
+	\end{enumerate}
+	\end{itemize}
+
+
+
+	\item \textbf{User Interface  Requirements} \vspace{.01\textheight} \\ 	
+	\begin{itemize}
+	\item \textbf{Web  Requirements} \vspace{.01\textheight} \\ 	
+	The purpose of a website is to engage, inform, and give ease of access for users with just an internet connection. Investing in a website helps invest in the idea of the project and give 			room for growth. Variety of tools will be used to develop the application such as:
+	\begin{enumerate}
+	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
+	\begin{enumerate}
+	\item \textbf{React Javascript} \vspace{.01\textheight}  \\	
+	\item \textbf{Visual Studio Code} \vspace{.01\textheight}  \\		
+	\item \textbf{Redux} \vspace{.01\textheight}  \\	
+	\item \textbf{ESLint} \vspace{.01\textheight}  \\	
+	\item \textbf{Storybook} \vspace{.01\textheight}  \\		
+	\item \textbf{React Developer Tools} \vspace{.01\textheight}  \\	
+	\item \textbf{React-Bootstrap} \vspace{.01\textheight}  \\	
+ 	\item \textbf{UI Component Libraries} \vspace{.01\textheight}  \\	
+	\end{enumerate}
+	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
+	\begin{enumerate}
+	\item \textbf{NodeJS} \vspace{.01\textheight}  \\	
+	\item \textbf{REST API} \vspace{.01\textheight}  \\		
+	\item \textbf{SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
+	\item \textbf{PHP} \vspace{.01\textheight}  \\	
+	\end{enumerate}
+	\end{enumerate}
+
+
+	\item \textbf{Application  Requirements} \vspace{.01\textheight} \\ 	
+	The purpose of a website is to engage, inform, and give ease of access for users with just an internet connection. Investing in a website helps invest in the idea of the project and give 			room for growth. Variety of tools will be used to develop the application such as:
+	\begin{enumerate}
+	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
+	\begin{enumerate}
+	\item \textbf{React Native } \vspace{.01\textheight}  \\	
+	\item \textbf{Visual Studio Code} \vspace{.01\textheight}  \\		
+	\item \textbf{Nuclide} \vspace{.01\textheight}  \\	
+	\item \textbf{Redux} \vspace{.01\textheight}  \\	
+	\item \textbf{ESLint} \vspace{.01\textheight}  \\		
+	\item \textbf{React Native Tools} \vspace{.01\textheight}  \\	
+	\item \textbf{React Navigiation} \vspace{.01\textheight}  \\	
+ 	\item \textbf{UI Component A} \vspace{.01\textheight}  \\	
+	\item \textbf{AbodeXD } \vspace{.01\textheight}  \\	
+	\item \textbf{Flow} \vspace{.01\textheight}  \\	
+	\end{enumerate}
+	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
+	\begin{enumerate}
+	\item \textbf{NodeJS} \vspace{.01\textheight}  \\	
+	\item \textbf{REST API} \vspace{.01\textheight}  \\		
+	\item \textbf{SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
+	\item \textbf{PHP} \vspace{.01\textheight}  \\	
+	\end{enumerate}
+	\end{enumerate}
+	\end{itemize}
+
+
+	
+	
+\end{enumerate}
+
 \subsection[Other Supplementary Requirements]{Other Supplementary Requirements}
+	\begin{enumerate}	
+	\item \textbf{Internet Connection } 	
+	\item \textbf{Android 5.0+, or iPhone 5s+} 
+	\item \textbf{RAM of 1GB or larger} 
+	\item \textbf{Must have an integal GPS }
+	\end{enumerate}
+
 
 \chapter[System Design]{System Design}
 
