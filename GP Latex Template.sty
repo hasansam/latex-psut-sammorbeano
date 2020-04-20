@@ -1,7 +1,7 @@
 \documentclass{report}
 \usepackage{graphicx}
 \usepackage{slantsc}
-\usepackage[a4paper, total={6in, 8in}]{geometry}
+\usepackage[a4paper, total={6.2in, 8in}]{geometry}
 \usepackage[toc, acronym]{glossaries}
 \graphicspath{ {figures/} }
 \usepackage{array}
@@ -37,14 +37,14 @@
 		\vspace{.08\textheight}
 		{\large Supervised by Mohammad Abu-Snober\par}
 		\vspace{.10\textheight}
-                     {\small Project submitted in partial fulfillment for the degree of Bachelor of Science in Computer Science\par}
+    {\small Project submitted in partial fulfillment for the degree of Bachelor of Science in Computer Science\par}
 		\vspace{.05\textheight}
-                     {\small 2019 - 2020\par}
-\end{center}
+    {\small 2019 - 2020\par}
+  \end{center}
 \end{titlepage}
 
-\section*{\LARGE {Declaration of Originality}}
-\vspace{.05\textheight}
+\section*{\LARGE {Declaration of Originality}} \vspace{.05\textheight}
+
 This document has been written entirely by the undersigned team members of the project. 
 The source of every quoted text is clearly cited and there is no ambiguity in where the quoted text begins and ends. 
 The source of any illustration, image or table that is not the work of the team members is also clearly cited. 
@@ -52,28 +52,22 @@ We are aware that using non-original text or material or paraphrasing or modifyi
 and is subject to legal actions.
 \newpage
 
-\section*{\LARGE {Acknowledgments}}
-\vspace{.05\textheight}
+\section*{\LARGE {Acknowledgments}} \vspace{.05\textheight}
+
 Acknowledgments go here...
 \newpage
 
-\addcontentsline{toc}{section}{Abstract}
-\section*{\LARGE {Abstract}}
-\vspace{.05\textheight}
+\addcontentsline{toc}{section}{Abstract} 
+\section*{\LARGE {Abstract}} \vspace{.05\textheight}
+
 Abstract goes here...
 \newpage
 
 \addcontentsline{toc}{section}{List of Abbreviations}
-\section*{\LARGE {List of Abbreviations}}
-\vspace{.05\textheight}
+\section*{\LARGE {List of Abbreviations}} \vspace{.05\textheight}
+
 \printglossary[type=\acronymtype]
-\acrfull{rss} \\
-\acrfull{gps} \\
-\acrfull{gsm} \\
-\acrfull{sim} \\
-\acrfull{gui} \\
-\acrfull{html} \\
-\acrfull{css} \\
+\acrfull{rss} \\ \acrfull{gps} \\ \acrfull{gsm} \\ \acrfull{sim} \\ \acrfull{gui} \\ \acrfull{html} \\ \acrfull{css} \\
 \newpage
 
 \tableofcontents
@@ -102,7 +96,6 @@ health-care system is of utmost significance to help our community.
 As for us working to build this project, learning new software, hardware, and technologies is of absolute importance
 and growing am entrepreneurial sense delving into a new field such as this will greatly benefit our careers moving forward.
 
-
 \section[Problem Statement]{Problem Statement}
 
 The current system at MedLabs is based on users making phone calls directly to the call center to make an arragenment for their samples to be taken at home.\
@@ -110,7 +103,6 @@ Which regularly leads to heavy load on the call-center subsequently leading to c
 will be renovated by the software to be developed in this project. Which will make the process far simpler, faster, and more convenient for the patients 
 while lifting sizeable load off the call-center.
 A live tracking system of the couriers will also greatly benefit MedLabs business as a whole, by helping to optimise their already rich testing, and boosting efficiency.
-
 \newpage
 
 \section[Related Work]{Related Work}
@@ -132,9 +124,14 @@ The remainder of this document is arranged as follows:
 \section[Project Tasks]{Project Tasks}
 
 \begin{center}
-  \begin{tabular}{ | m{0.6cm} | m{4cm} |  m{4.5cm} | m{1.5cm} | m{2cm} | }
+  \begin{longtable}{ | m{0.6cm} | m{4cm} |  m{4.5cm} | m{1.5cm} | m{2cm} | }
+    \multicolumn{5}{c}{\textbf{\large{Analysis Phase}}}\\
     \hline
     ID & Task & Description & Duration & Dependencies \\
+    \endfirsthead
+    \hline
+    ID & Task & Description & Duration & Dependencies \\
+    \endhead
     \hline
     T01 & Define the problem & Precisly describe the problem to be solved in a problem statement & Week 1 & None \\
     \hline
@@ -142,15 +139,26 @@ The remainder of this document is arranged as follows:
     \hline
     T03 & Identify system requirements & Deduce, document, and prioritise all system requirements & Week 2 & T02 \\
     \hline
+    T04 & Learn required documentation tools & Learn the required tools and programming langauges necessary for documentation (Latex) & Week 2 & None \\
+    \hline
     T04 & Manage system requirements & Use a traceability matrix to manage system/user requirements & Week 2 & T02, T03 \\
     \hline
-    T05 & Form a development strategy & Research and document hardware and software tools to be adopted in the project & Week 2 & T03 \\
+    T05 & Form a development - strategy & Research and document hardware and software tools to be adopted in the project. 
+    Research and choose the best fitting design model & Week 2 & T03 \\
+    \hline
+    \multicolumn{5}{c}{\textbf{\large{Design Phase}}}\\
+    \hline
+    ID & Task & Description & Duration & Dependencies \\
     \hline
     T06 & Design system requirements & Use a wide and applicable array of diagrams to manifest the system's requirements & Week 3 & T04 \\
     \hline
-    T07 & Design user interfaces & Use the appropriate softare to desing user interface prototypes & Week 4 & T03, T06 \\
+    T07 & Design user interfaces & Use the appropriate software to desing user interface prototypes & Week 4 & T03, T06 \\
     \hline
-  \end{tabular}
+    T08 & Design the database & Define a proper database with apt attributes and constraints & Week 4 & None \\
+    \hline
+    T09 & Design the physical model & Adopt the best suitable software architecture & Week 5 & T08, T06 \\
+    \hline
+  \end{longtable}
   \captionof{table}{Project Tasks}
 \end{center}
 
@@ -187,9 +195,8 @@ The remainder of this document is arranged as follows:
 \end{center}
 
 \begin{center}
-    \line(1,0){250}
+  \line(1,0){250}
 \end{center}
-\newpage
 
 \section[Platform Requirements]{Platform Requirements}
 
@@ -205,7 +212,7 @@ a SIM card even if it's offline. \\ The system will be assembled inside of the v
 developed to track all the vehicles.
 
 \begin{center}
-    \line(1,0){250}
+  \line(1,0){250}
 \end{center}
 
 
@@ -214,132 +221,133 @@ developed to track all the vehicles.
 \subsection{Mobile Application and Website} \vspace{.01\textheight} 
 
 \begin{enumerate}
+  
+  \item \textbf{Account Related Functional Requirements}
 
-    \item \textbf{Account Related Functional Requirements}
+    \begin{enumerate}
 
-       \begin{enumerate}
-         \item The program must allow a new user to create a new account. 
-               The user will have to provide a valid username,
-               a valid password and a valid personal phone number along with their full name.
-               \begin{itemize}
-                 \item [-] Input: A valid username, a valid password, a valid phone number, a first name, and a last name.
-                 \item [-] Output: Creation of a new account.
-                 \item [-] Constraints: The username should not be longer than 20 characters. 
-                                       The password should contain at least: One number, one lowercase letter, 
-                                       and one uppercase letter. 
-                                       The phone number should be valid.                  
-                 \item [-] Priority: Mo; must have. \\
-               \end{itemize}
+      \item The program must allow a new user to create a new account. 
+      he user will have to provide a valid username,
+      a valid password and a valid personal phone number along with their full name.
+        \begin{itemize}
+          \item [-] Input: A valid username, a valid password, a valid phone number, a first name, and a last name.
+          \item [-] Output: Creation of a new account.
+          \item [-] Constraints: The username should not be longer than 20 characters. 
+          The password should contain at least: One number, one lowercase letter, 
+          and one uppercase letter. 
+          The phone number should be valid.                  
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-         \item The program must allow a user who entered a password / username combination that matches one in the database to access the account.
-               \begin{itemize}
-                 \item [-] Input: A valid username and a valid password.
-                 \item [-] Output: The user will be directed to his home page in the application.
-                 \item [-] Constraints: The combination of the username and the password entered must match the combination stored in the database.                  
-                 \item [-] Priority: Mo; must have. \\
-               \end{itemize}     
+      \item The program must allow a user who entered a password / username combination that matches one in the database to access the account.
+        \begin{itemize}
+          \item [-] Input: A valid username and a valid password.
+          \item [-] Output: The user will be directed to his home page in the application.
+          \item [-] Constraints: The combination of the username and the password entered must match the combination stored in the database.                  
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}     
 
-         \item The program must allow a user who forgot their account’s password to reset it using the phone number linked to that account.
-               The user will have to provide a valid username, and a valid personal phone number.
-               \begin{itemize}
-                 \item [-] Input: A valid username, and a valid phone number.
-                 \item [-] Output: A randomly-generated new password sent to the user’s phone number. The user can change this password once they log in.
-                 \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
-                 \item [-] Priority: Mo; must have. \\
-               \end{itemize}
+      \item The program must allow a user who forgot their account’s password to reset it using the phone number linked to that account.
+      The user will have to provide a valid username, and a valid personal phone number.
+        \begin{itemize}
+          \item [-] Input: A valid username, and a valid phone number.
+          \item [-] Output: A randomly-generated new password sent to the user’s phone number. The user can change this password once they log in.
+          \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-         \item The program should allow a user who forgot their account’s username to reset it using the phone number linked to that account.
-               \begin{itemize}
-                 \item [-] Input: A valid phone number and a valid password.
-                 \item [-] Output: A randomly-generated new username sent to the user’s phone number. The user can change this username once he logs in.
-                 \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
-                 \item [-] Priority: S; should have. \\
-               \end{itemize}   
+      \item The program should allow a user who forgot their account’s username to reset it using the phone number linked to that account.
+        \begin{itemize}
+          \item [-] Input: A valid phone number and a valid password.
+          \item [-] Output: A randomly-generated new username sent to the user’s phone number. The user can change this username once he logs in.
+          \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
+          \item [-] Priority: S; should have. \\
+        \end{itemize}   
 
-         \item The program could allow the user to login using their phone number and their password instead of the username and password.
-               \begin{itemize}
-                 \item [-] Input: A valid phone number and a valid password.
-                 \item [-] Output: The user will be directed to his home page in the application.
-                 \item [-] Constraints: The combination of the phone number and the password entered must match the combination stored in the database.                  
-                 \item [-] Priority: Co; could have. \\
-               \end{itemize}  
+      \item The program could allow the user to login using their phone number and their password instead of the username and password.
+        \begin{itemize}
+          \item [-] Input: A valid phone number and a valid password.
+          \item [-] Output: The user will be directed to his home page in the application.
+          \item [-] Constraints: The combination of the phone number and the password entered must match the combination stored in the database.                  
+          \item [-] Priority: Co; could have. \\
+        \end{itemize}  
 
-       \end{enumerate}
+    \end{enumerate}
 
-    \item \textbf{User Related Functional Requirements}
+  \item \textbf{User Related Functional Requirements}
 
-        \begin{enumerate}
+    \begin{enumerate}
 
-         \item The program must allow the user to edit information related to their account. 
-                  Which includes: The username, password, phone number, first name, last name, personal avatar / image, and blood type.
-               \begin{itemize}
-                 \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
-                 \item [-] Output: Updated user information being stored in the database.
-                 \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
-                            to make sure no user modifies another’s information.                  
-                 \item [-] Priority: Mo; must have. \\
-               \end{itemize}
+      \item The program must allow the user to edit information related to their account. 
+      Which includes: The username, password, phone number, first name, last name, personal avatar / image, and blood type.
+        \begin{itemize}
+          \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
+          \item [-] Output: Updated user information being stored in the database.
+          \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
+          to make sure no user modifies another’s information.                  
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
                
-         \item The program must allow the user to view their history of tests done, and lists of scheduled and ongoing tests.
-               \begin{itemize}
-                 \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
-                 \item [-] Output: Updated user information being stored in the database.
-                 \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
-                                       to make sure no user modifies another’s information.                  
-                 \item [-] Priority: Mo; must have. \\
-               \end{itemize}
+      \item The program must allow the user to view their history of tests done, and lists of scheduled and ongoing tests.
+        \begin{itemize}
+          \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
+          \item [-] Output: Updated user information being stored in the database.
+          \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
+          to make sure no user modifies another’s information.                  
+          item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-         \item The program must notify the user with the following:
-               a) Confirmation of the time, location and type of sample to be taken - specified by the user - once the request has been processed by the system. 
-               b) A sample has been tested and the results are ready. In which case the results will be shown in the list of history of tests.
-               \begin{itemize}
-                 \item [-] Input: None.
-                 \item [-] Output: A Notification from the system to the user.
-                 \item [-] Constraints: Requires an active internet connection.                  
-                 \item [-] Priority: Mo; must have. \\
-               \end{itemize}
+      \item The program must notify the user with the following:
+      a) Confirmation of the time, location and type of sample to be taken - specified by the user - once the request has been processed by the system. 
+      b) A sample has been tested and the results are ready. In which case the results will be shown in the list of history of tests.
+        \begin{itemize}
+          \item [-] Input: None.
+          \item [-] Output: A Notification from the system to the user.
+          \item [-] Constraints: Requires an active internet connection.                  
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-        \end{enumerate}
+    \end{enumerate}
 
-    \item \textbf{Collection of data from the form}
+  \item \textbf{Collection of data from the form}
 
-        \begin{enumerate}
+    \begin{enumerate}
 
-         \item The program must allow the user to fill a form detailing the test he’d like to have done and a request for the sample to be taken at home.
-               \begin{itemize}
-                 \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
-                 \item [-] Output: Data formatted in JSON.
-                 \item [-] Constraints: Insufficient data entered by the user.                
-                 \item [-] Priority: Mo; must have. \\
-               \end{itemize}
+      \item The program must allow the user to fill a form detailing the test he’d like to have done and a request for the sample to be taken at home.
+        \begin{itemize}
+          \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
+          \item [-] Output: Data formatted in JSON.
+          \item [-] Constraints: Insufficient data entered by the user.                
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-        \end{enumerate}
+    \end{enumerate}
 
-    \item \textbf{Processing of collected data}
+  \item \textbf{Processing of collected data}
 
-        \begin{enumerate}
-         \item The program must send an API data request with the correct permission, and parameter in order to process it in the database.
-             \begin{itemize}
-                 \item [-] Input: Collected data formatted in JSON.
-                 \item [-] Output: Processed data to be stored in the database.
-                 \item [-] Constraints: The data should be secured with its designated user. A Token/Key technique is used to represent the claim between the two parties.               
-                 \item [-] Priority: Mo; must have. \\
-             \end{itemize}
+    \begin{enumerate}
+      \item The program must send an API data request with the correct permission, and parameter in order to process it in the database.
+        \begin{itemize}
+          \item [-] Input: Collected data formatted in JSON.
+          \item [-] Output: Processed data to be stored in the database.
+          \item [-] Constraints: The data should be secured with its designated user. A Token/Key technique is used to represent the claim between the two parties.               
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-        \end{enumerate}
+    \end{enumerate}
 
-    \item \textbf{Storage of data}
+  \item \textbf{Storage of data}
 
-        \begin{enumerate}
-         \item The program must properly store the data received in the database.
-            \begin{itemize}
-                 \item [-] Input: Processed data.
-                 \item [-] Output: Data stored in the database.
-                 \item [-] Constraints: The data should be accurately stored.               
-                 \item [-] Priority: Mo; must have. \\
-            \end{itemize}
+    \begin{enumerate}
+      \item The program must properly store the data received in the database.
+        \begin{itemize}
+          \item [-] Input: Processed data.
+          \item [-] Output: Data stored in the database.
+          \item [-] Constraints: The data should be accurately stored.               
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-        \end{enumerate}
+    \end{enumerate}
 
 \end{enumerate}
 
@@ -347,59 +355,61 @@ developed to track all the vehicles.
 
 \begin{enumerate}
 
-    \item \textbf{System Related Requirements}
+  \item \textbf{System Related Requirements}
 
-         \item In case of an emergency, the system must notify the nearest courier to the impaired one. In order to take the best measures.
-            \begin{itemize}
-                 \item [-] Input: Notification from an impaired courier.
-                 \item [-] Output: Notification to the nearest courier to the incident.
-                 \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
-                 \item [-] Priority: Mo; must have. \\
-            \end{itemize}
+    \begin{enumerate}
 
-        \end{enumerate}
+      \item In case of an emergency, the system must notify the nearest courier to the impaired one. In order to take the best measures.
+        \begin{itemize}
+          \item [-] Input: Notification from an impaired courier.
+          \item [-] Output: Notification to the nearest courier to the incident.
+          \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-    \item \textbf{Account Related Requirements}
+    \end{enumerate}
 
-    \item \textbf{Admin Related Requirements}
+  \item \textbf{Account Related Requirements}
 
-        \begin{enumerate}
+  \item \textbf{Admin Related Requirements}
 
-           \item The admin can allocate tasks to the couriers on his dashboard which displays all tasks in detail.
-             \begin{itemize}
-                 \item [-] Input: Input by the admin on the GUI.
-                 \item [-] Output: Task allocation and editting.
-                 \item [-] Constraints: Need for an active internet connection to send and receive information.                 
-                 \item [-] Priority: Mo; must have. \\
-             \end{itemize}
+    \begin{enumerate}
 
-            \item The system must provide real-time tracking of the couriers' vehicles.
-             \begin{itemize}
-                 \item [-] Input: Latitude and longitude provided by a GPS device.
-                 \item [-] Output: An accurate position of the courier on admin's map.
-                 \item [-] Constraints: Connection to the GPS device being lost.                 
-                 \item [-] Priority: Mo; must have. \\
-             \end{itemize}
-        \end{enumerate}
+      \item The admin can allocate tasks to the couriers on his dashboard which displays all tasks in detail.
+        \begin{itemize}
+          \item [-] Input: Input by the admin on the GUI.
+          \item [-] Output: Task allocation and editting.
+          \item [-] Constraints: Need for an active internet connection to send and receive information.                 
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
 
-    \item \textbf{Courier Related Requirements}
+      \item The system must provide real-time tracking of the couriers' vehicles.
+        \begin{itemize}
+          \item [-] Input: Latitude and longitude provided by a GPS device.
+          \item [-] Output: An accurate position of the courier on admin's map.
+          \item [-] Constraints: Connection to the GPS device being lost.                 
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
+    \end{enumerate}
 
-        \begin{enumerate}
+  \item \textbf{Courier Related Requirements}
 
-          \item The courier can view tasks assigned to him in detail on his dashboard.
-            \begin{itemize}
-                 \item [-] Input: None
-                 \item [-] Output: Tasks allocated to the courier.
-                 \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
-                 \item [-] Priority: Mo; must have. \\
-            \end{itemize}
+    \begin{enumerate}
 
-        \end{enumerate}
+      \item The courier can view tasks assigned to him in detail on his dashboard.
+        \begin{itemize}
+          \item [-] Input: None
+          \item [-] Output: Tasks allocated to the courier.
+          \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
+
+    \end{enumerate}
 
 \end{enumerate}
 
 \begin{center}
-    \line(1,0){250}
+  \line(1,0){250}
 \end{center}
 
 \section[Non-Functional Requirements]{Non-Functional Requirements}
@@ -408,29 +418,29 @@ developed to track all the vehicles.
 
 \begin{enumerate}
 
-    \item \textbf{Usability} \vspace{.01\textheight} \\ 
-         All system features shall be simple, transparent, and user-friendly to all archetypes of users. 
-         A clean GUI and clear indicators and labels on all text-fields in the forms will allow users to fill them as conveniently as possible.
+  \item \textbf{Usability} \vspace{.01\textheight} \\ 
+  All system features shall be simple, transparent, and user-friendly to all archetypes of users. 
+  A clean GUI and clear indicators and labels on all text-fields in the forms will allow users to fill them as conveniently as possible.
 
-    \item \textbf{Performance} \vspace{.01\textheight}  \\
-         The program will perform swiftly and smoothly to make sure the forms are submitted and processed in a timely manner 
-         so appointments can be made while delivering results as soon as they’re ready.
+  \item \textbf{Performance} \vspace{.01\textheight}  \\
+  The program will perform swiftly and smoothly to make sure the forms are submitted and processed in a timely manner 
+  so appointments can be made while delivering results as soon as they’re ready.
 
-    \item \textbf{Security} \vspace{.01\textheight} \\ 
-         There will be multiple functionalities in place to provide a secure program that assures the users of their information's safety. 
-         And they're as follows
-         \begin{itemize}
-             \item [-] No user can access any information unless they login. This will prevent users from gaining access to other users’ personal information.
-             \item [-] All passwords will be hashed and stored in a protected database to prevent any leaks of information.
-                     The un-reversable hashing will provide additional security in case of a security breach.
-         \end{itemize}
+  \item \textbf{Security} \vspace{.01\textheight} \\ 
+  There will be multiple functionalities in place to provide a secure program that assures the users of their information's safety. 
+  And they're as follows
+    \begin{itemize}
+      \item [-] No user can access any information unless they login. This will prevent users from gaining access to other users’ personal information.
+      \item [-] All passwords will be hashed and stored in a protected database to prevent any leaks of information.
+      The un-reversable hashing will provide additional security in case of a security breach.
+    \end{itemize}
 
-    \item \textbf{Availability} \vspace{.01\textheight}  \\ 
-         The program will be available for use to fill forms at all times. Exceptions may occur during system maintenance.
-         Which shall be conducted during times of minimum traffic.
+  \item \textbf{Availability} \vspace{.01\textheight}  \\ 
+  The program will be available for use to fill forms at all times. Exceptions may occur during system maintenance.
+  Which shall be conducted during times of minimum traffic.
 
-    \item \textbf{Portability} \vspace{.01\textheight}  \\
-         The program will be available as an application downloadable for Android and iOS. The program will conjointly be available as a website in like manner.
+  \item \textbf{Portability} \vspace{.01\textheight}  \\
+  The program will be available as an application downloadable for Android and iOS. The program will conjointly be available as a website in like manner.
 
 \end{enumerate}
 \clearpage
@@ -439,64 +449,72 @@ developed to track all the vehicles.
 
 \begin{enumerate}
 
-    \item \textbf{Usability} \vspace{.01\textheight} \\ 
-         The system shall use an unambiguous and user-friendly map to track the couriers distinctly. 
-         While sending automatic notifications to couriers in case of an emergency being reported.
+  \item \textbf{Usability} \vspace{.01\textheight} \\ 
+  The system shall use an unambiguous and user-friendly map to track the couriers distinctly. 
+  While sending automatic notifications to couriers in case of an emergency being reported.
 
-    \item \textbf{Performance} \vspace{.01\textheight}  \\
-         The system shall run in real-time to track the couriers with no delays as long as the GPS hardware device is functioning properly. 
+  \item \textbf{Performance} \vspace{.01\textheight}  \\
+  The system shall run in real-time to track the couriers with no delays as long as the GPS hardware device is functioning properly. 
 
-    \item \textbf{Availability} \vspace{.01\textheight}  \\ 
-         Unavailability might occur during system maintenance. 
-         This should not cause significant hindrance to any operations since the maintenance shall be concluded during off-times for couriers.
+  \item \textbf{Availability} \vspace{.01\textheight}  \\ 
+  Unavailability might occur during system maintenance. 
+  This should not cause significant hindrance to any operations since the maintenance shall be concluded during off-times for couriers.
 
-    \item \textbf{Maintainability} \vspace{.01\textheight}  \\
-         Any new couriers being added should not cause any complications to the system as a whole. And maintenance shall conclude during couriers’ off-time.
+  \item \textbf{Maintainability} \vspace{.01\textheight}  \\
+  Any new couriers being added should not cause any complications to the system as a whole. And maintenance shall conclude during couriers’ off-time.
 
 \end{enumerate}
 
 \section[Other Requirements]{Other Requirements}
 
-\subsection[Hardware Specification]{Hardware Requirements}
+\subsection[Hardware Specification]{Hardware Specification} \vspace{.01\textheight}
 
-An arduino based device will be used within the system. Integrating it with the web service developed. The device revolves around the usage of GPS, and GSM, a circuit is designed to track the location of the vehicles using these technologies. The tracking system sends geographical coordinates back to the web server, feeding the data into the cloud. By using this system, we are able to share real time information about transportation. This will also aid the means of transportation by providing shortest paths to a certain coordinate to the user. \\
-GSM module is used in this scenario for sending the coordinates of the vehicle to the server. GPS handles the continuous results of coordinates as a form of string data, known as longitude and latitude. Integrating it with the graphical user interface application, gives us the capability to showcase the location of a vehicle on a map dashboard in real-time.
-
+An arduino based device will be used within the system. Integrating it with the web service developed. 
+The device revolves around the usage of GPS, and GSM, a circuit is designed to track the location of the vehicles using these technologies.
+The tracking system sends geographical coordinates back to the web server, feeding the data into the cloud. 
+By using this system, we are able to share real time information about transportation. 
+This will also aid the means of transportation by providing shortest paths to a certain coordinate to the user. \\
+GSM module is used in this scenario for sending the coordinates of the vehicle to the server. 
+GPS handles the continuous results of coordinates as a form of string data, known as longitude and latitude. 
+Integrating it with the graphical user interface application, 
+gives us the capability to showcase the location of a vehicle on a map dashboard in real-time.
 
 \subsection[Software Specification]{Software Requirements}
 
 \begin{enumerate}
-	\item \textbf{Recognition Model Requirements} \vspace{.01\textheight} \\ 
-	With the addition of an Arduino based tracking device, tracking would be effortless. An API would be handling all the traffic between the server, and the application, hosting all the data on 	the cloud for ease of access and efficiency.\\
-	
+
+  \item \textbf{Recognition Model Requirements} \vspace{.01\textheight} \\ 
+  
+  With the addition of an Arduino based tracking device, tracking would be effortless. 
+  An API would be handling all the traffic between the server, and the application, hosting all the data on 
+  the cloud for ease of access and efficiency.\\
 	
 	\begin{description}
 	\item \textbf{Python}\vspace{.01\textheight} \\ 	
-	A high-level programming language which serves a general purpose, dynamic, and is widely used within the scope of data scientists. Python allows the use of a variety of functions 				included for the utilization of data analysis and machine learning
+  A high-level programming language which serves a general purpose, dynamic, and is widely used within the scope of data scientists. 
+  Python allows the use of a variety of functions 				included for the utilization of data analysis and machine learning
 	\end{description}
 
 	\begin{itemize}
 	\item \textbf{Attributes} \vspace{.01\textheight} \\ 		
 	\begin{enumerate}
-	\item \textbf{Create a CSV output to easily read, and manipulate data in a spreadsheet} \vspace{.01\textheight}  \\	
-	\item \textbf{Integration of SQL (Read, Write)} \vspace{.01\textheight}  \\	
-	\item \textbf{Using PySpark to build a machine learning model} \vspace{.01\textheight}  \\	
-	\item \textbf{NumPy, anmd Pandas Tool for Data Analytics} \vspace{.01\textheight}  \\	
-
+	\item {Create a CSV output to easily read, and manipulate data in a spreadsheet} \vspace{.01\textheight}  \\	
+	\item {Integration of SQL (Read, Write)} \vspace{.01\textheight}  \\	
+	\item {Using PySpark to build a machine learning model} \vspace{.01\textheight}  \\	
+	\item {NumPy, anmd Pandas Tool for Data Analytics} \vspace{.01\textheight}  \\	
 
 	\end{enumerate}
 	\end{itemize}
 
-
-
-	\item \textbf{User Interface  Requirements} \vspace{.01\textheight} \\ 	
+  \item \textbf{User Interface  Requirements} \vspace{.01\textheight} \\ 	
+  
 	\begin{itemize}
 	\item \textbf{Web  Requirements} \vspace{.01\textheight} \\ 	
 	The purpose of a website is to engage, inform, and give ease of access for users with just an internet connection. Investing in a website helps invest in the idea of the project and give 			room for growth. Variety of tools will be used to develop the application such as:
 	\begin{enumerate}
 	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
-	\begin{enumerate}
-	\item {React Javascript} \vspace{.01\textheight}  \\	
+	\begin{itemize}
+  \item [-]{React Javascript} \vspace{.01\textheight}  \\	
 	\item {Visual Studio Code} \vspace{.01\textheight}  \\		
 	\item {Redux} \vspace{.01\textheight}  \\	
 	\item {ESLint} \vspace{.01\textheight}  \\	
@@ -504,14 +522,14 @@ GSM module is used in this scenario for sending the coordinates of the vehicle t
 	\item {React Developer Tools} \vspace{.01\textheight}  \\	
 	\item {React-Bootstrap} \vspace{.01\textheight}  \\	
  	\item {UI Component Libraries} \vspace{.01\textheight}  \\	
-	\end{enumerate}
+	\end{itemize}
 	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
-	\begin{enumerate}
+	\begin{itemize}
 	\item {NodeJS} \vspace{.01\textheight}  \\	
 	\item {REST API} \vspace{.01\textheight}  \\		
 	\item {SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
 	\item {PHP} \vspace{.01\textheight}  \\	
-	\end{enumerate}
+	\end{itemize}
 	\end{enumerate}
 
 
