@@ -22,12 +22,12 @@
 \contentsline {section}{\numberline {3.3}Functional Requirements}{14}%
 \contentsline {subsection}{\numberline {3.3.1}Mobile Application and Website}{14}%
 \contentsline {subsection}{\numberline {3.3.2}Specimen Tracking System}{17}%
-\contentsline {section}{\numberline {3.4}Non-Functional Requirements}{17}%
-\contentsline {subsection}{\numberline {3.4.1}Mobile Application and Website}{17}%
+\contentsline {section}{\numberline {3.4}Non-Functional Requirements}{18}%
+\contentsline {subsection}{\numberline {3.4.1}Mobile Application and Website}{18}%
 \contentsline {subsection}{\numberline {3.4.2}Specimen Tracking System}{19}%
 \contentsline {section}{\numberline {3.5}Other Requirements}{19}%
-\contentsline {subsection}{\numberline {3.5.1}Hardware Requirements}{19}%
-\contentsline {subsection}{\numberline {3.5.2}Software Requirements}{19}%
+\contentsline {subsection}{\numberline {3.5.1}Hardware Specification}{19}%
+\contentsline {subsection}{\numberline {3.5.2}Software Specification}{19}%
 \contentsline {subsection}{\numberline {3.5.3}Other Supplementary Requirements}{22}%
 \contentsline {chapter}{\numberline {4}System Design}{23}%
 \contentsline {section}{\numberline {4.1}Logical Model Design}{23}%

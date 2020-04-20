@@ -349,15 +349,6 @@ developed to track all the vehicles.
 
     \item \textbf{System Related Requirements}
 
-        \begin{enumerate}
-         \item The system must provide real-time tracking of the couriers' vehicles.
-             \begin{itemize}
-                 \item [-] Input: Latitude and longitude provided by a GPS device.
-                 \item [-] Output: An accurate position of the courier.
-                 \item [-] Constraints: Connection to the GPS device being lost.                 
-                 \item [-] Priority: Mo; must have. \\
-             \end{itemize}
-
          \item In case of an emergency, the system must notify the nearest courier to the impaired one. In order to take the best measures.
             \begin{itemize}
                  \item [-] Input: Notification from an impaired courier.
@@ -368,9 +359,42 @@ developed to track all the vehicles.
 
         \end{enumerate}
 
-    \item \textbf{User Related Requirements}
+    \item \textbf{Account Related Requirements}
+
     \item \textbf{Admin Related Requirements}
+
+        \begin{enumerate}
+
+           \item The admin can allocate tasks to the couriers on his dashboard which displays all tasks in detail.
+             \begin{itemize}
+                 \item [-] Input: Input by the admin on the GUI.
+                 \item [-] Output: Task allocation and editting.
+                 \item [-] Constraints: Need for an active internet connection to send and receive information.                 
+                 \item [-] Priority: Mo; must have. \\
+             \end{itemize}
+
+            \item The system must provide real-time tracking of the couriers' vehicles.
+             \begin{itemize}
+                 \item [-] Input: Latitude and longitude provided by a GPS device.
+                 \item [-] Output: An accurate position of the courier on admin's map.
+                 \item [-] Constraints: Connection to the GPS device being lost.                 
+                 \item [-] Priority: Mo; must have. \\
+             \end{itemize}
+        \end{enumerate}
+
     \item \textbf{Courier Related Requirements}
+
+        \begin{enumerate}
+
+          \item The courier can view tasks assigned to him in detail on his dashboard.
+            \begin{itemize}
+                 \item [-] Input: None
+                 \item [-] Output: Tasks allocated to the courier.
+                 \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
+                 \item [-] Priority: Mo; must have. \\
+            \end{itemize}
+
+        \end{enumerate}
 
 \end{enumerate}
 
@@ -433,13 +457,13 @@ developed to track all the vehicles.
 
 \section[Other Requirements]{Other Requirements}
 
-\subsection[Hardware Requirements]{Hardware Requirements}
+\subsection[Hardware Specification]{Hardware Requirements}
 
 An arduino based device will be used within the system. Integrating it with the web service developed. The device revolves around the usage of GPS, and GSM, a circuit is designed to track the location of the vehicles using these technologies. The tracking system sends geographical coordinates back to the web server, feeding the data into the cloud. By using this system, we are able to share real time information about transportation. This will also aid the means of transportation by providing shortest paths to a certain coordinate to the user. \\
 GSM module is used in this scenario for sending the coordinates of the vehicle to the server. GPS handles the continuous results of coordinates as a form of string data, known as longitude and latitude. Integrating it with the graphical user interface application, gives us the capability to showcase the location of a vehicle on a map dashboard in real-time.
 
 
-\subsection[Software Requirements]{Software Requirements}
+\subsection[Software Specification]{Software Requirements}
 
 \begin{enumerate}
 	\item \textbf{Recognition Model Requirements} \vspace{.01\textheight} \\ 
@@ -472,21 +496,21 @@ GSM module is used in this scenario for sending the coordinates of the vehicle t
 	\begin{enumerate}
 	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
 	\begin{enumerate}
-	\item \textbf{React Javascript} \vspace{.01\textheight}  \\	
-	\item \textbf{Visual Studio Code} \vspace{.01\textheight}  \\		
-	\item \textbf{Redux} \vspace{.01\textheight}  \\	
-	\item \textbf{ESLint} \vspace{.01\textheight}  \\	
-	\item \textbf{Storybook} \vspace{.01\textheight}  \\		
-	\item \textbf{React Developer Tools} \vspace{.01\textheight}  \\	
-	\item \textbf{React-Bootstrap} \vspace{.01\textheight}  \\	
- 	\item \textbf{UI Component Libraries} \vspace{.01\textheight}  \\	
+	\item {React Javascript} \vspace{.01\textheight}  \\	
+	\item {Visual Studio Code} \vspace{.01\textheight}  \\		
+	\item {Redux} \vspace{.01\textheight}  \\	
+	\item {ESLint} \vspace{.01\textheight}  \\	
+	\item {Storybook} \vspace{.01\textheight}  \\		
+	\item {React Developer Tools} \vspace{.01\textheight}  \\	
+	\item {React-Bootstrap} \vspace{.01\textheight}  \\	
+ 	\item {UI Component Libraries} \vspace{.01\textheight}  \\	
 	\end{enumerate}
 	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
 	\begin{enumerate}
-	\item \textbf{NodeJS} \vspace{.01\textheight}  \\	
-	\item \textbf{REST API} \vspace{.01\textheight}  \\		
-	\item \textbf{SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
-	\item \textbf{PHP} \vspace{.01\textheight}  \\	
+	\item {NodeJS} \vspace{.01\textheight}  \\	
+	\item {REST API} \vspace{.01\textheight}  \\		
+	\item {SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
+	\item {PHP} \vspace{.01\textheight}  \\	
 	\end{enumerate}
 	\end{enumerate}
 
@@ -496,23 +520,23 @@ GSM module is used in this scenario for sending the coordinates of the vehicle t
 	\begin{enumerate}
 	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
 	\begin{enumerate}
-	\item \textbf{React Native } \vspace{.01\textheight}  \\	
-	\item \textbf{Visual Studio Code} \vspace{.01\textheight}  \\		
-	\item \textbf{Nuclide} \vspace{.01\textheight}  \\	
-	\item \textbf{Redux} \vspace{.01\textheight}  \\	
-	\item \textbf{ESLint} \vspace{.01\textheight}  \\		
-	\item \textbf{React Native Tools} \vspace{.01\textheight}  \\	
-	\item \textbf{React Navigiation} \vspace{.01\textheight}  \\	
- 	\item \textbf{UI Component A} \vspace{.01\textheight}  \\	
-	\item \textbf{AbodeXD } \vspace{.01\textheight}  \\	
-	\item \textbf{Flow} \vspace{.01\textheight}  \\	
+	\item {React Native } \vspace{.01\textheight}  \\	
+	\item {Visual Studio Code} \vspace{.01\textheight}  \\		
+	\item {Nuclide} \vspace{.01\textheight}  \\	
+	\item {Redux} \vspace{.01\textheight}  \\	
+	\item {ESLint} \vspace{.01\textheight}  \\		
+	\item {React Native Tools} \vspace{.01\textheight}  \\	
+	\item {React Navigiation} \vspace{.01\textheight}  \\	
+ 	\item {UI Component A} \vspace{.01\textheight}  \\	
+	\item {AbodeXD } \vspace{.01\textheight}  \\	
+	\item {Flow} \vspace{.01\textheight}  \\	
 	\end{enumerate}
 	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
 	\begin{enumerate}
-	\item \textbf{NodeJS} \vspace{.01\textheight}  \\	
-	\item \textbf{REST API} \vspace{.01\textheight}  \\		
-	\item \textbf{SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
-	\item \textbf{PHP} \vspace{.01\textheight}  \\	
+	\item {NodeJS} \vspace{.01\textheight}  \\	
+	\item {REST API} \vspace{.01\textheight}  \\		
+	\item {SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
+	\item {PHP} \vspace{.01\textheight}  \\	
 	\end{enumerate}
 	\end{enumerate}
 	\end{itemize}
@@ -524,10 +548,10 @@ GSM module is used in this scenario for sending the coordinates of the vehicle t
 
 \subsection[Other Supplementary Requirements]{Other Supplementary Requirements}
 	\begin{enumerate}	
-	\item \textbf{Internet Connection } 	
-	\item \textbf{Android 5.0+, or iPhone 5s+} 
-	\item \textbf{RAM of 1GB or larger} 
-	\item \textbf{Must have an integal GPS }
+	\item {Internet Connection } 	
+	\item {Android 5.0+, or iPhone 5s+} 
+	\item {RAM of 1GB or larger} 
+	\item {Must have an integal GPS }
 	\end{enumerate}
 
 
