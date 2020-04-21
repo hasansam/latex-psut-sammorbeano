@@ -139,34 +139,117 @@ The remainder of this document is arranged as follows:
     \hline
     T03 & Identify system requirements & Deduce, document, and prioritise all system requirements & Week 2 & T02 \\
     \hline
-    T04 & Learn required documentation tools & Learn the required tools and programming langauges necessary for documentation (Latex) & Week 2 & None \\
+    T04 & Learn the required documentation tools & Learn the required tools and programming langauges necessary for documentation (Latex) & Week 2 & None \\
     \hline
-    T04 & Manage system requirements & Use a traceability matrix to manage system/user requirements & Week 2 & T02, T03 \\
+    T05 & Manage system requirements & Use a traceability matrix to manage system/user requirements & Week 2 & T02, T03 \\
     \hline
-    T05 & Form a development - strategy & Research and document hardware and software tools to be adopted in the project. 
+    T06 & Form a development strategy & Research and document hardware and software tools to be adopted in the project. 
     Research and choose the best fitting design model & Week 2 & T03 \\
     \hline
     \multicolumn{5}{c}{\textbf{\large{Design Phase}}}\\
     \hline
     ID & Task & Description & Duration & Dependencies \\
     \hline
-    T06 & Design system requirements & Use a wide and applicable array of diagrams to manifest the system's requirements & Week 3 & T04 \\
+    T07 & Design system requirements & Use a wide and applicable array of diagrams to manifest the system's requirements & Week 3 & T03 \\
     \hline
-    T07 & Design user interfaces & Use the appropriate software to desing user interface prototypes & Week 4 & T03, T06 \\
+    T08 & Design user interfaces & Use the appropriate software to desing user interface prototypes & Week 4 & T03, T06 \\
     \hline
-    T08 & Design the database & Define a proper database with apt attributes and constraints & Week 4 & None \\
+    T09 & Design the database & Define a proper database with apt attributes and constraints & Week 4 & None \\
     \hline
-    T09 & Design the physical model & Adopt the best suitable software architecture & Week 5 & T08, T06 \\
+    T10 & Design the physical model & Adopt the best suitable software architecture & Week 5 & T09, T07 \\
     \hline
   \end{longtable}
   \captionof{table}{Project Tasks}
 \end{center}
+\newpage
 
 \section[Gantt Chart]{Gantt Chart}
 
 \section[Roles and Responsibilities]{Roles and Responsibilities}
 
+\begin{center}
+  \begin{longtable}{ | m{0.4cm} | m{6cm} | m{6cm} | }
+    \multicolumn{3}{c}{\textbf{\large{Abdullah's Responsibilities}}}\\
+    \hline
+    ID & Task & Description \\
+    \endfirsthead
+    \hline
+    ID & Task & Description \\
+    \endhead
+    \hline
+    01 & Define the problem & Define the problem and write the problem statement \\
+    \hline
+    02 & Collect user requirements & Interview personnel from MedLabs to collect user requirements \\
+    \hline
+    03 & Documentation & Define all stakeholders, document project tasks and individual roles and responsibilities \\
+    \hline
+    04 & Risk Assessment & Brainstorm possible risks, their impacts and plan to cope with each risk \\
+    \hline
+    05 & Identify system requirements & Identify and document the system's functional, non-functional, and platform requirements  \\
+    \hline
+    06 & Learn the required documentation tools & Learn and build a Latex template for the full documentation \\ 
+    \hline
+    \multicolumn{3}{c}{\textbf{\large{Hasan's Responsibilities}}}\\
+    \hline
+    ID & Task & Description \\
+    \hline
+    01 & Define the problem & Define the problem \\
+    \hline
+    02 & Collect user requirements & Interview personnel from MedLabs to collet user requirements \\
+    \hline
+    03 & Identify system requirements & Identify and document the system's nonfunctional requirements \\
+    \hline
+    04 & Identify system requirements & Identify and document the system's software and hardware specifications \\
+    \hline
+  \end{longtable}
+  \captionof{table}{Roles and Responsibilities}
+\end{center}
+
 \section[Cost Estimation]{Cost Estimation}
+
+\section[Risk Assessment]{Risk Assessment}
+
+\begin{center}
+  \begin{longtable}{ | m{0.6cm} | m{3cm} |  m{4cm} | m{1.4cm} | m{3.6cm} | }
+    \hline
+    ID & Task & Risk and Impact & Portability & Plan to Cope \\
+    \endfirsthead
+    \hline
+    ID & Task & Risk and Impact & Portability & Plan to Cope \\
+    \endhead
+    \hline
+    T01 & Define the problem & There's a risk of miss-pointing the real problem in a system. Accuracy is significant & 
+    Highly unlikely & Further intervewing and brainstorming \\
+    \hline
+    T02 & Collect user \newline requirements & Insufficient data might lead to miss identification of the user / customer's needs and wants & 
+    Unlikely & Further interviewing with the user \\
+    \hline
+    T03 & Identify system \newline requirements & An inaccurate understanding of the user's requirements will lead to incorrect system requirements & 
+    Unlikely & Careful reconsideration of the users's requirements \\
+    \hline
+    T04 & Learn the required documentation tools & Time is an important resource that will be wasted if the wrong tools are used &
+    Highly unlikely & Further research of available tools \\
+    \hline
+    T05 & Manage system \newline requirements & A mismatch between the user's requirements and the system’s identifed requirements will cause design problems &
+    Unlikely & A review and a possible edit of the functional requirements to accurately make sure every user requirement is met \\
+    \hline
+    T06 & Form a development strategy & Choosing the wrong strategy to follow will definitely lead to wasted time and effort & 
+    Unlikely & A thorough study of the system's requirements. Research of different development strategies \\
+    \hline
+    T07 & Design system \newline requirements & The system’s requirements must be illustrated as accurately as possible to prevent misunderstanding of the system &
+    Slightly likely & A comprehensive study of the system’s requirements \\
+    \hline
+    T08 & Design user \newline interfaces & The user's wants must be taken into account more than anything in this task &
+    Likely & Further interviewing with the user to properly understand their wants \\
+    \hline
+    T09 & Design the database & Any flaws or blunders in the design of the database will cause complications on the other levels &
+    Slightly likely & An exahaustive study of the sytem's logical operations and requirements \\
+    \hline
+    T10 & Design the physical model & The flow of data must be fluid as possible maximise the system's efficiency &
+    Slightly likely & A meticulous study of the system’s operations \\
+    \hline
+  \end{longtable}
+\end{center}
 
 \section[Project Management Tools]{Project Management Tools}
 
