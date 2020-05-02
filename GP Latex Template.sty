@@ -8,6 +8,7 @@
 \usepackage{caption}
 \usepackage{titlesec}
 \usepackage[T1]{fontenc}
+\DeclareGraphicsExtensions{.png,.pdf}
 
 \renewcommand{\arraystretch}{1.8}
 
@@ -25,9 +26,9 @@
 \begin{document}
 \begin{titlepage}
 	\begin{center}
-	\includegraphics[width=4cm]{Logo.png}\par
+	\includegraphics[width=4cm]{Logo}\par
 		\vspace{.05\textheight}
-		{\LARGE\scshape Princess Sumaya BE University for Technology\par}
+		{\LARGE\scshape Princess Sumaya University for Technology\par}
 		\vspace{.05\textheight}
 		{\Large\scshape King Hussein School of Computing Sciences\par}
 		\vspace{.07\textheight}
@@ -42,10 +43,6 @@
     {\small 2019 - 2020\par}
   \end{center}
 \end{titlepage}
-
-\begin{itemize}
-    \item 
-\end{itemize}
 
 \section*{\LARGE {Declaration of Originality}} \vspace{.05\textheight}
 
@@ -137,13 +134,13 @@ The remainder of this document is arranged as follows:
     ID & Task & Description & Duration & Dependencies \\
     \endhead
     \hline
-    T01 & Define the problem & Precisly describe the problem to be solved in a problem statement & Week 1 & None \\
+    T01 & Define the problem & Precisely describe the problem to be solved in a problem statement & Week 1 & None \\
     \hline
     T02 & Collect user requirements & Interview personnel from MedLabs and hold brainstorming sessions to collect and document user requirements & Week 1 & T01 \\
     \hline
     T03 & Identify system requirements & Deduce, document, and prioritise all system requirements & Week 2 & T02 \\
     \hline
-    T04 & Learn the required documentation tools & Learn the required tools and programming langauges necessary for documentation (Latex) & Week 2 & None \\
+    T04 & Learn the required documentation tools & Learn the required tools and programming languages necessary for documentation (Latex) & Week 2 & None \\
     \hline
     T05 & Manage system requirements & Use a traceability matrix to manage system/user requirements & Week 2 & T02, T03 \\
     \hline
@@ -168,6 +165,16 @@ The remainder of this document is arranged as follows:
 \newpage
 
 \section[Gantt Chart]{Gantt Chart}
+
+Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in this project
+
+\begin{center}
+\begin{figure}[h]
+  \includegraphics[scale=0.8]{Gantt Chart}
+  \caption{Gantt Chart}
+\end{figure}
+\end{center}
+
 
 \section[Roles and Responsibilities]{Roles and Responsibilities}
 
@@ -257,6 +264,18 @@ The remainder of this document is arranged as follows:
 
 \section[Project Management Tools]{Project Management Tools}
 
+\subsection*{Storage}
+A GitHub repository with separate branches was used to keep work synchronised and backed up. A master branch keeps the most important files from being edited improperly
+while working on separate development branches and merging them to the master branch after careful auditting makes sure everything stays secure and up to date. 
+A Google Drive folder was also used as a back-up storage in case of any emergency. This folder was updated as frequently as possible to ensure further safety.
+
+\subsection*{Planning}
+A shared Google Keep note was used to keep track of all the different sections of the project that had to be completed. The simple interface of Keep helps keep everything
+clear and easy to reach. A Google Tasks list was used to keep track of individual tasks assigned to each member of the team. 
+
+\subsection*{Charts and Diagrams}
+TeamGantt was used to create the Gantt Chart illustrated in figure 2.1.
+
 \chapter[Requirements Specification]{Requirements Specification}
 
 \section[Stakeholders]{Stakeholders}
@@ -302,6 +321,15 @@ developed to track all the vehicles.
   \line(1,0){250}
 \end{center}
 
+\section[Traceability Matrix]{Traceability Matrix}
+
+%\begin{center}
+%  \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
+%    \hline
+%
+%  \end{tabular}
+%  \captionof{table}{Traceability Matrix}
+%\end{center}
 
 \section[Functional Requirements]{Functional Requirements}
 
