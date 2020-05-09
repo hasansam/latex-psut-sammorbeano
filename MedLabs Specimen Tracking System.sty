@@ -55,7 +55,12 @@ and is subject to legal actions.
 
 \section*{\LARGE {Acknowledgments}} \vspace{.05\textheight}
 
-Acknowledgments go here...
+We'd like to offer our deepest feelings of gratitude to our supervisor, Dr. Mohammad Abo-Snober, For his great efforts throughout this project were of umost signifiance. 
+We'd also like to thank Dr Abdullah Darweesh for the invaluable advice and direction he'd provided, 
+Eng. Iyad Al-Dasouqi for the great deal of motivation he gives to everybody around him, Eng Khalid Al-Samhouri for the tremendous work he's put in helping us understand
+the requirements we'd have to meet for a successful project, Eng. Islam Ahmad and the entire RSS team for the enormous amount of knowledge and experience they'd help us
+achieve in this project. Not to mention our families, friends, and loved ones for their prayers and graceful wishes.
+
 \newpage
 
 \addcontentsline{toc}{section}{Abstract} 
@@ -321,7 +326,7 @@ developed to track all the vehicles.
   \line(1,0){250}
 \end{center}
 
-\section[Traceability Matrix]{Traceability Matrix}
+%\section[Traceability Matrix]{Traceability Matrix}
 
 %\begin{center}
 %  \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
@@ -333,7 +338,7 @@ developed to track all the vehicles.
 
 \section[Functional Requirements]{Functional Requirements}
 
-\subsection{Mobile Application and Website} \vspace{.01\textheight} 
+\subsection{The Client's Application and Website} \vspace{.01\textheight} 
 
 \begin{enumerate}
   
@@ -466,7 +471,7 @@ developed to track all the vehicles.
 
 \end{enumerate}
 
-\subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
+\subsection{Admin and Courier Application} \vspace{.01\textheight} 
 
 \begin{enumerate}
 
@@ -482,9 +487,16 @@ developed to track all the vehicles.
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
 
-    \end{enumerate}
+      \item The program must allow couriers and admins who entered a password / username combination that matches one in the database to access their accounts and be
+      directed to the proper interface depending on their job title.
+        \begin{itemize}
+          \item [-] Input: A valid username and a valid password.
+          \item [-] Output: The user will be directed to the interface related to their job title.
+          \item [-] Constraints: The combination of the username and the password entered must match the combination stored in the database.                  
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize} 
 
-  \item \textbf{Account Related Requirements}
+    \end{enumerate}
 
   \item \textbf{Admin Related Requirements}
 
@@ -503,6 +515,17 @@ developed to track all the vehicles.
           \item [-] Input: Latitude and longitude provided by a GPS device.
           \item [-] Output: An accurate position of the courier on admin's map.
           \item [-] Constraints: Connection to the GPS device being lost.                 
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
+
+      \item The system must allow the admin to create a new account using a username and a password.
+        \begin{itemize}
+          \item [-] Input: A valid username, and a valid password.
+          \item [-] Output: Creation of a new account.
+          \item [-] Constraints: The username should not be longer than 20 characters. 
+          The password should contain at least: One number, one lowercase letter, 
+          and one uppercase letter. 
+          The phone number should be valid.                  
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
     \end{enumerate}
@@ -745,10 +768,25 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
 	\item {Android 5.0+, or iPhone 5s+} 
 	\item {RAM of 1GB or larger} 
 	\item {Must have an integal GPS }
-	\end{enumerate}
-
+  \end{enumerate}
 
 \chapter[System Design]{System Design}
+
+\section[Use-Case Diagrams]{Use-Case Diagrams}
+
+\subsection[Employee App]{Employee App}
+
+\begin{center}
+  \includegraphics[width=17cm]{Employee App}
+\end{center}
+
+\clearpage
+
+\subsection[Client App]{Client App}
+
+\begin{center}
+  \includegraphics[width=17cm]{Client App}
+\end{center}
 
 \section[Logical Model Design]{Logical Model Design}
 
