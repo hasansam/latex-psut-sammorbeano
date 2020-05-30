@@ -8,6 +8,7 @@
 \usepackage{caption}
 \usepackage{titlesec}
 \usepackage[T1]{fontenc}
+\DeclareGraphicsExtensions{.png,.pdf}
 
 \renewcommand{\arraystretch}{1.8}
 
@@ -25,9 +26,9 @@
 \begin{document}
 \begin{titlepage}
 	\begin{center}
-	\includegraphics[width=4cm]{Logo.png}\par
+	\includegraphics[width=4cm]{Logo}\par
 		\vspace{.05\textheight}
-		{\LARGE\scshape Princess Sumaya BE University for Technology\par}
+		{\LARGE\scshape Princess Sumaya University for Technology\par}
 		\vspace{.05\textheight}
 		{\Large\scshape King Hussein School of Computing Sciences\par}
 		\vspace{.07\textheight}
@@ -54,13 +55,23 @@ and is subject to legal actions.
 
 \section*{\LARGE {Acknowledgments}} \vspace{.05\textheight}
 
-Acknowledgments go here...
+We'd like to offer our deepest feelings of gratitude to our supervisor, Dr. Mohammad Abo-Snober, for his great efforts throughout this project were of utmost signifiance. 
+We'd also like to thank Dr. Abdullah Darweesh for the invaluable advice and direction he'd provided, Eng. Iyad Al-Dasouqi for the great deal of motivation he'd provided and continues to provide 
+to everybody around him, Eng. Khalid Al-Samhouri for the tremendous work he's put forward, helping us understand the requirements we'd have to meet for a successful project, 
+Eng. Islam Ahmad and the entire RSS team for the treasured knowledge and experience they'd helped us
+attain in this project. Not to mention our families, friends, and loved ones for their enchanting prayers and graceful wishes.
+
 \newpage
 
 \addcontentsline{toc}{section}{Abstract} 
 \section*{\LARGE {Abstract}} \vspace{.05\textheight}
 
-Abstract goes here...
+The efficient use of new and upcoming technologies is significant when developing software. In this project we'll be making use of a real-time tracking system to maximise
+productivity in a courier-based system currently operated by MedLabs to process all the different medical samples. Overall, two applications will be developed, both of which
+for MedLabs. The first application will be used by patients and will provide all the necessary services typically present in similar applications. The patients will also be
+able to fill a form requesting a medical sample to be taken from them from their homes. This is currently done through the call-center at MedLabs. The second application will
+be used by the couriers and the admins with each being able to make use of functionalities relevant to their roles. A real-time tracking system that uses GPS technology developed
+by fellow students at PSUT's King Abdullah II School of Engineering will be used by the admins to assign tasks to the couriers as effectively and efficiently as possible.
 \newpage
 
 \addcontentsline{toc}{section}{List of Abbreviations}
@@ -107,6 +118,12 @@ A live tracking system of the couriers will also greatly benefit MedLabs busines
 
 \section[Related Work]{Related Work}
 
+The Ground Positioning System (GPS) is owned and operated by the United States of America. It's a powerful system of more than 30 satellites orbiting the earth 
+and constantly keeping a steady flow of signals being sent. This allows for their position to be known at all times. Using signals from at least 4 of those satellites, 
+a receiver can deduce its accurate position on the ground. \\ We'll be incorporating the project our fellow students from PSUT's King Abdullah II School of Engineering have been working on. 
+The project consists of a real-time tracking system that uses GPS to provide the most reliable positioning possible, regardless of whether the user has an active internet connection or not. 
+This system will be built into each of the couriers' vehicles. As long as a straight unobstructed line of sight is maintained between the vehicle and at least 4 satellites, the tracking will not be interrupted. 
+
 \section[Document Outline]{Document Outline}
 
 The remainder of this document is arranged as follows:
@@ -133,13 +150,13 @@ The remainder of this document is arranged as follows:
     ID & Task & Description & Duration & Dependencies \\
     \endhead
     \hline
-    T01 & Define the problem & Precisly describe the problem to be solved in a problem statement & Week 1 & None \\
+    T01 & Define the problem & Precisely describe the problem to be solved in a problem statement & Week 1 & None \\
     \hline
     T02 & Collect user requirements & Interview personnel from MedLabs and hold brainstorming sessions to collect and document user requirements & Week 1 & T01 \\
     \hline
     T03 & Identify system requirements & Deduce, document, and prioritise all system requirements & Week 2 & T02 \\
     \hline
-    T04 & Learn the required documentation tools & Learn the required tools and programming langauges necessary for documentation (Latex) & Week 2 & None \\
+    T04 & Learn the required documentation tools & Learn the required tools and programming languages necessary for documentation (Latex) & Week 2 & None \\
     \hline
     T05 & Manage system requirements & Use a traceability matrix to manage system/user requirements & Week 2 & T02, T03 \\
     \hline
@@ -164,6 +181,16 @@ The remainder of this document is arranged as follows:
 \newpage
 
 \section[Gantt Chart]{Gantt Chart}
+
+Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in this project
+
+\begin{center}
+\begin{figure}[h]
+  \includegraphics[scale=0.8]{Gantt Chart}
+  \caption{Gantt Chart}
+\end{figure}
+\end{center}
+
 
 \section[Roles and Responsibilities]{Roles and Responsibilities}
 
@@ -219,7 +246,7 @@ The remainder of this document is arranged as follows:
     \endhead
     \hline
     T01 & Define the problem & There's a risk of miss-pointing the real problem in a system. Accuracy is significant & 
-    Highly unlikely & Further intervewing and brainstorming \\
+    Highly unlikely & Further interviewing and brainstorming \\
     \hline
     T02 & Collect user \newline requirements & Insufficient data might lead to miss identification of the user / customer's needs and wants & 
     Unlikely & Further interviewing with the user \\
@@ -252,6 +279,18 @@ The remainder of this document is arranged as follows:
 \end{center}
 
 \section[Project Management Tools]{Project Management Tools}
+
+\subsection*{Storage}
+A GitHub repository with separate branches was used to keep work synchronised and backed up. A master branch keeps the most important files from being edited improperly
+while working on separate development branches and merging them to the master branch after careful auditting makes sure everything stays secure and up to date. 
+A Google Drive folder was also used as a back-up storage in case of any emergency. This folder was updated as frequently as possible to ensure further safety.
+
+\subsection*{Planning}
+A shared Google Keep note was used to keep track of all the different sections of the project that had to be completed. The simple interface of Keep helps keep everything
+clear and easy to reach. A Google Tasks list was used to keep track of individual tasks assigned to each member of the team. 
+
+\subsection*{Charts and Diagrams}
+TeamGantt was used to create the Gantt Chart illustrated in figure 2.1.
 
 \chapter[Requirements Specification]{Requirements Specification}
 
@@ -298,10 +337,19 @@ developed to track all the vehicles.
   \line(1,0){250}
 \end{center}
 
+%\section[Traceability Matrix]{Traceability Matrix}
+
+%\begin{center}
+%  \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
+%    \hline
+%
+%  \end{tabular}
+%  \captionof{table}{Traceability Matrix}
+%\end{center}
 
 \section[Functional Requirements]{Functional Requirements}
 
-\subsection{Mobile Application and Website} \vspace{.01\textheight} 
+\subsection{The Client's Application and Website} \vspace{.01\textheight} 
 
 \begin{enumerate}
   
@@ -309,7 +357,7 @@ developed to track all the vehicles.
 
     \begin{enumerate}
 
-      \item The program must allow a new user to create a new account. 
+      \item (1.1.a) The program must allow a new user to create a new account. 
       he user will have to provide a valid username,
       a valid password and a valid personal phone number along with their full name.
         \begin{itemize}
@@ -322,7 +370,7 @@ developed to track all the vehicles.
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
 
-      \item The program must allow a user who entered a password / username combination that matches one in the database to access the account.
+      \item (1.1.b) The program must allow a user who entered a password / username combination that matches one in the database to access the account.
         \begin{itemize}
           \item [-] Input: A valid username and a valid password.
           \item [-] Output: The user will be directed to his home page in the application.
@@ -330,7 +378,7 @@ developed to track all the vehicles.
           \item [-] Priority: Mo; must have. \\
         \end{itemize}     
 
-      \item The program must allow a user who forgot their account’s password to reset it using the phone number linked to that account.
+      \item (1.1.c) The program must allow a user who forgot their account’s password to reset it using the phone number linked to that account.
       The user will have to provide a valid username, and a valid personal phone number.
         \begin{itemize}
           \item [-] Input: A valid username, and a valid phone number.
@@ -339,7 +387,7 @@ developed to track all the vehicles.
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
 
-      \item The program should allow a user who forgot their account’s username to reset it using the phone number linked to that account.
+      \item (1.1.d) The program should allow a user who forgot their account’s username to reset it using the phone number linked to that account.
         \begin{itemize}
           \item [-] Input: A valid phone number and a valid password.
           \item [-] Output: A randomly-generated new username sent to the user’s phone number. The user can change this username once he logs in.
@@ -347,7 +395,7 @@ developed to track all the vehicles.
           \item [-] Priority: S; should have. \\
         \end{itemize}   
 
-      \item The program could allow the user to login using their phone number and their password instead of the username and password.
+      \item (1.1.e) The program could allow the user to login using their phone number and their password instead of the username and password.
         \begin{itemize}
           \item [-] Input: A valid phone number and a valid password.
           \item [-] Output: The user will be directed to his home page in the application.
@@ -361,7 +409,7 @@ developed to track all the vehicles.
 
     \begin{enumerate}
 
-      \item The program must allow the user to edit information related to their account. 
+      \item (1.2.a) The program must allow the user to edit information related to their account. 
       Which includes: The username, password, phone number, first name, last name, personal avatar / image, and blood type.
         \begin{itemize}
           \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
@@ -371,7 +419,7 @@ developed to track all the vehicles.
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
                
-      \item The program must allow the user to view their history of tests done, and lists of scheduled and ongoing tests.
+      \item (1.2.b) The program must allow the user to view their history of tests done, and lists of scheduled and ongoing tests.
         \begin{itemize}
           \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
           \item [-] Output: Updated user information being stored in the database.
@@ -380,7 +428,7 @@ developed to track all the vehicles.
           item [-] Priority: Mo; must have. \\
         \end{itemize}
 
-      \item The program must notify the user with the following:
+      \item (1.2.c) The program must notify the user with the following:
       a) Confirmation of the time, location and type of sample to be taken - specified by the user - once the request has been processed by the system. 
       b) A sample has been tested and the results are ready. In which case the results will be shown in the list of history of tests.
         \begin{itemize}
@@ -396,7 +444,7 @@ developed to track all the vehicles.
 
     \begin{enumerate}
 
-      \item The program must allow the user to fill a form detailing the test he’d like to have done and a request for the sample to be taken at home.
+      \item (1.3.a) The program must allow the user to fill a form detailing the test he’d like to have done and a request for the sample to be taken at home.
         \begin{itemize}
           \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
           \item [-] Output: Data formatted in JSON.
@@ -409,7 +457,7 @@ developed to track all the vehicles.
   \item \textbf{Processing of collected data}
 
     \begin{enumerate}
-      \item The program must send an API data request with the correct permission, and parameter in order to process it in the database.
+      \item (1.4.a) The program must send an API data request with the correct permission, and parameter in order to process it in the database.
         \begin{itemize}
           \item [-] Input: Collected data formatted in JSON.
           \item [-] Output: Processed data to be stored in the database.
@@ -422,7 +470,7 @@ developed to track all the vehicles.
   \item \textbf{Storage of data}
 
     \begin{enumerate}
-      \item The program must properly store the data received in the database.
+      \item (1.5.a) The program must properly store the data received in the database.
         \begin{itemize}
           \item [-] Input: Processed data.
           \item [-] Output: Data stored in the database.
@@ -434,7 +482,7 @@ developed to track all the vehicles.
 
 \end{enumerate}
 
-\subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
+\subsection{Admin and Courier Application} \vspace{.01\textheight} 
 
 \begin{enumerate}
 
@@ -442,7 +490,7 @@ developed to track all the vehicles.
 
     \begin{enumerate}
 
-      \item In case of an emergency, the system must notify the nearest courier to the impaired one. In order to take the best measures.
+      \item (2.1.a) In case of an emergency, the system must notify the nearest courier to the impaired one. In order to take the best measures.
         \begin{itemize}
           \item [-] Input: Notification from an impaired courier.
           \item [-] Output: Notification to the nearest courier to the incident.
@@ -450,15 +498,22 @@ developed to track all the vehicles.
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
 
-    \end{enumerate}
+      \item (2.1.b) The program must allow couriers and admins who entered a password / username combination that matches one in the database to access their accounts and be
+      directed to the proper interface depending on their job title.
+        \begin{itemize}
+          \item [-] Input: A valid username and a valid password.
+          \item [-] Output: The user will be directed to the interface related to their job title.
+          \item [-] Constraints: The combination of the username and the password entered must match the combination stored in the database.                  
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize} 
 
-  \item \textbf{Account Related Requirements}
+    \end{enumerate}
 
   \item \textbf{Admin Related Requirements}
 
     \begin{enumerate}
 
-      \item The admin can allocate tasks to the couriers on his dashboard which displays all tasks in detail.
+      \item (2.2.a) The admin can allocate tasks to the couriers on his dashboard which displays all tasks in detail.
         \begin{itemize}
           \item [-] Input: Input by the admin on the GUI.
           \item [-] Output: Task allocation and editting.
@@ -466,11 +521,22 @@ developed to track all the vehicles.
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
 
-      \item The system must provide real-time tracking of the couriers' vehicles.
+      \item (2.2.b) The system must provide real-time tracking of the couriers' vehicles.
         \begin{itemize}
           \item [-] Input: Latitude and longitude provided by a GPS device.
           \item [-] Output: An accurate position of the courier on admin's map.
           \item [-] Constraints: Connection to the GPS device being lost.                 
+          \item [-] Priority: Mo; must have. \\
+        \end{itemize}
+
+      \item (2.2.c) The system must allow the admin to create a new account using a username and a password.
+        \begin{itemize}
+          \item [-] Input: A valid username, and a valid password.
+          \item [-] Output: Creation of a new account.
+          \item [-] Constraints: The username should not be longer than 20 characters. 
+          The password should contain at least: One number, one lowercase letter, 
+          and one uppercase letter. 
+          The phone number should be valid.                  
           \item [-] Priority: Mo; must have. \\
         \end{itemize}
     \end{enumerate}
@@ -479,7 +545,7 @@ developed to track all the vehicles.
 
     \begin{enumerate}
 
-      \item The courier can view tasks assigned to him in detail on his dashboard.
+      \item (2.3.a) The courier can view tasks assigned to him in detail on his dashboard.
         \begin{itemize}
           \item [-] Input: None
           \item [-] Output: Tasks allocated to the courier.
@@ -597,21 +663,36 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
 	\begin{enumerate}
 	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
 	\begin{itemize}
-  \item [-]{React Javascript} \vspace{.01\textheight}  \\	
-	\item {Visual Studio Code} \vspace{.01\textheight}  \\		
+    \item {React Javascript} \vspace{.01\textheight}  \\	
+    \begin{description}
+    \item React JS Library will be used to develop the interactive UIs and Functionality for the website \\
+    \end{description}
 	\item {Redux} \vspace{.01\textheight}  \\	
-	\item {ESLint} \vspace{.01\textheight}  \\	
-	\item {Storybook} \vspace{.01\textheight}  \\		
-	\item {React Developer Tools} \vspace{.01\textheight}  \\	
+	 \begin{description}
+   \item Maintain the state of the application in a single tree object \\
+    \end{description}
 	\item {React-Bootstrap} \vspace{.01\textheight}  \\	
- 	\item {UI Component Libraries} \vspace{.01\textheight}  \\	
+	 \begin{description}
+  \item Bootstrap will be used as the main front-end framework to build the UI components\\
+    \end{description}
+ 
 	\end{itemize}
-	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
+	\clearpage
+	 \item \textbf{Back-End} \vspace{.01\textheight} \\
 	\begin{itemize}
 	\item {NodeJS} \vspace{.01\textheight}  \\	
-	\item {REST API} \vspace{.01\textheight}  \\		
-	\item {SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
-	\item {PHP} \vspace{.01\textheight}  \\	
+	 \begin{description}
+    \item The server side JavaScript environment will be the core back-end for the application \\
+    \end{description}
+	\item {REST API} \vspace{.01\textheight}  \\	
+	 \begin{description}
+\item HTTP Requests made by the application will be handled by a RESTful API \\
+    \end{description}
+	\item {SQL (MySQL, MONGO, or Firebase)} \vspace{.01\textheight}  \\	
+    \begin{description}
+\item Real-time tracking information will be stored on a database such as MySQL, or Firebase to be of use \\
+    \end{description}
+
 	\end{itemize}
 	\end{enumerate}
 
@@ -620,43 +701,163 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
 	The purpose of a website is to engage, inform, and give ease of access for users with just an internet connection. Investing in a website helps invest in the idea of the project and give 			room for growth. Variety of tools will be used to develop the application such as:
 	\begin{enumerate}
 	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
-	\begin{enumerate}
+	\begin{itemize}
 	\item {React Native } \vspace{.01\textheight}  \\	
-	\item {Visual Studio Code} \vspace{.01\textheight}  \\		
-	\item {Nuclide} \vspace{.01\textheight}  \\	
+    \begin{description}
+\item React JS Library will be used to develop the interactive UIs and Functionality for the mobile application cross platform \\
+    \end{description}
 	\item {Redux} \vspace{.01\textheight}  \\	
-	\item {ESLint} \vspace{.01\textheight}  \\		
-	\item {React Native Tools} \vspace{.01\textheight}  \\	
-	\item {React Navigiation} \vspace{.01\textheight}  \\	
- 	\item {UI Component A} \vspace{.01\textheight}  \\	
-	\item {AbodeXD } \vspace{.01\textheight}  \\	
-	\item {Flow} \vspace{.01\textheight}  \\	
-	\end{enumerate}
+	 \begin{description}
+\item Maintain the state of the application in a single tree object \\
+    \end{description}
+	\item {React Navigation} \vspace{.01\textheight}  \\	
+	 \begin{description}
+  \item Handling the routing and navigation for the react application \\
+    \end{description}
+    \item {React-Bootstrap} \vspace{.01\textheight}  \\	
+	 \begin{description}
+  \item Bootstrap will be used as the main front-end framework to build the UI components\\
+    \end{description}
+	\end{itemize}
+    \clearpage
 	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
-	\begin{enumerate}
-	\item {NodeJS} \vspace{.01\textheight}  \\	
-	\item {REST API} \vspace{.01\textheight}  \\		
-	\item {SQL (MySQL, or MONGO)} \vspace{.01\textheight}  \\	
-	\item {PHP} \vspace{.01\textheight}  \\	
-	\end{enumerate}
+	\begin{itemize}
+		\item {NodeJS} \vspace{.01\textheight}  \\	
+	 \begin{description}
+    \item The server side JavaScript environment will be the core back-end for the application \\
+    \end{description}
+	\item {REST API} \vspace{.01\textheight}  \\	
+	 \begin{description}
+\item HTTP Requests made by the application will be handled by a RESTful API \\
+    \end{description}
+	\item {SQL (MySQL, MONGO, or Firebase)} \vspace{.01\textheight}  \\	
+    \begin{description}
+\item Real-time tracking information will be stored on a database such as MySQL, or Firebase to be of use \\
+    \end{description}
+	\end{itemize}
 	\end{enumerate}
 	\end{itemize}
 
 
-	
+  \item \textbf{Tools} \vspace{.01\textheight} 
+\begin{itemize}
+   \item {AdobeXD} \vspace{.01\textheight}  \\	
+   \begin{description}
+    \item AdobeXD is a powerful platform that helps to create designs for website, and mobile apps \\
+    \end{description}
+   	\item {UI Component Libraries} \vspace{.01\textheight}  \\	
+ 	 \begin{description}
+    \item A variety of other libraries will be used for components \\
+    \end{description}
+    	\item {React Native Tools} \vspace{.01\textheight}  \\	
+ 	 \begin{description}
+   \item An extension offering a helpful environment to develop React Native Projects \\
+    \end{description}
+	\item {React Developer Tools} \vspace{.01\textheight}  \\	
+ 	 \begin{description}
+    \item Chrome DevTools extension for the open-source React JavaScript library. It allows you to inspect the React component hierarchies \\
+    \end{description}
+	\item {Storybook} \vspace{.01\textheight}  \\	
+ 	 \begin{description}
+    \item Storybook is an open source tool for developing UI components in isolation for React \\
+    \end{description}
+	\item {Visual Studio Code} \vspace{.01\textheight}  \\	
+ 	 \begin{description}
+    \item Source code editor tool used for building projects \\
+    \end{description}
+    
+    
+\end{itemize}
 	
 \end{enumerate}
 
+	
+	
 \subsection[Other Supplementary Requirements]{Other Supplementary Requirements}
 	\begin{enumerate}	
 	\item {Internet Connection } 	
 	\item {Android 5.0+, or iPhone 5s+} 
 	\item {RAM of 1GB or larger} 
 	\item {Must have an integal GPS }
-	\end{enumerate}
-
+  \end{enumerate}
 
 \chapter[System Design]{System Design}
+
+\section[Use-Case Diagrams]{Use-Case Diagrams}
+
+\subsection[Employee App]{Employee App}
+
+\begin{center}
+  \begin{figure}[h]
+    \includegraphics[width=17cm]{Employee App}
+    \caption{Employee App Use Case Diagram}
+  \end{figure}
+\end{center}
+
+\clearpage
+
+\begin{enumerate}
+  \item Use Case: Notify Couriers of Emergencies
+  \begin{itemize}
+    \item [-] Actor: The Admin and the Courier.
+    \item [-] Purpose: Notify Couriers of emergencies to take the proper action.
+    \item [-] Success Scenario: In case of an emergency occuring with a certain courier. That courier till notify the system of said 
+    emergency. The system will determine the best course of action. E.g. a nearby courier takes the samples from the impaired courier.
+    The system then notifies that courier of the actions to be taken.
+    \item [-] Type: Primary
+    \item [-] Cross References: Functional Requirement 2.1.b
+  \end{itemize}
+  \item Use Case: Assign Tasks to Couriers
+  \begin{itemize}
+    \item [-] Actor: The Admin and the Courier.
+    \item [-] Purpose: Assign different tasks to the couriers.
+    \item [-] Success Scenario: Using the real-time tracking map provided to the admin. They assign tasks of varying types to the couriers available by using
+    the admins' dashboard.
+    \item [-] Type: Primary
+    \item [-] Cross References: Functional Requirement 2.2.a
+  \end{itemize}
+  \item Use Case: Display Real-time Map to the Admin
+  \begin{itemize}
+    \item [-] Actor: The Admin.
+    \item [-] Purpose: Display real-time map to the admin
+    \item [-] Success Scenario: The system will provide the admins with a real-time tracking map. This will aid the admin when assigning tasks to available couriers.
+    \item [-] Type: Primary
+    \item [-] Cross References: Functional Requirement 2.2.b
+  \end{itemize}
+\end{enumerate}
+\subsection[Client App]{Client App}
+
+\begin{center}
+  \begin{figure}[h]
+    \includegraphics[width=17cm]{Client App}
+    \caption{Client App Use Case Diagram}
+  \end{figure}
+\end{center}
+
+\begin{itemize}
+  \item Use Case: Send notifications
+  \begin{itemize}
+    \item [-] Actor: The System and the Patient.
+    \item [-] Purpose: Notify patients with important information.
+    \item [-] Success Scenario: The system will also send a confirmation of the 
+    time, location and type of sample to be taken - specified by the user - once the request has been processed
+    by the system. When a test the patient had requested has been completed and the results are ready
+    to be viewed. The system here will notify the user of the particular test that has been completed. The notification
+    will successfully reach the patient if they have an active internet connection. 
+    \item [-] Type: Primary
+    \item [-] Cross References: Functional Requirement 1.2.a
+  \end{itemize}
+  \item Use Case: Fill Form
+  \begin{itemize}
+    \item [-] Actor: The Patient
+    \item [-] Purpose: Fill forms to request samples to be taken at home.
+    \item [-] Success Scenario: The patient fills a form on the application. The form includes a wide range of necessary information
+    regarding the test to be taken. Such as time, location, and surely the type of test to be taken. The form is submitted, processed
+    and stored properly in the database.
+    \item [-] Type: Primary
+    \item [-] Cross References: Functional Requirement 1.3.a
+  \end{itemize}
+\end{itemize}
 
 \section[Logical Model Design]{Logical Model Design}
 

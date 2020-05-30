@@ -1,0 +1,1160 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.15)  26 MAY 2020 16:58
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"MedLabs Specimen Tracking System.sty"
+(./MedLabs Specimen Tracking System.sty
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-05-11>
+(a:/TexLive/2020/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2019/12/20 v1.4l Standard LaTeX document class
+(a:/TexLive/2020/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count167
+\c@chapter=\count168
+\c@section=\count169
+\c@subsection=\count170
+\c@subsubsection=\count171
+\c@paragraph=\count172
+\c@subparagraph=\count173
+\c@figure=\count174
+\c@table=\count175
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(a:/TexLive/2020/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/slantsc/slantsc.sty
+Package: slantsc 2012/01/01 v2.11 Provide Slanted an Italic Small Caps
+
+(a:/TexLive/2020/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+LaTeX Info: Redefining \upshape on input line 35.
+LaTeX Info: Redefining \slshape on input line 45.
+LaTeX Info: Redefining \itshape on input line 55.
+LaTeX Info: Redefining \scshape on input line 65.
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(a:/TexLive/2020/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(a:/TexLive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count176
+\Gm@cntv=\count177
+\c@Gm@tempcnt=\count178
+\Gm@bindingoffset=\dimen137
+\Gm@wd@mp=\dimen138
+\Gm@odd@mp=\dimen139
+\Gm@even@mp=\dimen140
+\Gm@layoutwidth=\dimen141
+\Gm@layoutheight=\dimen142
+\Gm@layouthoffset=\dimen143
+\Gm@layoutvoffset=\dimen144
+\Gm@dimlist=\toks16
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+Package: glossaries 2020/03/19 v4.46 (NLCT)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+(a:/TexLive/2020/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(a:/TexLive/2020/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
+\XKV@depth=\count179
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(a:/TexLive/2020/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
+Package: mfirstuc 2017/11/14 v2.06 (NLCT)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count180
+)
+\@glsmfirst=\toks19
+\@glsmrest=\toks20
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/textcase/textcase.sty
+Package: textcase 2019/09/14 v1.00 Text only upper/lower case changing (DPC)
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/xfor/xfor.sty
+Package: xfor 2009/02/05 v1.05 (NLCT)
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/datatool/datatool-base.sty
+Package: datatool-base 2019/09/27 v2.32 (NLCT)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(a:/TexLive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(a:/TexLive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen145
+))
+(a:/TexLive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen146
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count181
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count182
+\leftroot@=\count183
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count184
+\DOTSCASE@=\count185
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box45
+\strutbox@=\box46
+\big@size=\dimen147
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count186
+\c@MaxMatrixCols=\count187
+\dotsspace@=\muskip16
+\c@parentequation=\count188
+\dspbrk@lvl=\count189
+\tag@help=\toks22
+\row@=\count190
+\column@=\count191
+\maxfields@=\count192
+\andhelp@=\toks23
+\eqnshift@=\dimen148
+\alignsep@=\dimen149
+\tagshift@=\dimen150
+\tagwidth@=\dimen151
+\totwidth@=\dimen152
+\lineht@=\dimen153
+\@envbody=\toks24
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/substr/substr.sty
+Package: substr 2009/10/20 v1.2 Handle substrings
+\c@su@anzahl=\count193
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/datatool/datatool-fp.sty
+Package: datatool-fp 2019/09/27 v2.32 (NLCT)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count194
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count195
+\FP@xia=\count196
+\FP@xib=\count197
+\FP@xfa=\count198
+\FP@xfb=\count199
+\FP@rega=\count266
+\FP@regb=\count267
+\FP@regs=\count268
+\FP@times=\count269
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count270
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+)))
+\@dtl@toks=\toks26
+\@dtl@tmpcount=\count271
+\dtl@tmplength=\skip52
+\dtl@sortresult=\count272
+\@dtl@numgrpsepcount=\count273
+\@dtl@datatype=\count274
+\dtl@codeA=\count275
+\dtl@codeB=\count276
+\@dtl@foreach@level=\count277
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-307
+.sty
+Package: glossaries-compatible-307 2020/03/19 v4.46 (NLCT)
+)
+\gls@level=\count278
+\@gls@tmpb=\toks27
+\gls@tmplen=\skip53
+\glskeylisttok=\toks28
+\glslabeltok=\toks29
+\glsshorttok=\toks30
+\glslongtok=\toks31
+
+(a:/TexLive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.sty
+Package: glossary-hypernav 2020/03/19 v4.46 (NLCT)
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
+Package: glossary-list 2020/03/19 v4.46 (NLCT)
+\glslistdottedwidth=\skip54
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
+Package: glossary-long 2020/03/19 v4.46 (NLCT)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip55
+\LTright=\skip56
+\LTpre=\skip57
+\LTpost=\skip58
+\LTchunksize=\count279
+\LTcapwidth=\dimen154
+\LT@head=\box47
+\LT@firsthead=\box48
+\LT@foot=\box49
+\LT@lastfoot=\box50
+\LT@cols=\count280
+\LT@rows=\count281
+\c@LT@tables=\count282
+\c@LT@chunks=\count283
+\LT@p@ftn=\toks32
+)
+\glsdescwidth=\skip59
+\glspagelistwidth=\skip60
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+Package: glossary-super 2020/03/19 v4.46 (NLCT)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2020/02/02 v4.1g the supertabular environment
+\c@tracingst=\count284
+\ST@wd=\dimen155
+\ST@rightskip=\skip61
+\ST@leftskip=\skip62
+\ST@parfillskip=\skip63
+\ST@pageleft=\dimen156
+\ST@headht=\dimen157
+\ST@tailht=\dimen158
+\ST@pagesofar=\dimen159
+\ST@pboxht=\dimen160
+\ST@lineht=\dimen161
+\ST@prevht=\dimen162
+\ST@toadd=\dimen163
+\ST@dimen=\dimen164
+\ST@pbox=\box51
+))
+(a:/TexLive/2020/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+Package: glossary-tree 2020/03/19 v4.46 (NLCT)
+\glstreeindent=\skip64
+))
+(a:/TexLive/2020/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen165
+\ar@mcellbox=\box52
+\extrarowheight=\dimen166
+\NC@list=\toks33
+\extratabsurround=\skip65
+\backup@length=\skip66
+\ar@cellbox=\box53
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/05/10 v3.4j Customizing captions (AR)
+
+(a:/TexLive/2020/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/05/10 v1.11 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen167
+\captionmargin@=\dimen168
+\captionwidth=\dimen169
+\caption@tempdima=\dimen170
+\caption@indent=\dimen171
+\caption@parindent=\dimen172
+\caption@hangindent=\dimen173
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count285
+\c@continuedfloat=\count286
+Package caption Info: longtable package is loaded.
+
+(a:/TexLive/2020/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4a longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box54
+\beforetitleunit=\skip67
+\aftertitleunit=\skip68
+\ttl@plus=\dimen174
+\ttl@minus=\dimen175
+\ttl@toksa=\toks34
+\titlewidth=\dimen176
+\titlewidthlast=\dimen177
+\titlewidthfirst=\dimen178
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
+)
+\glswrite=\write3
+\glo@main@file=\write4
+\openout4 = `"MedLabs Specimen Tracking System.glo"'.
+
+Package glossaries Info: Writing glossary file "MedLabs Specimen Tracking Syste
+m".glo on input line 15.
+\glo@acronym@file=\write5
+\openout5 = `"MedLabs Specimen Tracking System.acn"'.
+
+Package glossaries Info: Writing glossary file "MedLabs Specimen Tracking Syste
+m".acn on input line 15.
+
+(a:/TexLive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
+File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
+\l__kernel_color_stack_int=\count287
+\l__pdf_internal_box=\box55
+)
+(./MedLabs Specimen Tracking System.aux)
+\openout1 = `"MedLabs Specimen Tracking System.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+
+(a:/TexLive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count288
+\scratchdimen=\dimen179
+\scratchbox=\box56
+\nofMPsegments=\count289
+\nofMParguments=\count290
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count291
+\MPscratchDim=\dimen180
+\MPnumerator=\count292
+\makeMPintoPDFobject=\count293
+\everyMPtoPDFconversion=\toks36
+) (a:/TexLive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+
+(a:/TexLive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(a:/TexLive/2020/texmf-dist/tex/latex/grfext/grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+
+(a:/TexLive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+))
+(a:/TexLive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(a:/TexLive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+(a:/TexLive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(a:/TexLive/2020/texmf-dist/tex/latex/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
+
+(a:/TexLive/2020/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(74.71704pt, 448.07378pt, 74.71706pt)
+* v-part:(T,H,B)=(106.75473pt, 578.15999pt, 160.13213pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=448.07378pt
+* \textheight=578.15999pt
+* \oddsidemargin=2.44705pt
+* \evensidemargin=2.44705pt
+* \topmargin=-2.51526pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+<Logo.png, id=1, 189.70876pt x 176.66pt>
+File: Logo.png Graphic file (type png)
+<use Logo.png>
+Package pdftex.def Info: Logo.png  used on input line 29.
+(pdftex.def)             Requested size: 113.81102pt x 105.98332pt.
+[1
+
+\openout3 = `"MedLabs Specimen Tracking System.ist"'.
+
+{a:/TexLive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Logo.png>]
+[1] [2] [3]
+No file "MedLabs Specimen Tracking System".acr.
+
+Underfull \hbox (badness 10000) in paragraph at lines 81--82
+
+ []
+
+[4] (./MedLabs Specimen Tracking System.toc [5
+
+])
+\tf@toc=\write6
+\openout6 = `"MedLabs Specimen Tracking System.toc"'.
+
+ [6]
+(./MedLabs Specimen Tracking System.lof)
+\tf@lof=\write7
+\openout7 = `"MedLabs Specimen Tracking System.lof"'.
+
+ [7
+
+]
+(./MedLabs Specimen Tracking System.lot)
+\tf@lot=\write8
+\openout8 = `"MedLabs Specimen Tracking System.lot"'.
+
+ [8
+
+]
+Chapter 1.
+[9
+
+] [10]
+Chapter 2.
+
+Overfull \hbox (2.1634pt too wide) in paragraph at lines 147--148
+[]|\T1/cmr/m/n/10 Dependencies| 
+ []
+
+
+Overfull \hbox (2.1634pt too wide) in paragraph at lines 150--151
+[]|\T1/cmr/m/n/10 Dependencies| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--155
+[]|\T1/cmr/m/n/10 Interview per-son-nel from
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 155--155
+\T1/cmr/m/n/10 Med-Labs and hold brain-
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 157--157
+[]|\T1/cmr/m/n/10 Identify sys-tem re-quire-
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 157--157
+\T1/cmr/m/n/10 ori-tise all sys-tem re-quire-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 159--159
+[]|\T1/cmr/m/n/10 Learn the re-quired tools
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 161--161
+[]|\T1/cmr/m/n/10 Manage sys-tem re-quire-
+ []
+
+
+Overfull \hbox (2.1634pt too wide) in paragraph at lines 168--169
+[]|\T1/cmr/m/n/10 Dependencies| 
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 170--170
+[]|\T1/cmr/m/n/10 Design sys-tem re-quire-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 178
+ []
+
+[11
+
+] [12]
+<Gantt Chart.png, id=59, 586.1097pt x 232.9503pt>
+File: Gantt Chart.png Graphic file (type png)
+<use Gantt Chart.png>
+Package pdftex.def Info: Gantt Chart.png  used on input line 189.
+(pdftex.def)             Requested size: 468.8884pt x 186.36047pt.
+
+Overfull \hbox (20.81462pt too wide) in paragraph at lines 189--190
+[][] 
+ []
+
+
+Underfull \hbox (badness 8189) in paragraph at lines 211--212
+[]|\T1/cmr/m/n/10 Define all stake-hold-ers, doc-u-ment
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 231
+ []
+
+[13 <./Gantt Chart.png>]
+Overfull \hbox (7.26593pt too wide) in paragraph at lines 242--242
+[]|\T1/cmr/m/n/10 Portability| 
+ []
+
+
+Overfull \hbox (7.26593pt too wide) in paragraph at lines 245--245
+[]|\T1/cmr/m/n/10 Portability| 
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 248--248
+[]|\T1/cmr/m/n/10 There's a risk of miss-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]|\T1/cmr/m/n/10 Highly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+[]|\T1/cmr/m/n/10 Further in-ter-view-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]|\T1/cmr/m/n/10 Insufficient data might
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--253
+[]|\T1/cmr/m/n/10 Further in-ter-view-ing
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+[]|\T1/cmr/m/n/10 An in-ac-cu-rate un-der-
+ []
+
+
+Underfull \hbox (badness 6412) in paragraph at lines 254--254
+\T1/cmr/m/n/10 stand-ing of the user's
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+\T1/cmr/m/n/10 re-quire-ments will lead
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+\T1/cmr/m/n/10 to in-cor-rect sys-tem
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 257--257
+\T1/cmr/m/n/10 doc-u-men-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
+[]|\T1/cmr/m/n/10 Highly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--259
+[]|\T1/cmr/m/n/10 Further re-search of
+ []
+
+
+Underfull \hbox (badness 2903) in paragraph at lines 260--260
+\T1/cmr/m/n/10 user's re-quire-ments and
+ []
+
+
+Underfull \hbox (badness 1325) in paragraph at lines 261--262
+\T1/cmr/m/n/10 re-quire-ments to ac-cu-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\T1/cmr/m/n/10 Form a de-vel-op-
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 263--263
+\T1/cmr/m/n/10 egy to fol-low will def-i-
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 264--265
+\T1/cmr/m/n/10 Re-search of dif-fer-ent
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+[]|\T1/cmr/m/n/10 The sys-tem's re-quire-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+\T1/cmr/m/n/10 to pre-vent mis-un-der-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[]|\T1/cmr/m/n/10 Slightly
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 270--271
+[]|\T1/cmr/m/n/10 Further in-ter-view-ing
+ []
+
+
+Underfull \hbox (badness 2547) in paragraph at lines 270--271
+\T1/cmr/m/n/10 erly un-der-stand their
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 272--272
+[]|\T1/cmr/m/n/10 Design the
+ []
+
+
+Underfull \hbox (badness 1789) in paragraph at lines 272--272
+\T1/cmr/m/n/10 will cause com-pli-ca-tions
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
+[]|\T1/cmr/m/n/10 Slightly
+ []
+
+
+Underfull \hbox (badness 1194) in paragraph at lines 273--274
+[]|\T1/cmr/m/n/10 An ex-a-haus-tive study
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 276--276
+[]|\T1/cmr/m/n/10 Slightly
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 278
+ []
+
+[14] [15] [16]
+Chapter 3.
+
+Underfull \hbox (badness 4378) in paragraph at lines 307--307
+[]|\T1/cmr/m/n/10 Royal Sci-en-tific So-ci-ety
+ []
+
+[17
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+
+ []
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 403--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--420
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 426--429
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 438--439
+
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 452--453
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 498--499
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 507--508
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 521--522
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 529--530
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 540--541
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--554
+
+ []
+
+[21] [22]
+Underfull \hbox (badness 10000) in paragraph at lines 635--636
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 637--640
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 648--649
+
+ []
+
+[23
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--652
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--653
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--654
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 658--659
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 664--665
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 666--667
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--669
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 670--671
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--673
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 674--675
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 676--677
+
+ []
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 681--682
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--684
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 685--686
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--688
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 693--694
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 703--704
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 705--706
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 707--708
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 709--710
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 711--712
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 713--714
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--718
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 719--720
+
+ []
+
+[25
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 723--724
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 725--726
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 727--728
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 729--730
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 731--732
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 733--734
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 735--736
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 744--745
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--747
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 748--749
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 750--751
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 752--753
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 754--755
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 756--757
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 758--759
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 760--761
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 764--765
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 766--767
+
+ []
+
+[26
+
+] [27]
+Chapter 4.
+<Employee App.png, id=109, 1449.415pt x 1365.1pt>
+File: Employee App.png Graphic file (type png)
+<use Employee App.png>
+Package pdftex.def Info: Employee App.png  used on input line 792.
+(pdftex.def)             Requested size: 483.69684pt x 455.54602pt.
+
+Overfull \hbox (35.62306pt too wide) in paragraph at lines 792--793
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28
+
+] [29 <./Employee App.png>]
+<Client App.png, id=117, 1499.6025pt x 1687.30376pt>
+File: Client App.png Graphic file (type png)
+<use Client App.png>
+Package pdftex.def Info: Client App.png  used on input line 832.
+(pdftex.def)             Requested size: 483.69684pt x 544.2221pt.
+
+Overfull \hbox (35.62306pt too wide) in paragraph at lines 832--833
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30
+
+] [31] [32 <./Client App.png>] (./MedLabs Specimen Tracking System.aux) ) 
+Here is how much of TeX's memory you used:
+ 8748 strings out of 480488
+ 132269 string characters out of 5903860
+ 462029 words of memory out of 5000000
+ 24591 multiletter control sequences out of 15000+600000
+ 545180 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,8n,96p,1041b,392s stack positions out of 5000i,500n,10000p,200000b,80000s
+{a:/Te
+xLive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{a:/TexLive/202
+0/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<a:/TexLive/2020/texmf-di
+st/fonts/type1/public/cm-super/sfbx1000.pfb><a:/TexLive/2020/texmf-dist/fonts/t
+ype1/public/cm-super/sfbx1200.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/publi
+c/cm-super/sfbx1440.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super
+/sfbx1728.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx2074.
+pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><a:/Te
+xLive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb><a:/TexLive/2020
+/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><a:/TexLive/2020/texmf-dis
+t/fonts/type1/public/cm-super/sfcc1728.pfb><a:/TexLive/2020/texmf-dist/fonts/ty
+pe1/public/cm-super/sfrm0900.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public
+/cm-super/sfrm1000.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/
+sfrm1200.pfb>
+Output written on "MedLabs Specimen Tracking System.pdf" (33 pages, 583940 byte
+s).
+PDF statistics:
+ 172 PDF objects out of 1000 (max. 8388607)
+ 115 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+
