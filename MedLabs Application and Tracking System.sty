@@ -1,5 +1,5 @@
 \documentclass{report}
-\usepackage{graphicx}
+\usepackage[pdftex]{graphicx}
 \usepackage{slantsc}
 \usepackage[a4paper, total={6.2in, 8in}]{geometry}
 \usepackage[toc, acronym]{glossaries}
@@ -8,7 +8,8 @@
 \usepackage{caption}
 \usepackage{titlesec}
 \usepackage[T1]{fontenc}
-\DeclareGraphicsExtensions{.png,.pdf}
+\usepackage[table]{xcolor}
+\DeclareGraphicsExtensions{.pdf,.png}
 
 \renewcommand{\arraystretch}{1.8}
 
@@ -16,12 +17,12 @@
 
 \newacronym{rss}{HTML}{Royal Scientific Society.}
 \newacronym{gps}{GPS}{Global Position System.}
-\newacronym{gsm}{GSM}{Global System Module.}
+\newacronym{gsm}{GSM}{Global System for Mobile Communications.}
 \newacronym{sim}{SIM}{Subscriber Identification Module.}
 \newacronym{gui}{GUI}{Graphical User Interface.}
 \newacronym{html}{HTML}{Hypertext Markup Language.}
 \newacronym{css}{CSS}{Cascading Style Sheetsage.}
-
+\newacronym{er}{ER}{Entity Relationship.}
 
 \begin{document}
 \begin{titlepage}
@@ -34,7 +35,7 @@
 		\vspace{.07\textheight}
 		{\large Prepared by \textsc{Abdullah Beano and Hasan Sammour}\par}
 		\vspace{.05\textheight}
-		{\Huge\bfseries MedLabs Specimen Tracking System\par}
+		{\Huge\bfseries MedLabs Application and Tracking System\par}
 		\vspace{.08\textheight}
 		{\large Supervised by Mohammad Abu-Snober\par}
 		\vspace{.10\textheight}
@@ -48,37 +49,38 @@
 
 This document has been written entirely by the undersigned team members of the project. 
 The source of every quoted text is clearly cited and there is no ambiguity in where the quoted text begins and ends. 
-The source of any illustration, image or table that is not the work of the team members is also clearly cited. 
+The source of any illustration, image, or table that is not the work of the team members is also clearly cited. 
 We are aware that using non-original text or material or paraphrasing or modifying it without proper citation is a violation of the university’s regulations 
 and is subject to legal actions.
 \newpage
 
 \section*{\LARGE {Acknowledgments}} \vspace{.05\textheight}
 
-We'd like to offer our deepest feelings of gratitude to our supervisor, Dr. Mohammad Abo-Snober, for his great efforts throughout this project were of utmost signifiance. 
-We'd also like to thank Dr. Abdullah Darweesh for the invaluable advice and direction he'd provided, Eng. Iyad Al-Dasouqi for the great deal of motivation he'd provided and continues to provide 
-to everybody around him, Eng. Khalid Al-Samhouri for the tremendous work he's put forward, helping us understand the requirements we'd have to meet for a successful project, 
-Eng. Islam Ahmad and the entire RSS team for the treasured knowledge and experience they'd helped us
-attain in this project. Not to mention our families, friends, and loved ones for their enchanting prayers and graceful wishes.
+We'd like to offer our deepest feelings of gratitude to our supervisor, Dr. Mohammad Abo-Snober, for his efforts throughout this project were of notable significance. 
+We'd also like to thank Dr. Abdullah Darweesh for the invaluable advice and direction he'd provided, Eng. Iyad Al-Dasouqi for the great deal of motivation he'd brought and continues to bring to everybody around him, 
+Eng. Khalid Al-Samhouri for the tremendous work he's put forward helping us understand the requirements we'd have to meet for a successful project, 
+and Eng. Islam Ahmad and the entire RSS team for the appreciated knowledge and experience they'd helped us
+gain in this project. Not to mention our families, friends, and loved ones for their enchanting prayers and graceful wishes.
 
 \newpage
 
 \addcontentsline{toc}{section}{Abstract} 
 \section*{\LARGE {Abstract}} \vspace{.05\textheight}
 
-The efficient use of new and upcoming technologies is significant when developing software. In this project we'll be making use of a real-time tracking system to maximise
-productivity in a courier-based system currently operated by MedLabs to process all the different medical samples. Overall, two applications will be developed, both of which
-for MedLabs. The first application will be used by patients and will provide all the necessary services typically present in similar applications. The patients will also be
-able to fill a form requesting a medical sample to be taken from them from their homes. This is currently done through the call-center at MedLabs. The second application will
-be used by the couriers and the admins with each being able to make use of functionalities relevant to their roles. A real-time tracking system that uses GPS technology developed
-by fellow students at PSUT's King Abdullah II School of Engineering will be used by the admins to assign tasks to the couriers as effectively and efficiently as possible.
+The efficient use of new and upcoming technologies is significant when developing software. And for which, a real-time tracking system will be used in this project to maximise productivity 
+in a courier-based system currently operated by MedLabs to process all the different medical samples. Moreover, two applications will be developed, both of which are
+for MedLabs as well. The first application will be used by patients and will provide all the necessary services typically present in similar applications. 
+The patients will also be able to fill a form requesting a medical sample to be taken from them from their homes. This is currently done through the call-center at MedLabs. 
+Which introduces difficulties for the patients as well as MedLabs themselves. The second application will be used by the couriers and the admins working for MedLabs, 
+with each of them being able to make use of functionalities relevant to their roles. A real-time tracking system that uses GPS technology developed by fellow students from 
+PSUT's King Abdullah II School of Engineering will be used by the admins to assign tasks to the couriers as effectively and efficiently as possible.
 \newpage
 
 \addcontentsline{toc}{section}{List of Abbreviations}
 \section*{\LARGE {List of Abbreviations}} \vspace{.05\textheight}
 
 \printglossary[type=\acronymtype]
-\acrfull{rss} \\ \acrfull{gps} \\ \acrfull{gsm} \\ \acrfull{sim} \\ \acrfull{gui} \\ \acrfull{html} \\ \acrfull{css} \\
+\acrfull{rss} \\ \acrfull{gps} \\ \acrfull{gsm} \\ \acrfull{sim} \\ \acrfull{gui} \\ \acrfull{html} \\ \acrfull{css} \\ \acrfull{er}
 \newpage
 
 \tableofcontents
@@ -96,41 +98,43 @@ by fellow students at PSUT's King Abdullah II School of Engineering will be used
 
 \section[Overview]{Overview}
 
-In this project, a live tracking system of the different couriers working for MedLabs in Amman will be developed.
-These couriers’ main job is to deliver varying medical samples from MedLabs branches to the main branch for further testing. 
-A portion of these workers are also lab technicians who will be taking samples from the patients from their homes, 
-the system will track their routes as well. 
-Secondly, an application and a website will be developed to allow users to fill request-forms for their samples to be taken from home.
-by a capable lab technician. As the only way to achieve that currently is through a phone call to MedLabs call-center. \\
-There's undeniable value when it comes to making improvements to the health-care system in any way. And a dynamic, modern nad powerful
-health-care system is of utmost significance to help our community. 
-As for us working to build this project, learning new software, hardware, and technologies is of absolute importance
-and growing am entrepreneurial sense delving into a new field such as this will greatly benefit our careers moving forward.
+The real-time tracking system of the different couriers working for MedLabs in Amman will function as follows – 
+these couriers’ main job is to deliver the different medical samples from MedLabs' branches to the main branch for further testing. 
+A portion of these workers is also lab technicians who will be taking samples from the patients from their homes. The system will track all of their routes and display them on the admin's dashboard. 
+This will allow the admins to allocate tasks to couriers as efficiently as possible. All of which will be achieved through the workers' application that will serve admins and couriers alike. 
+MedLabs' patients will be able to fill request-forms for samples to be taken from home by a capable lab technician using the separate application developed for the patients. \\
+There's an undeniable value when it comes to making improvements to the health-care system in Jordan or anywhere else. 
+And a system that is dynamic, modern, and powerful is of unquestionable significance if we'd like our communities to grow strong. 
+As for us working to build this project, learning new software, hardware, and technologies is both exhilarating and meaningful. 
+And growing an entrepreneurial sense by delving into a new field such as this will greatly benefit our careers moving forward.
 
 \section[Problem Statement]{Problem Statement}
 
-The current system at MedLabs is based on users making phone calls directly to the call center to make an arragenment for their samples to be taken at home.\
-Which regularly leads to heavy load on the call-center subsequently leading to customer dissastifcation. This inefficient and often confusing - for the patients - system
-will be renovated by the software to be developed in this project. Which will make the process far simpler, faster, and more convenient for the patients 
-while lifting sizeable load off the call-center.
-A live tracking system of the couriers will also greatly benefit MedLabs business as a whole, by helping to optimise their already rich testing, and boosting efficiency.
+The current system that's in place to serve patients from their homes is inefficient and costly. 
+As it is based on the patients making phone calls directly to the call center to make an arrangement for their samples to be taken at home. 
+Which introduces a need for more employees on the line, a bigger and more capable call-center, and perhaps even customer dissatisfaction in case the service was lousy or unavailable. 
+This unfit and often confusing system will be renovated by the software to be developed in this project. Applications that will make the process far simpler, faster, and convenient for the patients. 
+While lifting sizeable load off the call-center. Moreover, a real-time tracking system of the couriers will also greatly benefit the MedLabs business as a whole, 
+by boosting the effectiveness of delivering the samples from and to the different branches.
 \newpage
 
 \section[Related Work]{Related Work}
 
-The Ground Positioning System (GPS) is owned and operated by the United States of America. It's a powerful system of more than 30 satellites orbiting the earth 
-and constantly keeping a steady flow of signals being sent. This allows for their position to be known at all times. Using signals from at least 4 of those satellites, 
-a receiver can deduce its accurate position on the ground. \\ We'll be incorporating the project our fellow students from PSUT's King Abdullah II School of Engineering have been working on. 
+The Ground Positioning System (GPS) is owned and operated by the United States of America. 
+It's a powerful system of more than 30 satellites orbiting the earth and constantly keeping a steady flow of signals being sent to ground stations scattered across the planet. 
+This allows for the satellites' position to be known at all times. Using signals from at least 4 of those satellites, a receiver can deduce its accurate position on the ground. 
+This type of advanced and free to use technology should be used to better and improve existing and upcoming projects. 
+This will be achieved in this project as we'll be incorporating a project our fellow students from PSUT's King Abdullah II School of Engineering have been working on. 
 The project consists of a real-time tracking system that uses GPS to provide the most reliable positioning possible, regardless of whether the user has an active internet connection or not. 
-This system will be built into each of the couriers' vehicles. As long as a straight unobstructed line of sight is maintained between the vehicle and at least 4 satellites, the tracking will not be interrupted. 
+This system will be built into each of the couriers' vehicles. And as long as a straight unobstructed line of sight is maintained between the vehicle and at least 4 satellites, the tracking will not be interrupted. 
 
 \section[Document Outline]{Document Outline}
 
 The remainder of this document is arranged as follows:
 \begin{itemize}
   \item [-] Chapter 2 details the project's plan and the analysis that went into it.
-  \item [-] Chapter 3 describes the system's requirements in detail.
-  \item [-] Chapter 4 illustrates the system's design using a plethora of diagrams and the model's description.
+  \item [-] Chapter 3 describes the system's requirements in a detailed manner.
+  \item [-] Chapter 4 illustrates the system's design using a plethora of diagrams and descriptions.
 \end{itemize}
 
 
@@ -138,10 +142,37 @@ The remainder of this document is arranged as follows:
 
 \section[Project Deliverables]{Project Deliverables}
 
+\begin{center}
+  \begin{tabular}{ | m{0.6cm} | m{10cm} | m{2cm} | }
+    \hline
+    ID & Description & Status \\
+    \hline
+    PD1 & The full documentation of the project & Complete \\
+    \hline
+    PD2 & The website to be used by MedLabs' patients & Incomplete \\
+    \hline
+    PD3 & The application to be used by MedLabs' patients & Incomplete  \\
+    \hline
+    PD4 & The application to be used by MedLabs' workers & Incomplete  \\
+    \hline
+  \end{tabular}
+  \captionof{table}{Project Deliverables}
+\end{center}
+
+\begin{center}
+  \line(1,0){250}
+\end{center}
+
+\section[Project Timeline]{Project Timeline}
+
+It's the aim for deliverables PD2 through PD4 to be delivered as fully functional software by the end of the first semester of the academic year 2020-2021. And the discussion of the second part of the project
+including all implementation and testing will be held on a date to be specified by the university at a later time. 
+\clearpage
+
 \section[Project Tasks]{Project Tasks}
 
 \begin{center}
-  \begin{longtable}{ | m{0.6cm} | m{4cm} |  m{4.5cm} | m{1.5cm} | m{2cm} | }
+  \begin{longtable}{ | m{0.6cm} | m{4cm} |  m{4.5cm} | m{1.3cm} | m{2cm} | }
     \multicolumn{5}{c}{\textbf{\large{Analysis Phase}}}\\
     \hline
     ID & Task & Description & Duration & Dependencies \\
@@ -150,18 +181,18 @@ The remainder of this document is arranged as follows:
     ID & Task & Description & Duration & Dependencies \\
     \endhead
     \hline
-    T01 & Define the problem & Precisely describe the problem to be solved in a problem statement & Week 1 & None \\
+    T01 & Define the problem & Precisely describe the problem to be solved in a concise problem statement & Week 1 & None \\
     \hline
     T02 & Collect user requirements & Interview personnel from MedLabs and hold brainstorming sessions to collect and document user requirements & Week 1 & T01 \\
     \hline
     T03 & Identify system requirements & Deduce, document, and prioritise all system requirements & Week 2 & T02 \\
     \hline
-    T04 & Learn the required documentation tools & Learn the required tools and programming languages necessary for documentation (Latex) & Week 2 & None \\
+    T04 & Learn the required documentation tools & Learn the required tools and programming languages necessary for documentation (Latex and chart building software) & Week 2 & None \\
     \hline
     T05 & Manage system requirements & Use a traceability matrix to manage system/user requirements & Week 2 & T02, T03 \\
     \hline
     T06 & Form a development strategy & Research and document hardware and software tools to be adopted in the project. 
-    Research and choose the best fitting design model & Week 2 & T03 \\
+    And choose the best fitting design model after a comprehensive study & Week 2 & T03 \\
     \hline
     \multicolumn{5}{c}{\textbf{\large{Design Phase}}}\\
     \hline
@@ -169,28 +200,28 @@ The remainder of this document is arranged as follows:
     \hline
     T07 & Design system requirements & Use a wide and applicable array of diagrams to manifest the system's requirements & Week 3 & T03 \\
     \hline
-    T08 & Design user interfaces & Use the appropriate software to desing user interface prototypes & Week 4 & T03, T06 \\
+    T08 & Design user interfaces & Use the appropriate software to design a user interface prototype & Week 4 & T03, T06 \\
     \hline
-    T09 & Design the database & Define a proper database with apt attributes and constraints & Week 4 & None \\
+    T09 & Design the database system & Define a proper database with apt attributes and constraints & Week 4 & None \\
     \hline
     T10 & Design the physical model & Adopt the best suitable software architecture & Week 5 & T09, T07 \\
     \hline
   \end{longtable}
   \captionof{table}{Project Tasks}
 \end{center}
-\newpage
+\clearpage
 
 \section[Gantt Chart]{Gantt Chart}
 
-Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in this project
+Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in this project. Phase 3 - implementation - and phase 4 - testing - will be illustrated as the project progresses.
 
 \begin{center}
-\begin{figure}[h]
-  \includegraphics[scale=0.8]{Gantt Chart}
-  \caption{Gantt Chart}
-\end{figure}
+  \begin{figure}[h]
+    \includegraphics[width=16cm, scale=1]{Gantt Chart}
+    \caption{Gantt Chart}
+  \end{figure}
 \end{center}
-
+\clearpage
 
 \section[Roles and Responsibilities]{Roles and Responsibilities}
 
@@ -204,40 +235,52 @@ Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in
     ID & Task & Description \\
     \endhead
     \hline
-    01 & Define the problem & Define the problem and write the problem statement \\
+    01 & Define the problem & Precisely describe the problem to be solved in a concise problem statement \\
     \hline
-    02 & Collect user requirements & Interview personnel from MedLabs to collect user requirements \\
+    02 & Collect user requirements & Interview personnel from MedLabs to collet user requirements \\
     \hline
-    03 & Documentation & Define all stakeholders, document project tasks and individual roles and responsibilities \\
+    03 & Identify system requirements & Identify and document the system's functional and platform requirements \\
     \hline
-    04 & Risk Assessment & Brainstorm possible risks, their impacts and plan to cope with each risk \\
+    04 & Learn the required documentation tools & Learn the required tools and programming languages necessary for documentation (Latex and chart building software) \\ 
     \hline
-    05 & Identify system requirements & Identify and document the system's functional, non-functional, and platform requirements  \\
+    05 & Manage system requirements & Use a traceability matrix to manage system/user requirements \\ 
     \hline
-    06 & Learn the required documentation tools & Learn and build a Latex template for the full documentation \\ 
+    06 & Form a development strategy & Research and document hardware and software tools to be adopted in the project. 
+    And choose the best fitting design model after a comprehensive study \\ 
+    \hline
+    07 & Design system requirements & Use a wide and applicable array of diagrams to manifest the system's requirements \\ 
+    \hline
+    08 & Design the physical model & Adopt the best suitable software architecture after an all-encompassing study \\ 
+    \hline
+    09 & Audit the final documentation & Audit the final document and make necessary changes \\
     \hline
     \multicolumn{3}{c}{\textbf{\large{Hasan's Responsibilities}}}\\
     \hline
     ID & Task & Description \\
     \hline
-    01 & Define the problem & Define the problem \\
+    01 & Define the problem & Help understand the problem to be solved by doing research \\
     \hline
     02 & Collect user requirements & Interview personnel from MedLabs to collet user requirements \\
     \hline
-    03 & Identify system requirements & Identify and document the system's nonfunctional requirements \\
+    03 & Identify system requirements & Identify and document the system's nonfunctional and software/hardware requirements \\
     \hline
-    04 & Identify system requirements & Identify and document the system's software and hardware specifications \\
+    04 & Learn the required documentation tools & Learn the required tools and programming languages necessary for documentation (Latex and chart building software) \\ 
+    \hline
+    05 & Form a development strategy & Research and document hardware and software tools to be adopted in the project. 
+    And choose the best fitting design model after a comprehensive study \\ 
+    \hline
+    06 & Design the database system tools & Define a proper database with apt attributes and constraints \\ 
+    \hline
+    07 & Design user interfaces & Use the appropriate software to design a friendly user interface prototype \\ 
     \hline
   \end{longtable}
   \captionof{table}{Roles and Responsibilities}
 \end{center}
 
-\section[Cost Estimation]{Cost Estimation}
-
 \section[Risk Assessment]{Risk Assessment}
 
 \begin{center}
-  \begin{longtable}{ | m{0.6cm} | m{3cm} |  m{4cm} | m{1.4cm} | m{3.6cm} | }
+  \begin{longtable}{ | m{0.6cm} | m{3cm} |  m{4cm} | m{1.5cm} | m{3.6cm} | }
     \hline
     ID & Task & Risk and Impact & Portability & Plan to Cope \\
     \endfirsthead
@@ -246,18 +289,18 @@ Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in
     \endhead
     \hline
     T01 & Define the problem & There's a risk of miss-pointing the real problem in a system. Accuracy is significant & 
-    Highly unlikely & Further interviewing and brainstorming \\
+    Highly unlikely & Further interviewing \newline and brainstorming \\
     \hline
-    T02 & Collect user \newline requirements & Insufficient data might lead to miss identification of the user / customer's needs and wants & 
-    Unlikely & Further interviewing with the user \\
+    T02 & Collect user \newline requirements & Insufficient data might lead to miss identification of the user's needs and wants & 
+    Unlikely & Further interviewing \newline with the user \\
     \hline
     T03 & Identify system \newline requirements & An inaccurate understanding of the user's requirements will lead to incorrect system requirements & 
-    Unlikely & Careful reconsideration of the users's requirements \\
+    Unlikely & Careful reconsideration of the user's requirements \\
     \hline
     T04 & Learn the required documentation tools & Time is an important resource that will be wasted if the wrong tools are used &
-    Highly unlikely & Further research of available tools \\
+    Highly unlikely & Further research of \newline available tools \\
     \hline
-    T05 & Manage system \newline requirements & A mismatch between the user's requirements and the system’s identifed requirements will cause design problems &
+    T05 & Manage system \newline requirements & A mismatch between the user's requirements and the system’s identified requirements will cause design problems &
     Unlikely & A review and a possible edit of the functional requirements to accurately make sure every user requirement is met \\
     \hline
     T06 & Form a development strategy & Choosing the wrong strategy to follow will definitely lead to wasted time and effort & 
@@ -267,30 +310,39 @@ Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in
     Slightly likely & A comprehensive study of the system’s requirements \\
     \hline
     T08 & Design user \newline interfaces & The user's wants must be taken into account more than anything in this task &
-    Likely & Further interviewing with the user to properly understand their wants \\
+    Likely & Further interviewing \newline with the user to properly understand their wants \\
     \hline
-    T09 & Design the database & Any flaws or blunders in the design of the database will cause complications on the other levels &
-    Slightly likely & An exahaustive study of the sytem's logical operations and requirements \\
+    T09 & Design the \newline database & Any flaws or blunders in the design of the database will cause complications on the other levels &
+    Slightly likely & An exhaustive study of the system's logical operations and requirements \\
     \hline
     T10 & Design the physical model & The flow of data must be fluid as possible maximise the system's efficiency &
     Slightly likely & A meticulous study of the system’s operations \\
     \hline
   \end{longtable}
+  \captionof{table}{Risk Assessment}
 \end{center}
+\clearpage
 
 \section[Project Management Tools]{Project Management Tools}
 
-\subsection*{Storage}
+\subsection{Storage}
 A GitHub repository with separate branches was used to keep work synchronised and backed up. A master branch keeps the most important files from being edited improperly
-while working on separate development branches and merging them to the master branch after careful auditting makes sure everything stays secure and up to date. 
-A Google Drive folder was also used as a back-up storage in case of any emergency. This folder was updated as frequently as possible to ensure further safety.
+while working on separate development branches and merging them to the master branch after careful auditing makes sure everything stays secure and up to date. 
+A Google Drive folder was also used as back-up storage in case of any fatal emergency. This folder was updated as frequently as possible to ensure further safety.
 
-\subsection*{Planning}
+\subsection{Planning}
 A shared Google Keep note was used to keep track of all the different sections of the project that had to be completed. The simple interface of Keep helps keep everything
-clear and easy to reach. A Google Tasks list was used to keep track of individual tasks assigned to each member of the team. 
+clear and easy to reach. A Google Tasks list was used to keep track of individual tasks assigned to each member of the team. Calls with screen-sharing enabled on Discord were made in case a team-member
+needed aid in their tasks.
 
-\subsection*{Charts and Diagrams}
-TeamGantt was used to create the Gantt Chart illustrated in figure 2.1.
+\subsection{The Document, Charts, and Diagrams}
+
+\begin{itemize}
+  \item [-] TexLive was used to compile the document into PDF format while Visual Code was used with the applicable extensions to write the Latex code itself.
+  \item [-] TeamGantt was used to create the Gantt Chart.
+  \item [-] Creately was used to illustrate the different use-case diagrams.
+  \item [-] Lucidchart was used to build the activity diagrams and the entity-relationship (ER) diagram.
+\end{itemize}
 
 \chapter[Requirements Specification]{Requirements Specification}
 
@@ -301,7 +353,7 @@ TeamGantt was used to create the Gantt Chart illustrated in figure 2.1.
       \hline
       Stakeholder & Description & Importance of Role \\ [1ex]
       \hline
-      MedLabs & The tracking system, the application, and the website developed in this project 
+      MedLabs & The tracking system, the applications, and the website developed in this project 
       were made to benefit MedLabs’ business and to optimise their courier system & High \\
       \hline
       Royal Scientific Society (RSS) & The project’s idea was made available
@@ -309,7 +361,7 @@ TeamGantt was used to create the Gantt Chart illustrated in figure 2.1.
       The RSS also specified the system’s requirements & Medium \\
       \hline
       The developers & The students who built the tracking device
-      and the students who designed and developed the tracking system, the application, and the website.
+      and the students who designed and developed the applications and the website.
       All of the aforementioned will greatly benefit the students’ learning process and careers in the future & Low \\        
       \hline
   \end{tabular}
@@ -322,30 +374,20 @@ TeamGantt was used to create the Gantt Chart illustrated in figure 2.1.
 
 \section[Platform Requirements]{Platform Requirements}
 
-\subsection[Mobile Application and Website]{Mobile Application and Website} \vspace{.01\textheight} 
+\subsection[Mobile Applications and Website]{Mobile Applications and Website} \vspace{.01\textheight} 
 The mobile application will be developed using the React JavaScript library for Android and iOS. 
 The application is rather simple and not at all taxing and will run without trouble on almost any mobile device with an active internet connection. \\
 The website will be accessible and should run effectively on any desktop or laptop with an active internet connection.
 
 \subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
 The hardware used in this project is an Arduino based vehicle tracking system. Arduino is a single-board microcontroller that - in this case -  
-uses a global position system (GPS), and a global system module (GSM) to achieve real-time tracking of any vehile or object that bears and makes use of
+uses a Global Positioning System (GPS), and a Global System for Mobile Communications (GSM) to achieve real-time tracking of any vehile or object that bears and makes use of
 a SIM card even if it's offline. \\ The system will be assembled inside of the vehicle. Two applications, for the admininstrator and the employee will be
 developed to track all the vehicles.
 
 \begin{center}
   \line(1,0){250}
 \end{center}
-
-%\section[Traceability Matrix]{Traceability Matrix}
-
-%\begin{center}
-%  \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
-%    \hline
-%
-%  \end{tabular}
-%  \captionof{table}{Traceability Matrix}
-%\end{center}
 
 \section[Functional Requirements]{Functional Requirements}
 
@@ -783,9 +825,11 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
 
 \chapter[System Design]{System Design}
 
-\section[Use-Case Diagrams]{Use-Case Diagrams}
+\section[Logical Model Design]{Logical Model Design}
 
-\subsection[Employee App]{Employee App}
+\subsection[Use-Case Diagrams]{Use-Case Diagrams}
+
+\subsubsection[Employee App]{Employee App}
 
 \begin{center}
   \begin{figure}[h]
@@ -825,7 +869,8 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
     \item [-] Cross References: Functional Requirement 2.2.b
   \end{itemize}
 \end{enumerate}
-\subsection[Client App]{Client App}
+
+\subsubsection[Client App]{Client App}
 
 \begin{center}
   \begin{figure}[h]
@@ -858,8 +903,6 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
     \item [-] Cross References: Functional Requirement 1.3.a
   \end{itemize}
 \end{itemize}
-
-\section[Logical Model Design]{Logical Model Design}
 
 \section[Physical Model Design]{Physical Model Design}
 
