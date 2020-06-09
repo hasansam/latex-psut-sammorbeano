@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.15)  5 JUN 2020 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2020.5.15)  8 JUN 2020 20:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -351,6 +351,11 @@ Package: titlesec 2019/10/16 v2.13 Sectioning titles
 \titlewidthlast=\dimen177
 \titlewidthfirst=\dimen178
 )
+(a:/TexLive/2020/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+\c@subfigure=\count287
+\c@subtable=\count288
+)
 (a:/TexLive/2020/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/02/11 v2.0o Standard LaTeX package
 )
@@ -367,7 +372,7 @@ Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 \everycr=\toks35
 \minrowclearance=\skip69
 )
-\rownum=\count287
+\rownum=\count289
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -392,38 +397,42 @@ g System".acn on input line 16.
 
 (a:/TexLive/2020/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-05-05 L3 backend support: PDF mode
-\l__kernel_color_stack_int=\count288
+\l__kernel_color_stack_int=\count290
 \l__pdf_internal_box=\box55
 )
-No file "MedLabs Application and Tracking System".aux.
+(./MedLabs Application and Tracking System.aux
+
+LaTeX Warning: Label `fig:erd' multiply defined.
+
+)
 \openout1 = `"MedLabs Application and Tracking System.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-(a:/TexLive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+ (a:/TexLive/2020/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
+\scratchcounter=\count291
 \scratchdimen=\dimen179
 \scratchbox=\box56
-\nofMPsegments=\count290
-\nofMParguments=\count291
+\nofMPsegments=\count292
+\nofMParguments=\count293
 \everyMPshowfont=\toks36
-\MPscratchCnt=\count292
+\MPscratchCnt=\count294
 \MPscratchDim=\dimen180
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
+\MPnumerator=\count295
+\makeMPintoPDFobject=\count296
 \everyMPtoPDFconversion=\toks37
 ) (a:/TexLive/2020/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -442,15 +451,15 @@ e
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(74.71704pt, 448.07378pt, 74.71706pt)
-* v-part:(T,H,B)=(106.75473pt, 578.15999pt, 160.13213pt)
+* h-part:(L,W,R)=(89.62709pt, 418.25368pt, 89.6271pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=448.07378pt
-* \textheight=578.15999pt
-* \oddsidemargin=2.44705pt
-* \evensidemargin=2.44705pt
-* \topmargin=-2.51526pt
+* \textwidth=418.25368pt
+* \textheight=591.5302pt
+* \oddsidemargin=17.3571pt
+* \evensidemargin=17.3571pt
+* \topmargin=-7.86334pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=10.0pt
@@ -473,289 +482,300 @@ Package caption Info: End \AtBeginDocument code.
 <Logo.png, id=1, 189.70876pt x 176.66pt>
 File: Logo.png Graphic file (type png)
 <use Logo.png>
-Package pdftex.def Info: Logo.png  used on input line 30.
+Package pdftex.def Info: Logo.png  used on input line 32.
 (pdftex.def)             Requested size: 113.81102pt x 105.98332pt.
 [1
 
 \openout3 = `"MedLabs Application and Tracking System.ist"'.
 
 {a:/TexLive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./Logo.png>]
-[1] [2] [3]
+[1] [2
+
+] [3
+
+]
 No file "MedLabs Application and Tracking System".acr.
-[4]
-No file "MedLabs Application and Tracking System".toc.
+[4
+
+] (./MedLabs Application and Tracking System.toc [5
+
+])
 \tf@toc=\write6
 \openout6 = `"MedLabs Application and Tracking System.toc"'.
 
-[5
-
-]
-No file "MedLabs Application and Tracking System".lof.
+ [6]
+(./MedLabs Application and Tracking System.lof)
 \tf@lof=\write7
 \openout7 = `"MedLabs Application and Tracking System.lof"'.
 
-[6
+ [7
 
 ]
-No file "MedLabs Application and Tracking System".lot.
+(./MedLabs Application and Tracking System.lot)
 \tf@lot=\write8
 \openout8 = `"MedLabs Application and Tracking System.lot"'.
 
-[7
+ [8
 
 ]
 Chapter 1.
-[8
+[9
 
-] [9]
+] [10]
 Chapter 2.
 
-Overfull \hbox (2.36787pt too wide) in paragraph at lines 150--150
+Overfull \hbox (2.36787pt too wide) in paragraph at lines 181--181
 []|\T1/cmr/m/n/10 PD1| 
  []
 
 
-Overfull \hbox (2.36787pt too wide) in paragraph at lines 152--152
+Overfull \hbox (2.36787pt too wide) in paragraph at lines 183--183
 []|\T1/cmr/m/n/10 PD2| 
  []
 
 
-Overfull \hbox (2.36787pt too wide) in paragraph at lines 154--154
+Overfull \hbox (2.36787pt too wide) in paragraph at lines 185--185
 []|\T1/cmr/m/n/10 PD3| 
  []
 
 
-Overfull \hbox (2.36787pt too wide) in paragraph at lines 156--156
+Overfull \hbox (2.36787pt too wide) in paragraph at lines 187--187
 []|\T1/cmr/m/n/10 PD4| 
- []
-
-[10
-
-]
-Overfull \hbox (2.33507pt too wide) in paragraph at lines 178--178
-[]|\T1/cmr/m/n/10 Duration| 
- []
-
-
-Overfull \hbox (2.1634pt too wide) in paragraph at lines 178--179
-[]|\T1/cmr/m/n/10 Dependencies| 
- []
-
-
-Overfull \hbox (2.33507pt too wide) in paragraph at lines 181--181
-[]|\T1/cmr/m/n/10 Duration| 
- []
-
-
-Overfull \hbox (2.1634pt too wide) in paragraph at lines 181--182
-[]|\T1/cmr/m/n/10 Dependencies| 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 186--186
-[]|\T1/cmr/m/n/10 Interview per-son-nel from
- []
-
-
-Underfull \hbox (badness 3930) in paragraph at lines 186--186
-\T1/cmr/m/n/10 Med-Labs and hold brain-
- []
-
-
-Underfull \hbox (badness 2521) in paragraph at lines 188--188
-[]|\T1/cmr/m/n/10 Identify sys-tem re-quire-
- []
-
-
-Underfull \hbox (badness 4108) in paragraph at lines 188--188
-\T1/cmr/m/n/10 ori-tise all sys-tem re-quire-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--190
-[]|\T1/cmr/m/n/10 Learn the re-quired tools
- []
-
-
-Underfull \hbox (badness 2762) in paragraph at lines 190--190
-\T1/cmr/m/n/10 (La-tex and chart build-ing
- []
-
-
-Underfull \hbox (badness 2310) in paragraph at lines 192--192
-[]|\T1/cmr/m/n/10 Manage sys-tem re-quire-
- []
-
-
-Overfull \hbox (2.33507pt too wide) in paragraph at lines 199--199
-[]|\T1/cmr/m/n/10 Duration| 
- []
-
-
-Overfull \hbox (2.1634pt too wide) in paragraph at lines 199--200
-[]|\T1/cmr/m/n/10 Dependencies| 
- []
-
-
-Underfull \hbox (badness 7907) in paragraph at lines 201--201
-[]|\T1/cmr/m/n/10 Design sys-tem re-quire-
- []
-
-
-Underfull \vbox (badness 10000) detected at line 209
  []
 
 [11
 
-] [12]
+]
+Overfull \hbox (2.33507pt too wide) in paragraph at lines 213--213
+[]|\T1/cmr/m/n/10 Duration| 
+ []
+
+
+Overfull \hbox (2.1634pt too wide) in paragraph at lines 213--214
+[]|\T1/cmr/m/n/10 Dependencies| 
+ []
+
+
+Overfull \hbox (2.33507pt too wide) in paragraph at lines 216--216
+[]|\T1/cmr/m/n/10 Duration| 
+ []
+
+
+Overfull \hbox (2.1634pt too wide) in paragraph at lines 216--217
+[]|\T1/cmr/m/n/10 Dependencies| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--221
+[]|\T1/cmr/m/n/10 Interview per-son-nel from
+ []
+
+
+Underfull \hbox (badness 3930) in paragraph at lines 221--221
+\T1/cmr/m/n/10 Med-Labs and hold brain-
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 223--223
+[]|\T1/cmr/m/n/10 Identify sys-tem re-quire-
+ []
+
+
+Underfull \hbox (badness 4108) in paragraph at lines 223--223
+\T1/cmr/m/n/10 ori-tise all sys-tem re-quire-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--225
+[]|\T1/cmr/m/n/10 Learn the re-quired tools
+ []
+
+
+Underfull \hbox (badness 2762) in paragraph at lines 225--225
+\T1/cmr/m/n/10 (La-tex and chart build-ing
+ []
+
+
+Underfull \hbox (badness 2310) in paragraph at lines 227--227
+[]|\T1/cmr/m/n/10 Manage sys-tem re-quire-
+ []
+
+
+Overfull \hbox (2.33507pt too wide) in paragraph at lines 234--234
+[]|\T1/cmr/m/n/10 Duration| 
+ []
+
+
+Overfull \hbox (2.1634pt too wide) in paragraph at lines 234--235
+[]|\T1/cmr/m/n/10 Dependencies| 
+ []
+
+
+Underfull \hbox (badness 7907) in paragraph at lines 236--236
+[]|\T1/cmr/m/n/10 Design sys-tem re-quire-
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 244
+ []
+
+[12
+
+]
 
 pdfTeX warning: pdflatex.exe (file ./Gantt Chart.pdf): PDF inclusion: found PDF
  version <1.7>, but at most version <1.5> allowed
-<Gantt Chart.pdf, id=58, 794.97pt x 614.295pt>
+<Gantt Chart.pdf, id=59, 794.97pt x 614.295pt>
 File: Gantt Chart.pdf Graphic file (type pdf)
 <use Gantt Chart.pdf>
-Package pdftex.def Info: Gantt Chart.pdf  used on input line 220.
-(pdftex.def)             Requested size: 794.96806pt x 614.29349pt.
-
-Overfull \hbox (7.18663pt too wide) in paragraph at lines 220--221
-[][] 
+Package pdftex.def Info: Gantt Chart.pdf  used on input line 254.
+(pdftex.def)             Requested size: 397.48402pt x 307.14674pt.
+[13 <./Gantt Chart.pdf>]
+Underfull \vbox (badness 10000) detected at line 310
  []
 
-[13
-
- <./Gantt Chart.pdf>]
-Underfull \vbox (badness 10000) detected at line 276
- []
-
-[14
-
-]
-Overfull \hbox (4.42049pt too wide) in paragraph at lines 285--285
+[14]
+Overfull \hbox (4.42049pt too wide) in paragraph at lines 321--321
 []|\T1/cmr/m/n/10 Portability| 
  []
 
 
-Overfull \hbox (4.42049pt too wide) in paragraph at lines 288--288
+Overfull \hbox (5.4966pt too wide) in alignment at lines 319--322
+ [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (4.42049pt too wide) in paragraph at lines 324--324
 []|\T1/cmr/m/n/10 Portability| 
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 291--291
+Overfull \hbox (5.4966pt too wide) in alignment at lines 322--325
+ [] [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 1622) in paragraph at lines 327--327
 []|\T1/cmr/m/n/10 There's a risk of miss-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 292--292
+Underfull \hbox (badness 10000) in paragraph at lines 328--328
 []|\T1/cmr/m/n/10 Highly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 294--294
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
 []|\T1/cmr/m/n/10 Insufficient data might
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 []|\T1/cmr/m/n/10 An in-ac-cu-rate un-der-
  []
 
 
-Underfull \hbox (badness 6412) in paragraph at lines 297--297
+Underfull \hbox (badness 6412) in paragraph at lines 333--333
 \T1/cmr/m/n/10 stand-ing of the user's
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 \T1/cmr/m/n/10 re-quire-ments will lead
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--297
+Underfull \hbox (badness 10000) in paragraph at lines 333--333
 \T1/cmr/m/n/10 to in-cor-rect sys-tem
  []
 
 
-Underfull \hbox (badness 1472) in paragraph at lines 298--299
+Underfull \hbox (badness 1472) in paragraph at lines 334--335
 \T1/cmr/m/n/10 of the user's re-quire-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 300--300
+Underfull \hbox (badness 10000) in paragraph at lines 336--336
 \T1/cmr/m/n/10 doc-u-men-ta-tion
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--301
+Underfull \hbox (badness 10000) in paragraph at lines 337--337
 []|\T1/cmr/m/n/10 Highly
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 303--303
+Underfull \hbox (badness 2903) in paragraph at lines 339--339
 \T1/cmr/m/n/10 user's re-quire-ments and
  []
 
 
-Underfull \hbox (badness 1325) in paragraph at lines 304--305
+Underfull \hbox (badness 1325) in paragraph at lines 340--341
 \T1/cmr/m/n/10 re-quire-ments to ac-cu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 306--306
+Underfull \hbox (badness 10000) in paragraph at lines 342--342
 []|\T1/cmr/m/n/10 Form a de-vel-op-
  []
 
 
-Underfull \hbox (badness 1622) in paragraph at lines 306--306
+Underfull \hbox (badness 1622) in paragraph at lines 342--342
 \T1/cmr/m/n/10 egy to fol-low will def-i-
  []
 
 
-Underfull \hbox (badness 5592) in paragraph at lines 307--308
+Underfull \hbox (badness 5592) in paragraph at lines 343--344
 \T1/cmr/m/n/10 Re-search of dif-fer-ent
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
 []|\T1/cmr/m/n/10 The sys-tem's re-quire-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--309
+Underfull \hbox (badness 10000) in paragraph at lines 345--345
 \T1/cmr/m/n/10 to pre-vent mis-un-der-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 310--310
+Underfull \hbox (badness 10000) in paragraph at lines 346--346
 []|\T1/cmr/m/n/10 Slightly
  []
 
 
-Underfull \hbox (badness 2547) in paragraph at lines 313--314
+Underfull \hbox (badness 2547) in paragraph at lines 349--350
 \T1/cmr/m/n/10 erly un-der-stand their
  []
 
 
-Underfull \hbox (badness 1789) in paragraph at lines 315--315
+Underfull \hbox (badness 1789) in paragraph at lines 351--351
 \T1/cmr/m/n/10 will cause com-pli-ca-tions
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 316--316
+Underfull \hbox (badness 10000) in paragraph at lines 352--352
 []|\T1/cmr/m/n/10 Slightly
  []
 
 
-Underfull \hbox (badness 4084) in paragraph at lines 316--317
+Underfull \hbox (badness 4084) in paragraph at lines 352--353
 \T1/cmr/m/n/10 er-a-tions and re-quire-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 319--319
+Underfull \hbox (badness 10000) in paragraph at lines 355--355
 []|\T1/cmr/m/n/10 Slightly
  []
 
 
-Underfull \vbox (badness 10000) detected at line 321
+Overfull \hbox (5.4966pt too wide) in alignment at lines 325--357
+ [] [] [] [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 357
  []
 
 [15] [16] [17
@@ -763,136 +783,110 @@ Underfull \vbox (badness 10000) detected at line 321
 ]
 Chapter 3.
 
-Underfull \hbox (badness 4378) in paragraph at lines 359--359
+Underfull \hbox (badness 4378) in paragraph at lines 397--397
 []|\T1/cmr/m/n/10 Royal Sci-en-tific So-ci-ety
+ []
+
+
+Overfull \hbox (17.68486pt too wide) in paragraph at lines 390--406
+ [] 
  []
 
 [18
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
+Underfull \hbox (badness 10000) in paragraph at lines 448--449
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 420--421
+Underfull \hbox (badness 10000) in paragraph at lines 456--457
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 429--430
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
 [19]
-Underfull \hbox (badness 10000) in paragraph at lines 437--438
+Underfull \hbox (badness 10000) in paragraph at lines 473--474
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 445--446
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 461--462
+Underfull \hbox (badness 10000) in paragraph at lines 497--498
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 468--471
+Underfull \hbox (badness 10000) in paragraph at lines 504--507
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 480--481
+Underfull \hbox (badness 10000) in paragraph at lines 516--517
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 494--495
+Underfull \hbox (badness 10000) in paragraph at lines 530--531
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 507--508
+Underfull \hbox (badness 10000) in paragraph at lines 543--544
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
+Underfull \hbox (badness 10000) in paragraph at lines 556--557
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 540--541
+Underfull \hbox (badness 10000) in paragraph at lines 576--577
 
+ []
+
+
+Overfull \hbox (1.96077pt too wide) in paragraph at lines 579--581
+[]\T1/cmr/m/n/10 (2.1.b) The pro-gram must al-low couri-ers and ad-mins who en-
+tered a pass-word/username
  []
 
 [21]
-Underfull \hbox (badness 10000) in paragraph at lines 549--550
+Underfull \hbox (badness 10000) in paragraph at lines 585--586
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--564
+Underfull \hbox (badness 10000) in paragraph at lines 599--600
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 571--572
+Underfull \hbox (badness 10000) in paragraph at lines 607--608
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 582--583
+Underfull \hbox (badness 10000) in paragraph at lines 618--619
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 595--596
+Underfull \hbox (badness 10000) in paragraph at lines 631--632
 
  []
 
 [22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 677--678
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 679--682
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 690--691
-
- []
-
-[24
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 692--693
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 694--695
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 695--696
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 700--701
 
  []
 
@@ -901,274 +895,220 @@ Underfull \hbox (badness 10000) in paragraph at lines 706--707
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 708--709
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 710--711
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 726--727
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 712--713
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 714--715
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 716--717
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 718--719
-
- []
-
-[25]
-Underfull \hbox (badness 10000) in paragraph at lines 723--724
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 725--726
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 727--728
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 729--730
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 731--732
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 733--734
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 735--736
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 745--746
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 747--748
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 749--750
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 751--752
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 753--754
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 755--756
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 757--758
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 759--760
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 761--762
-
- []
-
-[26
+[25
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 765--766
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 767--768
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 769--770
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 771--772
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 773--774
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 775--776
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 777--778
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 786--787
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 788--789
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 790--791
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 792--793
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 794--795
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 796--797
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 798--799
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 800--801
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 802--803
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 804--805
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 806--807
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 808--809
-
- []
-
-[27
-
-] [28]
 Chapter 4.
 
-! LaTeX Error: File `Employee App' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.836 ...includegraphics[width=17cm]{Employee App}
-                                                  
-? r
-OK, entering \nonstopmode...
+pdfTeX warning: pdflatex.exe (file ./Architectural Model Design.pdf): PDF inclu
+sion: found PDF version <1.7>, but at most version <1.5> allowed
+<Architectural Model Design.pdf, id=117, 361.35pt x 307.1475pt>
+File: Architectural Model Design.pdf Graphic file (type pdf)
+<use Architectural Model Design.pdf>
+Package pdftex.def Info: Architectural Model Design.pdf  used on input line 771
+.
+(pdftex.def)             Requested size: 271.01184pt x 230.36005pt.
+[26
+
+ <./Architectural Model Design.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./Workers App Use-case Diagram.pdf): PDF inc
+lusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Workers App Use-case Diagram.pdf, id=126, 624.89748pt x 597.20117pt>
+File: Workers App Use-case Diagram.pdf Graphic file (type pdf)
+<use Workers App Use-case Diagram.pdf>
+Package pdftex.def Info: Workers App Use-case Diagram.pdf  used on input line 7
+82.
+(pdftex.def)             Requested size: 406.17854pt x 388.17616pt.
+[27 <./Workers App Use-case Diagram.pdf>] [28]
+
+pdfTeX warning: pdflatex.exe (file ./Patients App Use-case Diagram.pdf): PDF in
+clusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Patients App Use-case Diagram.pdf, id=138, 596.52696pt x 750.64969pt>
+File: Patients App Use-case Diagram.pdf Graphic file (type pdf)
+<use Patients App Use-case Diagram.pdf>
+Package pdftex.def Info: Patients App Use-case Diagram.pdf  used on input line 
+822.
+(pdftex.def)             Requested size: 417.56602pt x 525.4512pt.
 [29
 
-]
+ <./Patients App Use-case Diagram.pdf>] [30]
 
-! LaTeX Error: File `Client App' not found.
+pdfTeX warning: pdflatex.exe (file ./Emergency Notification Activity Diagram.pd
+f): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+<Emergency Notification Activity Diagram.pdf, id=151, 289.08pt x 659.46375pt>
+File: Emergency Notification Activity Diagram.pdf Graphic file (type pdf)
+<use Emergency Notification Activity Diagram.pdf>
+Package pdftex.def Info: Emergency Notification Activity Diagram.pdf  used on i
+nput line 859.
+(pdftex.def)             Requested size: 202.35461pt x 461.62148pt.
+[31
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.877     \includegraphics[width=17cm]{Client App}
-                                                  
-I could not locate the file with any of these extensions:
-.pdf,.png,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+ <./Emergency Notification Activity Diagram.pdf>]
 
-[30
+pdfTeX warning: pdflatex.exe (file ./Form Fill Activity Diagram .pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<Form Fill Activity Diagram .pdf, id=167, 289.08pt x 600.2425pt>
+File: Form Fill Activity Diagram .pdf Graphic file (type pdf)
+<use Form Fill Activity Diagram .pdf>
+Package pdftex.def Info: Form Fill Activity Diagram .pdf  used on input line 86
+7.
+(pdftex.def)             Requested size: 231.2643pt x 480.19464pt.
+[32
 
-] [31] (./MedLabs Application and Tracking System.aux) ) 
+ <./Form Fill Activity Diagram .pdf>]
+<Login Page.pdf, id=185, 376.40625pt x 815.045pt>
+File: Login Page.pdf Graphic file (type pdf)
+<use Login Page.pdf>
+Package pdftex.def Info: Login Page.pdf  used on input line 882.
+(pdftex.def)             Requested size: 177.75908pt x 384.9118pt.
+<Verify Number via SMS.pdf, id=186, 376.40625pt x 815.045pt>
+File: Verify Number via SMS.pdf Graphic file (type pdf)
+<use Verify Number via SMS.pdf>
+Package pdftex.def Info: Verify Number via SMS.pdf  used on input line 888.
+(pdftex.def)             Requested size: 177.75908pt x 384.9118pt.
+ [33
+
+ <./Login Page.pdf> <./Verify Number via SMS.pdf>]
+<Front Page.pdf, id=383, 376.40625pt x 815.045pt>
+File: Front Page.pdf Graphic file (type pdf)
+<use Front Page.pdf>
+Package pdftex.def Info: Front Page.pdf  used on input line 899.
+(pdftex.def)             Requested size: 177.75908pt x 384.9118pt.
+<Home Page.pdf, id=384, 376.40625pt x 815.045pt>
+File: Home Page.pdf Graphic file (type pdf)
+<use Home Page.pdf>
+Package pdftex.def Info: Home Page.pdf  used on input line 905.
+(pdftex.def)             Requested size: 177.75908pt x 384.9118pt.
+ [34
+
+ <./Front Page.pdf> <./Home Page.pdf>]
+<User Profile.pdf, id=598, 376.40625pt x 1007.765pt>
+File: User Profile.pdf Graphic file (type pdf)
+<use User Profile.pdf>
+Package pdftex.def Info: User Profile.pdf  used on input line 916.
+(pdftex.def)             Requested size: 198.66985pt x 531.91397pt.
+<Health Tips.pdf, id=599, 376.40625pt x 1007.765pt>
+File: Health Tips.pdf Graphic file (type pdf)
+<use Health Tips.pdf>
+Package pdftex.def Info: Health Tips.pdf  used on input line 922.
+(pdftex.def)             Requested size: 198.66985pt x 531.91397pt.
+ [35
+
+ <./User Profile.pdf> <./Health Tips.pdf>]
+<Search For Tests Homepage.pdf, id=804, 376.40625pt x 815.045pt>
+File: Search For Tests Homepage.pdf Graphic file (type pdf)
+<use Search For Tests Homepage.pdf>
+Package pdftex.def Info: Search For Tests Homepage.pdf  used on input line 933.
+
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+<Search for Tests.pdf, id=805, 376.40625pt x 815.045pt>
+File: Search for Tests.pdf Graphic file (type pdf)
+<use Search for Tests.pdf>
+Package pdftex.def Info: Search for Tests.pdf  used on input line 939.
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+ [36
+
+ <./Search For Tests Homepage.pdf> <./Search for Tests.pdf>]
+<Checkout With Options.pdf, id=1136, 376.40625pt x 815.045pt>
+File: Checkout With Options.pdf Graphic file (type pdf)
+<use Checkout With Options.pdf>
+Package pdftex.def Info: Checkout With Options.pdf  used on input line 950.
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+<Book In-Lab.pdf, id=1137, 376.40625pt x 815.045pt>
+File: Book In-Lab.pdf Graphic file (type pdf)
+<use Book In-Lab.pdf>
+Package pdftex.def Info: Book In-Lab.pdf  used on input line 956.
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+ [37
+
+ <./Checkout With Options.pdf> <./Book In-Lab.pdf>]
+<Book at Home.pdf, id=1442, 376.40625pt x 815.045pt>
+File: Book at Home.pdf Graphic file (type pdf)
+<use Book at Home.pdf>
+Package pdftex.def Info: Book at Home.pdf  used on input line 967.
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+<Order Confirmation.pdf, id=1443, 376.40625pt x 815.045pt>
+File: Order Confirmation.pdf Graphic file (type pdf)
+<use Order Confirmation.pdf>
+Package pdftex.def Info: Order Confirmation.pdf  used on input line 973.
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+ [38
+
+ <./Book at Home.pdf> <./Order Confirmation.pdf>]
+<Admin Dashboard.pdf, id=1694, 376.40625pt x 815.045pt>
+File: Admin Dashboard.pdf Graphic file (type pdf)
+<use Admin Dashboard.pdf>
+Package pdftex.def Info: Admin Dashboard.pdf  used on input line 984.
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+<View Labs on Map.pdf, id=1695, 376.40625pt x 815.045pt>
+File: View Labs on Map.pdf Graphic file (type pdf)
+<use View Labs on Map.pdf>
+Package pdftex.def Info: View Labs on Map.pdf  used on input line 990.
+(pdftex.def)             Requested size: 198.66985pt x 430.19336pt.
+ [39
+
+ <./Admin Dashboard.pdf> <./View Labs on Map.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./ER Diagram.pdf): PDF inclusion: found PDF 
+version <1.7>, but at most version <1.5> allowed
+<ER Diagram.pdf, id=1965, 637.38126pt x 343.2825pt>
+File: ER Diagram.pdf Graphic file (type pdf)
+<use ER Diagram.pdf>
+Package pdftex.def Info: ER Diagram.pdf  used on input line 1002.
+(pdftex.def)             Requested size: 446.16383pt x 240.2961pt.
+
+Overfull \hbox (27.91016pt too wide) in paragraph at lines 1002--1003
+ [][] 
+ []
+
+[40
+
+ <./ER Diagram.pdf>]
+File: ER Diagram.pdf Graphic file (type pdf)
+<use ER Diagram.pdf>
+Package pdftex.def Info: ER Diagram.pdf  used on input line 1010.
+(pdftex.def)             Requested size: 637.3797pt x 343.28165pt.
+
+
+LaTeX Warning: Float too large for page by 67.8495pt on input line 1013.
+
+[41] (./MedLabs Application and Tracking System.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8861 strings out of 480488
- 130998 string characters out of 5903860
- 466916 words of memory out of 5000000
- 24728 multiletter control sequences out of 15000+600000
- 545180 words of font info for 43 fonts, out of 8000000 for 9000
+ 9132 strings out of 480488
+ 137098 string characters out of 5903860
+ 469208 words of memory out of 5000000
+ 24973 multiletter control sequences out of 15000+600000
+ 544845 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,9n,96p,1048b,401s stack positions out of 5000i,500n,10000p,200000b,80000s
-{a:/TexLive/2020/texmf-
-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{a:/TexLive/2020/texmf-dist/font
-s/enc/dvips/cm-super/cm-super-t1.enc}<a:/TexLive/2020/texmf-dist/fonts/type1/pu
-blic/cm-super/sfbx1000.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-su
-per/sfbx1200.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx14
-40.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb><a:
-/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb><a:/TexLive/2
-020/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><a:/TexLive/2020/texmf-
-dist/fonts/type1/public/cm-super/sfcc1200.pfb><a:/TexLive/2020/texmf-dist/fonts
-/type1/public/cm-super/sfcc1440.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/pub
-lic/cm-super/sfcc1728.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-sup
-er/sfrm0900.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm100
-0.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on "MedLabs Application and Tracking System.pdf" (32 pages, 3786
-85 bytes).
+ 55i,9n,96p,1039b,428s stack positions out of 5000i,500n,10000p,200000b,80000s
+{a:/TexLive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<a:/TexL
+ive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><a:/TexLive/2020/t
+exmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><a:/TexLive/2020/texmf-dist/
+fonts/type1/public/cm-super/sfbx1440.pfb><a:/TexLive/2020/texmf-dist/fonts/type
+1/public/cm-super/sfbx1728.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/c
+m-super/sfbx2074.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sf
+bx2488.pfb><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1200.pfb
+><a:/TexLive/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1440.pfb><a:/TexLi
+ve/2020/texmf-dist/fonts/type1/public/cm-super/sfcc1728.pfb><a:/TexLive/2020/te
+xmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb><a:/TexLive/2020/texmf-dist/f
+onts/type1/public/cm-super/sfrm1000.pfb><a:/TexLive/2020/texmf-dist/fonts/type1
+/public/cm-super/sfrm1200.pfb>
+Output written on "MedLabs Application and Tracking System.pdf" (42 pages, 4508
+984 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 2019 PDF objects out of 2073 (max. 8388607)
+ 481 compressed objects within 5 object streams
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

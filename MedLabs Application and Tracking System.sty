@@ -1,21 +1,21 @@
 \documentclass{report}
 \usepackage[pdftex]{graphicx}
 \usepackage{slantsc}
-\usepackage[a4paper, total={6.2in, 8in}]{geometry}
+\usepackage[a4paper]{geometry}
 \usepackage[toc, acronym]{glossaries}
-\graphicspath{ {figures/} }
 \usepackage{array}
 \usepackage{caption}
 \usepackage{titlesec}
+\usepackage{subcaption}
 \usepackage[T1]{fontenc}
 \usepackage[table]{xcolor}
+\graphicspath{ {figures/} }
 \DeclareGraphicsExtensions{.pdf,.png}
-
 \renewcommand{\arraystretch}{1.8}
 
 \makeglossaries
 
-\newacronym{rss}{HTML}{Royal Scientific Society.}
+\newacronym{rss}{RSS}{Royal Scientific Society.}
 \newacronym{gps}{GPS}{Global Position System.}
 \newacronym{gsm}{GSM}{Global System for Mobile Communications.}
 \newacronym{sim}{SIM}{Subscriber Identification Module.}
@@ -23,110 +23,140 @@
 \newacronym{html}{HTML}{Hypertext Markup Language.}
 \newacronym{css}{CSS}{Cascading Style Sheetsage.}
 \newacronym{er}{ER}{Entity Relationship.}
+\newacronym{ui}{UI}{User Interface.}
+\newacronym{js}{JS}{JavaScript.}
 
 \begin{document}
 \begin{titlepage}
-	\begin{center}
-	\includegraphics[width=4cm]{Logo}\par
-		\vspace{.05\textheight}
-		{\LARGE\scshape Princess Sumaya University for Technology\par}
-		\vspace{.05\textheight}
-		{\Large\scshape King Hussein School of Computing Sciences\par}
-		\vspace{.07\textheight}
-		{\large Prepared by \textsc{Abdullah Beano and Hasan Sammour}\par}
-		\vspace{.05\textheight}
-		{\Huge\bfseries MedLabs Application and Tracking System\par}
-		\vspace{.08\textheight}
-		{\large Supervised by Mohammad Abu-Snober\par}
-		\vspace{.10\textheight}
+  \begin{center}
+  \includegraphics[width=4cm]{Logo}\par
+    \vspace{.05\textheight}
+    {\LARGE\scshape Princess Sumaya University for Technology\par}
+    \vspace{.05\textheight}
+    {\Large\scshape King Hussein School of Computing Sciences\par}
+    \vspace{.07\textheight}
+    {\large Prepared by \textsc{Abdullah Beano and Hasan Sammour}\par}
+    \vspace{.05\textheight}
+    {\Huge\bfseries MedLabs Applications, Website, and Tracking System\par}
+    \vspace{.08\textheight}
+    {\large Supervised by Mohammad Abu-Snober\par}
+    \vspace{.10\textheight}
     {\small Project submitted in partial fulfillment for the degree of Bachelor of Science in Computer Science\par}
-		\vspace{.05\textheight}
+    \vspace{.05\textheight}
     {\small 2019 - 2020\par}
   \end{center}
 \end{titlepage}
 
-\section*{\LARGE {Declaration of Originality}} \vspace{.05\textheight}
+\section*{\LARGE {Declaration of Originality}}
 
 This document has been written entirely by the undersigned team members of the project. 
-The source of every quoted text is clearly cited and there is no ambiguity in where the quoted text begins and ends. 
-The source of any illustration, image, or table that is not the work of the team members is also clearly cited. 
-We are aware that using non-original text or material or paraphrasing or modifying it without proper citation is a violation of the university’s regulations 
-and is subject to legal actions.
-\newpage
+The source of every quoted text is clearly cited and there is no ambiguity in where the 
+quoted text begins and ends. The source of any illustration, image, or table that is not 
+the work of the team members is also clearly cited. We are aware that using non-original 
+text or material or paraphrasing or modifying it without proper citation is a violation 
+of the university’s regulations and is subject to legal actions.
+\clearpage
 
-\section*{\LARGE {Acknowledgments}} \vspace{.05\textheight}
+\section*{\LARGE {Acknowledgments}}
 
-We'd like to offer our deepest feelings of gratitude to our supervisor, Dr. Mohammad Abo-Snober, for his efforts throughout this project were of notable significance. 
-We'd also like to thank Dr. Abdullah Darweesh for the invaluable advice and direction he'd provided, Eng. Iyad Al-Dasouqi for the great deal of motivation he'd brought and continues to bring to everybody around him, 
-Eng. Khalid Al-Samhouri for the tremendous work he's put forward helping us understand the requirements we'd have to meet for a successful project, 
-and Eng. Islam Ahmad and the entire RSS team for the appreciated knowledge and experience they'd helped us
-gain in this project. Not to mention our families, friends, and loved ones for their enchanting prayers and graceful wishes.
-
-\newpage
+We'd like to offer our deepest feelings of gratitude to our supervisor, 
+Dr. Mohammad Abo-Snober, for his efforts throughout this project were of notable significance. 
+We'd also like to thank Dr. Abdullah Darweesh for the invaluable advice and direction he'd 
+provided, Eng. Iyad Al-Dasouqi for the great deal of motivation he'd brought and continues 
+to bring to everybody around him, Eng. Khalid Al-Samhouri for the tremendous work he's put 
+forward helping us understand the requirements we'd have to meet for a successful project, 
+and Eng. Islam Ahmad and the entire RSS team for the appreciated knowledge and experience 
+they'd helped us gain in this project. Not to mention our families, friends, and loved ones 
+for their enchanting prayers and graceful wishes.
+\clearpage
 
 \addcontentsline{toc}{section}{Abstract} 
-\section*{\LARGE {Abstract}} \vspace{.05\textheight}
+\section*{\LARGE {Abstract}}
 
-The efficient use of new and upcoming technologies is significant when developing software. And for which, a real-time tracking system will be used in this project to maximise productivity 
-in a courier-based system currently operated by MedLabs to process all the different medical samples. Moreover, two applications will be developed, both of which are
-for MedLabs as well. The first application will be used by patients and will provide all the necessary services typically present in similar applications. 
-The patients will also be able to fill a form requesting a medical sample to be taken from them from their homes. This is currently done through the call-center at MedLabs. 
-Which introduces difficulties for the patients as well as MedLabs themselves. The second application will be used by the couriers and the admins working for MedLabs, 
-with each of them being able to make use of functionalities relevant to their roles. A real-time tracking system that uses GPS technology developed by fellow students from 
-PSUT's King Abdullah II School of Engineering will be used by the admins to assign tasks to the couriers as effectively and efficiently as possible.
-\newpage
+The efficient use of new and upcoming technologies is significant when developing software. 
+And for which, a real-time tracking system will be used in this project to maximise productivity 
+in a courier-based system currently operated by MedLabs to process all the different medical 
+samples. Moreover, two applications will be developed, both of which are for MedLabs as well. 
+The first application will be used by patients and will provide all the necessary services 
+typically present in similar applications. The patients will also be able to fill a form 
+requesting a medical sample to be taken from them from their homes. This is currently 
+done through the call-center at MedLabs. Which introduces difficulties for the patients as well 
+as MedLabs themselves. The second application will be used by the couriers and the admins 
+working for MedLabs, with each of them being able to make use of functionalities relevant 
+to their roles. A real-time tracking system that uses GPS technology developed by fellow 
+students from PSUT's King Abdullah II School of Engineering will be used by the admins 
+to assign tasks to the couriers as effectively and efficiently as possible.
+\clearpage
 
 \addcontentsline{toc}{section}{List of Abbreviations}
-\section*{\LARGE {List of Abbreviations}} \vspace{.05\textheight}
+\section*{\LARGE {List of Abbreviations}}
 
 \printglossary[type=\acronymtype]
-\acrfull{rss} \\ \acrfull{gps} \\ \acrfull{gsm} \\ \acrfull{sim} \\ \acrfull{gui} \\ \acrfull{html} \\ \acrfull{css} \\ \acrfull{er}
-\newpage
+\acrfull{rss} \\ \acrfull{gps} \\ \acrfull{gsm} \\ \acrfull{sim} \\ \acrfull{gui} \\ \acrfull{html} \\ \acrfull{css} \\ \acrfull{er} \\
+\acrfull{ui} \\ \acrfull{js}
 
 \tableofcontents
-\newpage
 
 \addcontentsline{toc}{section}{\listfigurename}
 \listoffigures
-\newpage
 
 \addcontentsline{toc}{section}{\listtablename}
 \listoftables
-\newpage
 
 \chapter[Introdution]{Introdution}
 
 \section[Overview]{Overview}
 
-The real-time tracking system of the different couriers working for MedLabs in Amman will function as follows – 
-these couriers’ main job is to deliver the different medical samples from MedLabs' branches to the main branch for further testing. 
-A portion of these workers is also lab technicians who will be taking samples from the patients from their homes. The system will track all of their routes and display them on the admin's dashboard. 
-This will allow the admins to allocate tasks to couriers as efficiently as possible. All of which will be achieved through the workers' application that will serve admins and couriers alike. 
-MedLabs' patients will be able to fill request-forms for samples to be taken from home by a capable lab technician using the separate application developed for the patients. \\
-There's an undeniable value when it comes to making improvements to the health-care system in Jordan or anywhere else. 
-And a system that is dynamic, modern, and powerful is of unquestionable significance if we'd like our communities to grow strong. 
-As for us working to build this project, learning new software, hardware, and technologies is both exhilarating and meaningful. 
-And growing an entrepreneurial sense by delving into a new field such as this will greatly benefit our careers moving forward.
+The real-time tracking system of the different couriers working for MedLabs in Amman will 
+function as follows – these couriers’ main job is to deliver the different medical samples 
+from MedLabs' branches to the main branch for further testing. A portion of these workers 
+is also lab technicians who will be taking samples from the patients from their homes. 
+The system will track all of their routes and display them on the admin's dashboard. 
+This will allow the admins to allocate tasks to couriers as efficiently as possible. 
+All of which will be achieved through the workers' application that will serve admins and 
+couriers alike. MedLabs' patients will be able to fill request-forms for samples to be taken 
+from home by a capable lab technician using the separate application developed for the patients. \\
+There's an undeniable value when it comes to making improvements to the health-care system in 
+Jordan or anywhere else. And a system that is dynamic, modern, and powerful is of 
+unquestionable significance if we'd like our communities to grow strong. As for us working 
+to build this project, learning new software, hardware, and technologies is both exhilarating 
+and meaningful. And growing an entrepreneurial sense by delving into a new field such as 
+this will greatly benefit our careers moving forward.
+\begin{center}
+  \line(1,0){250}
+\end{center}
 
 \section[Problem Statement]{Problem Statement}
 
 The current system that's in place to serve patients from their homes is inefficient and costly. 
-As it is based on the patients making phone calls directly to the call center to make an arrangement for their samples to be taken at home. 
-Which introduces a need for more employees on the line, a bigger and more capable call-center, and perhaps even customer dissatisfaction in case the service was lousy or unavailable. 
-This unfit and often confusing system will be renovated by the software to be developed in this project. Applications that will make the process far simpler, faster, and convenient for the patients. 
-While lifting sizeable load off the call-center. Moreover, a real-time tracking system of the couriers will also greatly benefit the MedLabs business as a whole, 
-by boosting the effectiveness of delivering the samples from and to the different branches.
-\newpage
+As it is based on the patients making phone calls directly to the call center to make an 
+arrangement for their samples to be taken at home. Which introduces a need for more employees 
+on the line, a bigger and more capable call-center, and perhaps even customer dissatisfaction 
+in case the service was lousy or unavailable. This unfit and often confusing system will be 
+renovated by the software to be developed in this project. Applications that will make the 
+process far simpler, faster, and convenient for the patients. While lifting sizeable load 
+off the call-center. Moreover, a real-time tracking system of the couriers will also greatly 
+benefit the MedLabs business as a whole, by boosting the effectiveness of delivering the 
+samples from and to the different branches.
 
 \section[Related Work]{Related Work}
 
 The Ground Positioning System (GPS) is owned and operated by the United States of America. 
-It's a powerful system of more than 30 satellites orbiting the earth and constantly keeping a steady flow of signals being sent to ground stations scattered across the planet. 
-This allows for the satellites' position to be known at all times. Using signals from at least 4 of those satellites, a receiver can deduce its accurate position on the ground. 
-This type of advanced and free to use technology should be used to better and improve existing and upcoming projects. 
-This will be achieved in this project as we'll be incorporating a project our fellow students from PSUT's King Abdullah II School of Engineering have been working on. 
-The project consists of a real-time tracking system that uses GPS to provide the most reliable positioning possible, regardless of whether the user has an active internet connection or not. 
-This system will be built into each of the couriers' vehicles. And as long as a straight unobstructed line of sight is maintained between the vehicle and at least 4 satellites, the tracking will not be interrupted. 
+It's a powerful system of more than 30 satellites orbiting the earth and constantly keeping 
+a steady flow of signals being sent to ground stations scattered across the planet. 
+This allows for the satellites' position to be known at all times. Using signals from at least 
+4 of those satellites, a receiver can deduce its accurate position on the ground. 
+This type of advanced and free to use technology should be used to better and improve existing 
+and upcoming projects. This will be achieved in this project as we'll be incorporating a 
+project our fellow students from PSUT's King Abdullah II School of Engineering have been 
+working on. The project consists of a real-time tracking system that uses GPS to provide the 
+most reliable positioning possible, regardless of whether the user has an active internet 
+connection or not. This system will be built into each of the couriers' vehicles. 
+And as long as a straight unobstructed line of sight is maintained between the vehicle and 
+at least 4 satellites, the tracking will not be interrupted. 
+\begin{center}
+  \line(1,0){250}
+\end{center}
 
 \section[Document Outline]{Document Outline}
 
@@ -137,11 +167,12 @@ The remainder of this document is arranged as follows:
   \item [-] Chapter 4 illustrates the system's design using a plethora of diagrams and descriptions.
 \end{itemize}
 
-
 \chapter[Project Plan]{Project Plan}
 
 \section[Project Deliverables]{Project Deliverables}
 
+The project aims to deliver on multiple goals. They're explained in the following table.
+The status of each goal is mentioned as well.
 \begin{center}
   \begin{tabular}{ | m{0.6cm} | m{10cm} | m{2cm} | }
     \hline
@@ -165,12 +196,16 @@ The remainder of this document is arranged as follows:
 
 \section[Project Timeline]{Project Timeline}
 
-It's the aim for deliverables PD2 through PD4 to be delivered as fully functional software by the end of the first semester of the academic year 2020-2021. And the discussion of the second part of the project
-including all implementation and testing will be held on a date to be specified by the university at a later time. 
+It's the aim for deliverables PD2 through PD4 to be delivered as fully functional software 
+by the end of the first semester of the academic year 2020-2021. And the discussion of the 
+second part of the project including all implementation and testing will be held on a date 
+to be specified by the university at a later time. 
 \clearpage
 
 \section[Project Tasks]{Project Tasks}
 
+The project has been broken down into unambiguous and coherent tasks. Each task's description
+and dependencies are detailed in the following table.
 \begin{center}
   \begin{longtable}{ | m{0.6cm} | m{4cm} |  m{4.5cm} | m{1.3cm} | m{2cm} | }
     \multicolumn{5}{c}{\textbf{\large{Analysis Phase}}}\\
@@ -209,22 +244,21 @@ including all implementation and testing will be held on a date to be specified 
   \end{longtable}
   \captionof{table}{Project Tasks}
 \end{center}
-\clearpage
 
 \section[Gantt Chart]{Gantt Chart}
 
-Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in this project. Phase 3 - implementation - and phase 4 - testing - will be illustrated as the project progresses.
-
-\begin{center}
-  \begin{figure}[h]
-    \includegraphics[width=16cm, scale=1]{Gantt Chart}
-    \caption{Gantt Chart}
-  \end{figure}
-\end{center}
-\clearpage
+Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in the project. 
+Phase 3 - implementation - and phase 4 - testing - will be illustrated as the project progresses.
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.5]{Gantt Chart}
+  \caption{Gantt Chart}
+\end{figure}
 
 \section[Roles and Responsibilities]{Roles and Responsibilities}
 
+The tasks assigned to each team member are cited in the table below with clear a clear 
+description of each task.
 \begin{center}
   \begin{longtable}{ | m{0.4cm} | m{6cm} | m{6cm} | }
     \multicolumn{3}{c}{\textbf{\large{Abdullah's Responsibilities}}}\\
@@ -279,6 +313,8 @@ Figure 2.1 below depicts the Gantt Chart detailing the timeline for the tasks in
 
 \section[Risk Assessment]{Risk Assessment}
 
+The problems the project may run into relating to each individual task and the plans put in 
+place to cope with those problems are described in the following table.
 \begin{center}
   \begin{longtable}{ | m{0.6cm} | m{3cm} |  m{4cm} | m{1.5cm} | m{3.6cm} | }
     \hline
@@ -342,12 +378,14 @@ needed aid in their tasks.
   \item [-] TeamGantt was used to create the Gantt Chart.
   \item [-] Creately was used to illustrate the different use-case diagrams.
   \item [-] Lucidchart was used to build the activity diagrams and the entity-relationship (ER) diagram.
+  \item [-] AdobeXD was used to create the prototype for the user interface.
 \end{itemize}
 
 \chapter[Requirements Specification]{Requirements Specification}
 
 \section[Stakeholders]{Stakeholders}
 
+Each group of stakeholders and the importance of their roles are described by the following table
 \begin{center}
   \begin{tabular}{ | m{4cm} |  m{7cm} | m{3cm} | }
       \hline
@@ -374,24 +412,22 @@ needed aid in their tasks.
 
 \section[Platform Requirements]{Platform Requirements}
 
-\subsection[Mobile Applications and Website]{Mobile Applications and Website} \vspace{.01\textheight} 
+\subsection[Mobile Applications and Website]{Mobile Applications and Website} 
 The mobile application will be developed using the React JavaScript library for Android and iOS. 
-The application is rather simple and not at all taxing and will run without trouble on almost any mobile device with an active internet connection. \\
-The website will be accessible and should run effectively on any desktop or laptop with an active internet connection.
+The application is rather simple and not at all taxing and will run without trouble on almost any mobile device with an active internet connection.
+The website will be accessible and should also run effectively on any desktop or laptop with an active internet connection.
 
-\subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
-The hardware used in this project is an Arduino based vehicle tracking system. Arduino is a single-board microcontroller that - in this case -  
-uses a Global Positioning System (GPS), and a Global System for Mobile Communications (GSM) to achieve real-time tracking of any vehile or object that bears and makes use of
-a SIM card even if it's offline. \\ The system will be assembled inside of the vehicle. Two applications, for the admininstrator and the employee will be
-developed to track all the vehicles.
-
+\subsection[The Tracking System]{The Tracking System} 
+The hardware used in this project is an Arduino-based vehicle tracking system. Arduino is a single-board microcontroller that - in this case -  
+uses a Global Positioning System (GPS), and a Global System for Mobile Communications (GSM) to achieve real-time tracking of any vehicle or object that bears and makes use of
+a SIM card even if it's offline. The system will be assembled inside of the vehicle.
 \begin{center}
   \line(1,0){250}
 \end{center}
 
 \section[Functional Requirements]{Functional Requirements}
 
-\subsection{The Client's Application and Website} \vspace{.01\textheight} 
+\subsection{The Patients Application and Website} 
 
 \begin{enumerate}
   
@@ -409,24 +445,24 @@ developed to track all the vehicles.
           The password should contain at least: One number, one lowercase letter, 
           and one uppercase letter. 
           The phone number should be valid.                  
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
-      \item (1.1.b) The program must allow a user who entered a password / username combination that matches one in the database to access the account.
+      \item (1.1.b) The program must allow a user who entered a password/username combination that matches one in the database to access the account.
         \begin{itemize}
           \item [-] Input: A valid username and a valid password.
           \item [-] Output: The user will be directed to his home page in the application.
           \item [-] Constraints: The combination of the username and the password entered must match the combination stored in the database.                  
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}     
 
       \item (1.1.c) The program must allow a user who forgot their account’s password to reset it using the phone number linked to that account.
-      The user will have to provide a valid username, and a valid personal phone number.
+      The user will have to provide a valid username and a valid personal phone number.
         \begin{itemize}
           \item [-] Input: A valid username, and a valid phone number.
           \item [-] Output: A randomly-generated new password sent to the user’s phone number. The user can change this password once they log in.
           \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
       \item (1.1.d) The program should allow a user who forgot their account’s username to reset it using the phone number linked to that account.
@@ -434,7 +470,7 @@ developed to track all the vehicles.
           \item [-] Input: A valid phone number and a valid password.
           \item [-] Output: A randomly-generated new username sent to the user’s phone number. The user can change this username once he logs in.
           \item [-] Constraints: A risk of a lost phone being accessed by other users.                  
-          \item [-] Priority: S; should have. \\
+          \item [-] Priority: S; should-have. \\
         \end{itemize}   
 
       \item (1.1.e) The program could allow the user to login using their phone number and their password instead of the username and password.
@@ -442,7 +478,7 @@ developed to track all the vehicles.
           \item [-] Input: A valid phone number and a valid password.
           \item [-] Output: The user will be directed to his home page in the application.
           \item [-] Constraints: The combination of the phone number and the password entered must match the combination stored in the database.                  
-          \item [-] Priority: Co; could have. \\
+          \item [-] Priority: Co; could-have. \\
         \end{itemize}  
 
     \end{enumerate}
@@ -452,32 +488,32 @@ developed to track all the vehicles.
     \begin{enumerate}
 
       \item (1.2.a) The program must allow the user to edit information related to their account. 
-      Which includes: The username, password, phone number, first name, last name, personal avatar / image, and blood type.
+      Which includes: The username, password, phone number, first name, last name, personal avatar/image, and blood type.
         \begin{itemize}
           \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
           \item [-] Output: Updated user information being stored in the database.
           \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
           to make sure no user modifies another’s information.                  
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
                
-      \item (1.2.b) The program must allow the user to view their history of tests done, and lists of scheduled and ongoing tests.
+      \item (1.2.b) The program must allow the user to view their history of tests done and lists of scheduled and ongoing tests.
         \begin{itemize}
           \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
           \item [-] Output: Updated user information being stored in the database.
           \item [-] Constraints: The profile editing interface is only accessible to the user after logging in successfully 
           to make sure no user modifies another’s information.                  
-          item [-] Priority: Mo; must have. \\
+          item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
       \item (1.2.c) The program must notify the user with the following:
-      a) Confirmation of the time, location and type of sample to be taken - specified by the user - once the request has been processed by the system. 
+      a) Confirmation of the time, location, and type of sample to be taken - specified by the user - once the request has been processed by the system. 
       b) A sample has been tested and the results are ready. In which case the results will be shown in the list of history of tests.
         \begin{itemize}
           \item [-] Input: None.
           \item [-] Output: A Notification from the system to the user.
           \item [-] Constraints: Requires an active internet connection.                  
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
     \end{enumerate}
@@ -491,7 +527,7 @@ developed to track all the vehicles.
           \item [-] Input: Bits of information entered by the user in their respective fields on the GUI.
           \item [-] Output: Data formatted in JSON.
           \item [-] Constraints: Insufficient data entered by the user.                
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
     \end{enumerate}
@@ -499,12 +535,12 @@ developed to track all the vehicles.
   \item \textbf{Processing of collected data}
 
     \begin{enumerate}
-      \item (1.4.a) The program must send an API data request with the correct permission, and parameter in order to process it in the database.
+      \item (1.4.a) The program must send an API data request with the correct permission and parameters for them to be processed in the database.
         \begin{itemize}
           \item [-] Input: Collected data formatted in JSON.
           \item [-] Output: Processed data to be stored in the database.
           \item [-] Constraints: The data should be secured with its designated user. A Token/Key technique is used to represent the claim between the two parties.               
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
     \end{enumerate}
@@ -517,18 +553,18 @@ developed to track all the vehicles.
           \item [-] Input: Processed data.
           \item [-] Output: Data stored in the database.
           \item [-] Constraints: The data should be accurately stored.               
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
     \end{enumerate}
 
 \end{enumerate}
 
-\subsection{Admin and Courier Application} \vspace{.01\textheight} 
+\subsection{Admin and Courier Application} 
 
 \begin{enumerate}
 
-  \item \textbf{System Related Requirements}
+  \item \textbf{Account Related Requirements}
 
     \begin{enumerate}
 
@@ -537,16 +573,16 @@ developed to track all the vehicles.
           \item [-] Input: Notification from an impaired courier.
           \item [-] Output: Notification to the nearest courier to the incident.
           \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
-      \item (2.1.b) The program must allow couriers and admins who entered a password / username combination that matches one in the database to access their accounts and be
+      \item (2.1.b) The program must allow couriers and admins who entered a password/username combination that matches one in the database to access their accounts and be
       directed to the proper interface depending on their job title.
         \begin{itemize}
           \item [-] Input: A valid username and a valid password.
           \item [-] Output: The user will be directed to the interface related to their job title.
           \item [-] Constraints: The combination of the username and the password entered must match the combination stored in the database.                  
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize} 
 
     \end{enumerate}
@@ -560,7 +596,7 @@ developed to track all the vehicles.
           \item [-] Input: Input by the admin on the GUI.
           \item [-] Output: Task allocation and editting.
           \item [-] Constraints: Need for an active internet connection to send and receive information.                 
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
       \item (2.2.b) The system must provide real-time tracking of the couriers' vehicles.
@@ -568,7 +604,7 @@ developed to track all the vehicles.
           \item [-] Input: Latitude and longitude provided by a GPS device.
           \item [-] Output: An accurate position of the courier on admin's map.
           \item [-] Constraints: Connection to the GPS device being lost.                 
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
       \item (2.2.c) The system must allow the admin to create a new account using a username and a password.
@@ -579,7 +615,7 @@ developed to track all the vehicles.
           The password should contain at least: One number, one lowercase letter, 
           and one uppercase letter. 
           The phone number should be valid.                  
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
     \end{enumerate}
 
@@ -592,260 +628,168 @@ developed to track all the vehicles.
           \item [-] Input: None
           \item [-] Output: Tasks allocated to the courier.
           \item [-] Constraints: Need for an active internet connection to send and receive notifications.                 
-          \item [-] Priority: Mo; must have. \\
+          \item [-] Priority: Mo; must-have. \\
         \end{itemize}
 
     \end{enumerate}
 
 \end{enumerate}
 
-\begin{center}
-  \line(1,0){250}
-\end{center}
-
 \section[Non-Functional Requirements]{Non-Functional Requirements}
-
-\subsection{Mobile Application and Website} \vspace{.01\textheight} 
 
 \begin{enumerate}
 
   \item \textbf{Usability} \vspace{.01\textheight} \\ 
   All system features shall be simple, transparent, and user-friendly to all archetypes of users. 
   A clean GUI and clear indicators and labels on all text-fields in the forms will allow users to fill them as conveniently as possible.
+  The system shall also use an unambiguous and user-friendly map to track the couriers distinctly. 
 
-  \item \textbf{Performance} \vspace{.01\textheight}  \\
+  \item \textbf{Performance} \vspace{.01\textheight} \\
   The program will perform swiftly and smoothly to make sure the forms are submitted and processed in a timely manner 
   so appointments can be made while delivering results as soon as they’re ready.
+  The system shall also run in real-time to track the couriers with no delays as long as the GPS hardware device is functioning properly.
 
-  \item \textbf{Security} \vspace{.01\textheight} \\ 
+  \item \textbf{Security}\vspace{.01\textheight} \\ 
   There will be multiple functionalities in place to provide a secure program that assures the users of their information's safety. 
   And they're as follows
     \begin{itemize}
-      \item [-] No user can access any information unless they login. This will prevent users from gaining access to other users’ personal information.
+      \item [-] No user can access any information unless they log in. This will prevent users from gaining access to other users’ personal information.
       \item [-] All passwords will be hashed and stored in a protected database to prevent any leaks of information.
-      The un-reversable hashing will provide additional security in case of a security breach.
+      The un-reversible hashing will provide additional security in case of a security breach.
     \end{itemize}
 
-  \item \textbf{Availability} \vspace{.01\textheight}  \\ 
+  \item \textbf{Availability} \vspace{.01\textheight} \\ 
   The program will be available for use to fill forms at all times. Exceptions may occur during system maintenance.
   Which shall be conducted during times of minimum traffic.
 
-  \item \textbf{Portability} \vspace{.01\textheight}  \\
+  \item \textbf{Portability} \vspace{.01\textheight} \\
   The program will be available as an application downloadable for Android and iOS. The program will conjointly be available as a website in like manner.
 
-\end{enumerate}
-\clearpage
-
-\subsection[Specimen Tracking System]{Specimen Tracking System} \vspace{.01\textheight} 
-
-\begin{enumerate}
-
-  \item \textbf{Usability} \vspace{.01\textheight} \\ 
-  The system shall use an unambiguous and user-friendly map to track the couriers distinctly. 
-  While sending automatic notifications to couriers in case of an emergency being reported.
-
-  \item \textbf{Performance} \vspace{.01\textheight}  \\
-  The system shall run in real-time to track the couriers with no delays as long as the GPS hardware device is functioning properly. 
-
-  \item \textbf{Availability} \vspace{.01\textheight}  \\ 
-  Unavailability might occur during system maintenance. 
-  This should not cause significant hindrance to any operations since the maintenance shall be concluded during off-times for couriers.
-
-  \item \textbf{Maintainability} \vspace{.01\textheight}  \\
+  \item \textbf{Maintainability} \vspace{.01\textheight} \\
   Any new couriers being added should not cause any complications to the system as a whole. And maintenance shall conclude during couriers’ off-time.
 
 \end{enumerate}
+\begin{center}
+  \line(1,0){250}
+\end{center}
 
 \section[Other Requirements]{Other Requirements}
 
-\subsection[Hardware Specification]{Hardware Specification} \vspace{.01\textheight}
+\subsection[Hardware Specification]{Hardware Specification}
 
-An arduino based device will be used within the system. Integrating it with the web service developed. 
-The device revolves around the usage of GPS, and GSM, a circuit is designed to track the location of the vehicles using these technologies.
-The tracking system sends geographical coordinates back to the web server, feeding the data into the cloud. 
-By using this system, we are able to share real time information about transportation. 
-This will also aid the means of transportation by providing shortest paths to a certain coordinate to the user. \\
-GSM module is used in this scenario for sending the coordinates of the vehicle to the server. 
-GPS handles the continuous results of coordinates as a form of string data, known as longitude and latitude. 
-Integrating it with the graphical user interface application, 
-gives us the capability to showcase the location of a vehicle on a map dashboard in real-time.
+An Arduino based device will be used within the system. Integrating it with the web service developed. 
+The device revolves around the usage of GPS and GSM. A circuit is designed to track the location of the vehicles using these technologies. The tracking system sends geographical coordinates back to the web server, 
+feeding the data into the cloud. By using this system, we can share real-time information about transportation. This will also aid the means of transportation by providing the shortest paths to a certain 
+coordinate to the user.\\ GSM is used in this scenario for sending the coordinates of the vehicle to the server. The GPS handles the continuous results of coordinates as a form of string data, 
+known as longitude and latitude. Integrating it with the graphical user interface application gives us the capability to showcase the location of a vehicle on a map on a dashboard in real-time.
 
 \subsection[Software Specification]{Software Requirements}
 
 \begin{enumerate}
 
-  \item \textbf{Recognition Model Requirements} \vspace{.01\textheight} \\ 
+  \item \textbf{Recognition Model Requirements} \\
+
+  With the addition of an Arduino based tracking device, tracking would be effortless. An API would be handling all the traffic between the server, and the application, 
+  hosting all the data on the cloud for ease of access and efficiency. Using Python, a high-level programming language that serves a general-purpose. It is dynamic and is widely used within the 
+  scope of data scientists. Python allows the use of a variety of functionalities included for the utilization of data analysis and machine learning. Such as:
+    \begin{itemize}
+      \item [-] Create a CSV output to easily read and manipulate data in a spreadsheet.
+      \item [-] Integration of SQL (Read, Write).
+      \item [-] Using PySpark to build a machine learning model.
+      \item [-] NumPy, and Pandas Tool for Data Analytics.
+    \end{itemize}
+
+  \item \textbf{User Interface Requirements}
+
+    \begin{enumerate}
+
+      \item \textbf{Website Requirements} \\ 
+      
+      The purpose of a website is to engage, inform, and give easy access to users with just nothing but an active internet connection. Investing in a website helps invest in the idea of the project and give 
+      room for growth. A variety of tools will be used to develop the application. And they're explained as follows:
+        \begin{enumerate}
+          \item \textbf{Front-End}
+            \begin{itemize}
+              \item [-] React Javascript will be used to develop the interactive user interfaces and the different functionalities of the website.
+              \item [-] Redux will be used to maintain the state of the application in a single tree object.
+              \item [-] React-Bootstrap will be used as the main front-end framework to build the user interface components.
+            \end{itemize}
+          \item \textbf{Back-End}
+            \begin{itemize}
+              \item [-] NodeJS will be used for the server-side JavaScript environment, which will be the core back-end for the website.
+              \item [-] REST API. The HTTP requests made by the application will be handled by a RESTful API.
+              \item [-] SQL (MySQL, MONGO, or Firebase). Real-time tracking information will be stored on a database such as MySQL or Firebase.
+            \end{itemize}
+        \end{enumerate}
+        \clearpage
+
+      \item \textbf{Application Requirements} \\ 
+
+      A variety of tools will be used to develop the application. And they're as follows:
+        \begin{enumerate}
+          \item \textbf{Front-End}
+            \begin{itemize}
+              \item [-] React Native. The React JS Library will be used to develop the interactive user interfaces and the varying functionalities of the mobile applications on both iOS and Android.
+              \item [-] Redux will be used to maintain the state of the application in a single tree object.
+              \item [-] React Navigation will be used to handle the routing and navigation for the react application.
+              \item [-] React-Bootstrap will be used as the main front-end framework to build the user interface components.
+            \end{itemize}
+          \item \textbf{Back-End}
+            \begin{itemize}
+              \item [-] NodeJS will be used for the server-side JavaScript environment, which will be the core back-end for the application.
+              \item [-] REST API. The HTTP requests made by the application will be handled by a RESTful API.
+              \item [-] SQL (MySQL, MONGO, or Firebase). Real-time tracking information will be stored on a database such as MySQL or Firebase.
+            \end{itemize}
+        \end{enumerate}
+    \end{enumerate}
+
+
+  \item \textbf{Other Tools}
+    \begin{itemize}
+      \item [-] React Native Tools. An extension offering a helpful environment to develop React Native Projects.
+      \item [-] React Developer Tools. A Chrome DevTools extension for the open-source React JavaScript library. It allows inspection of the React component hierarchies.
+      \item [-] Storybook is an open-source tool for developing UI components in isolation for React.
+      \item [-] Visual Studio Code is a source code editor used for building projects.
+    \end{itemize}
   
-  With the addition of an Arduino based tracking device, tracking would be effortless. 
-  An API would be handling all the traffic between the server, and the application, hosting all the data on 
-  the cloud for ease of access and efficiency.\\
-	
-	\begin{description}
-	\item \textbf{Python}\vspace{.01\textheight} \\ 	
-  A high-level programming language which serves a general purpose, dynamic, and is widely used within the scope of data scientists. 
-  Python allows the use of a variety of functions 				included for the utilization of data analysis and machine learning
-	\end{description}
-
-	\begin{itemize}
-	\item \textbf{Attributes} \vspace{.01\textheight} \\ 		
-	\begin{enumerate}
-	\item {Create a CSV output to easily read, and manipulate data in a spreadsheet} \vspace{.01\textheight}  \\	
-	\item {Integration of SQL (Read, Write)} \vspace{.01\textheight}  \\	
-	\item {Using PySpark to build a machine learning model} \vspace{.01\textheight}  \\	
-	\item {NumPy, anmd Pandas Tool for Data Analytics} \vspace{.01\textheight}  \\	
-
-	\end{enumerate}
-	\end{itemize}
-
-  \item \textbf{User Interface  Requirements} \vspace{.01\textheight} \\ 	
-  
-	\begin{itemize}
-	\item \textbf{Web  Requirements} \vspace{.01\textheight} \\ 	
-	The purpose of a website is to engage, inform, and give ease of access for users with just an internet connection. Investing in a website helps invest in the idea of the project and give 			room for growth. Variety of tools will be used to develop the application such as:
-	\begin{enumerate}
-	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
-	\begin{itemize}
-    \item {React Javascript} \vspace{.01\textheight}  \\	
-    \begin{description}
-    \item React JS Library will be used to develop the interactive UIs and Functionality for the website \\
-    \end{description}
-	\item {Redux} \vspace{.01\textheight}  \\	
-	 \begin{description}
-   \item Maintain the state of the application in a single tree object \\
-    \end{description}
-	\item {React-Bootstrap} \vspace{.01\textheight}  \\	
-	 \begin{description}
-  \item Bootstrap will be used as the main front-end framework to build the UI components\\
-    \end{description}
- 
-	\end{itemize}
-	\clearpage
-	 \item \textbf{Back-End} \vspace{.01\textheight} \\
-	\begin{itemize}
-	\item {NodeJS} \vspace{.01\textheight}  \\	
-	 \begin{description}
-    \item The server side JavaScript environment will be the core back-end for the application \\
-    \end{description}
-	\item {REST API} \vspace{.01\textheight}  \\	
-	 \begin{description}
-\item HTTP Requests made by the application will be handled by a RESTful API \\
-    \end{description}
-	\item {SQL (MySQL, MONGO, or Firebase)} \vspace{.01\textheight}  \\	
-    \begin{description}
-\item Real-time tracking information will be stored on a database such as MySQL, or Firebase to be of use \\
-    \end{description}
-
-	\end{itemize}
-	\end{enumerate}
-
-
-	\item \textbf{Application  Requirements} \vspace{.01\textheight} \\ 	
-	The purpose of a website is to engage, inform, and give ease of access for users with just an internet connection. Investing in a website helps invest in the idea of the project and give 			room for growth. Variety of tools will be used to develop the application such as:
-	\begin{enumerate}
-	 \item \textbf{Front-End} \vspace{.01\textheight}  \\	
-	\begin{itemize}
-	\item {React Native } \vspace{.01\textheight}  \\	
-    \begin{description}
-\item React JS Library will be used to develop the interactive UIs and Functionality for the mobile application cross platform \\
-    \end{description}
-	\item {Redux} \vspace{.01\textheight}  \\	
-	 \begin{description}
-\item Maintain the state of the application in a single tree object \\
-    \end{description}
-	\item {React Navigation} \vspace{.01\textheight}  \\	
-	 \begin{description}
-  \item Handling the routing and navigation for the react application \\
-    \end{description}
-    \item {React-Bootstrap} \vspace{.01\textheight}  \\	
-	 \begin{description}
-  \item Bootstrap will be used as the main front-end framework to build the UI components\\
-    \end{description}
-	\end{itemize}
-    \clearpage
-	 \item \textbf{Back-End} \vspace{.01\textheight}  \\*
-	\begin{itemize}
-		\item {NodeJS} \vspace{.01\textheight}  \\	
-	 \begin{description}
-    \item The server side JavaScript environment will be the core back-end for the application \\
-    \end{description}
-	\item {REST API} \vspace{.01\textheight}  \\	
-	 \begin{description}
-\item HTTP Requests made by the application will be handled by a RESTful API \\
-    \end{description}
-	\item {SQL (MySQL, MONGO, or Firebase)} \vspace{.01\textheight}  \\	
-    \begin{description}
-\item Real-time tracking information will be stored on a database such as MySQL, or Firebase to be of use \\
-    \end{description}
-	\end{itemize}
-	\end{enumerate}
-	\end{itemize}
-
-
-  \item \textbf{Tools} \vspace{.01\textheight} 
-\begin{itemize}
-   \item {AdobeXD} \vspace{.01\textheight}  \\	
-   \begin{description}
-    \item AdobeXD is a powerful platform that helps to create designs for website, and mobile apps \\
-    \end{description}
-   	\item {UI Component Libraries} \vspace{.01\textheight}  \\	
- 	 \begin{description}
-    \item A variety of other libraries will be used for components \\
-    \end{description}
-    	\item {React Native Tools} \vspace{.01\textheight}  \\	
- 	 \begin{description}
-   \item An extension offering a helpful environment to develop React Native Projects \\
-    \end{description}
-	\item {React Developer Tools} \vspace{.01\textheight}  \\	
- 	 \begin{description}
-    \item Chrome DevTools extension for the open-source React JavaScript library. It allows you to inspect the React component hierarchies \\
-    \end{description}
-	\item {Storybook} \vspace{.01\textheight}  \\	
- 	 \begin{description}
-    \item Storybook is an open source tool for developing UI components in isolation for React \\
-    \end{description}
-	\item {Visual Studio Code} \vspace{.01\textheight}  \\	
- 	 \begin{description}
-    \item Source code editor tool used for building projects \\
-    \end{description}
-    
-    
-\end{itemize}
-	
 \end{enumerate}
-
-	
-	
-\subsection[Other Supplementary Requirements]{Other Supplementary Requirements}
-	\begin{enumerate}	
-	\item {Internet Connection } 	
-	\item {Android 5.0+, or iPhone 5s+} 
-	\item {RAM of 1GB or larger} 
-	\item {Must have an integal GPS }
-  \end{enumerate}
-
+  
 \chapter[System Design]{System Design}
+
+This chapter illustrates the system's design using a plethora of diagrams and descriptions. The system's logical and architectural design are followed by the system's physical design, including the database
+and a prototype of the user interface. 
 
 \section[Logical Model Design]{Logical Model Design}
 
+\subsection[Architectural Model Design]{Architectural Model Design}
+
+The system is constructed using a Model View Controller (MVC) architecture. The GPS tracking device hands a combination of an altitude and latitude to the database. Which in turn's connected to the controller.
+A REST API will be connected straight to the controller.
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.75]{Architectural Model Design}
+  \caption{Architectural Model Design}
+\end{figure}
+
 \subsection[Use-Case Diagrams]{Use-Case Diagrams}
 
-\subsubsection[Employee App]{Employee App}
+There are two use-case diagrams in total. One of which is for the patients' application and is represented in figure \ref{fig:patients}. The other diagram is for the workers' application which serves both couriers
+and admins alike and is depicted in figure \ref{fig:workers}. The following diagram depicts the use-case diagram for the workers' application.
 
-\begin{center}
-  \begin{figure}[h]
-    \includegraphics[width=17cm]{Employee App}
-    \caption{Employee App Use Case Diagram}
-  \end{figure}
-\end{center}
-
-\clearpage
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.65]{Workers App Use-case Diagram}
+  \caption{Workers App Use-case Diagram}
+  \label{fig:workers}
+\end{figure}
 
 \begin{enumerate}
   \item Use Case: Notify Couriers of Emergencies
   \begin{itemize}
     \item [-] Actor: The Admin and the Courier.
     \item [-] Purpose: Notify Couriers of emergencies to take the proper action.
-    \item [-] Success Scenario: In case of an emergency occuring with a certain courier. That courier till notify the system of said 
+    \item [-] Success Scenario: In case of an emergency occurring with a certain courier. That courier till notify the system of said 
     emergency. The system will determine the best course of action. E.g. a nearby courier takes the samples from the impaired courier.
     The system then notifies that courier of the actions to be taken.
     \item [-] Type: Primary
@@ -869,17 +813,18 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
     \item [-] Cross References: Functional Requirement 2.2.b
   \end{itemize}
 \end{enumerate}
+\clearpage
 
-\subsubsection[Client App]{Client App}
+The following diagram represents the use-case diagram for the patients' application.
 
-\begin{center}
-  \begin{figure}[h]
-    \includegraphics[width=17cm]{Client App}
-    \caption{Client App Use Case Diagram}
-  \end{figure}
-\end{center}
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.7]{Patients App Use-case Diagram}
+  \caption{Patients App Use-case Diagram}
+  \label{fig:patients}
+\end{figure}
 
-\begin{itemize}
+\begin{enumerate}
   \item Use Case: Send notifications
   \begin{itemize}
     \item [-] Actor: The System and the Patient.
@@ -902,8 +847,169 @@ gives us the capability to showcase the location of a vehicle on a map dashboard
     \item [-] Type: Primary
     \item [-] Cross References: Functional Requirement 1.3.a
   \end{itemize}
-\end{itemize}
+\end{enumerate}
+\clearpage
+
+\subsection[Activity Diagrams]{Activity Diagrams}
+
+Two activity diagrams illustrate two unique use-cases previously mentioned. And are delineated in figure \ref{fig:emergency} and figure \ref{fig:form}.
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.7]{Emergency Notification Activity Diagram}
+  \caption{Emergency Notification Activity Diagram}
+  \label{fig:emergency}
+\end{figure}
+\clearpage
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.8]{Form Fill Activity Diagram }
+  \caption{Form Fill Activity Diagram}
+  \label{fig:form}
+\end{figure}
+\clearpage
 
 \section[Physical Model Design]{Physical Model Design}
+
+\subsection{User Interface Prototype}
+The figures \ref{fig:mainlogin} through \ref{fig:viewLabs} show the different pages and screens from the application to be developed.
+
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.85\linewidth]{Login Page}
+    \captionof{figure}{Main Login}
+    \label{fig:mainlogin}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.85\linewidth]{Verify Number via SMS}
+    \captionof{figure}{Verify Number via SMS}
+    \label{fig:verifysms}
+  \end{minipage}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.85\linewidth]{Front Page}
+    \captionof{figure}{Front Page}
+    \label{fig:frontpage}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.85\linewidth]{Home Page}
+    \captionof{figure}{Home Page}
+    \label{fig:homepage}
+  \end{minipage}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}{0.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{User Profile}
+    \captionof{figure}{User Profile}
+    \label{fig:userProfile}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Health Tips}
+    \captionof{figure}{Health Tips}
+    \label{fig:healthTips}
+  \end{minipage}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Search For Tests Homepage}
+    \captionof{figure}{Search For Tests Homepage}
+    \label{fig:illustration1}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Search for Tests}
+    \captionof{figure}{Search for Tests}
+    \label{fig:searchForTests}
+  \end{minipage}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Checkout With Options}
+    \captionof{figure}{Checkout With Options}
+    \label{fig:checkoutWithOptions}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Book In-Lab}
+    \captionof{figure}{Book In-Lab}
+    \label{fig:bookInLab}
+  \end{minipage}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Book at Home}
+    \captionof{figure}{Book at Home}
+    \label{fig:bookAtHome}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Order Confirmation}
+    \captionof{figure}{Order Confirmation}
+    \label{fig:orderConfirmation}
+  \end{minipage}
+\end{figure}
+\clearpage
+
+\begin{figure}[h!]
+  \centering
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{Admin Dashboard}
+    \captionof{figure}{Admin Dashboard}
+    \label{fig:adminDashboard}
+  \end{minipage}%
+  \begin{minipage}{.5\textwidth}
+    \centering
+    \includegraphics[width=0.95\linewidth]{View Labs on Map}
+    \captionof{figure}{View Labs on Map}
+    \label{fig:viewLabs}
+  \end{minipage}
+\end{figure}
+\clearpage
+
+\subsection{Database Design}
+
+The database to be built in this project is illustrated with the types of relationships and attributes explicitly detailed in figure \ref{fig:erd} entity relationship (ER) diagram.
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[scale=0.7]{ER Diagram}
+  \caption{ER Diagram}
+  \label{fig:erd}
+\end{figure}
+\clearpage
+
+\begin{figure}[hbt!]
+  \centering
+  \includegraphics[angle=90, origin=c, scale=1]{ER Diagram}
+  \caption{ER Diagram}
+  \label{fig:erd}
+\end{figure}
 
 \end{document}
